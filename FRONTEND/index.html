@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- AICI NE CONECTAM CU FISERUL .CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!-- AICI SE PUNE ICONITA SITE-ULUI WEB-->
+    <link rel="icon" href="./PICTURES/home/LunacyLogoWeb.jpg" type="image/x-icon">
+    <title>Lunacy</title>
+</head>
+<body>
+    <div class="topMenu">
+        <div class="logoName">
+            <img src="./PICTURES/home/LunacyLogoWeb.jpg" alt="Lunacy logo" width="30px" height="30px">
+            <a href="https://icons8.com/lunacy">Lunacy</a>
+        </div>
+        <div class="pages">
+            <a href="#about">About</a>
+            <a href="#howtouse">How to use</a>
+            <a href="Contact.html">Contacts</a>
+        </div>
+        <button class="downloadButton">Download</button>
+    </div>
+    
+    <div class="introducere">
+        <p class="what">What will you</p><p class="design">design</p><p class="today">today?</p>
+    </div>
+    
+    <div class="text">
+        <p><span class="blue">Lunacy</span> makes it easy to create professional designs and to share or print them.</p>
+    </div>
+
+    <div class="welcome">
+        <div class="welcomePicture">
+            <img src="./PICTURES/home/LunacyWelcomePage.png" alt="welcome to lunacy" width="700px" height="450px">
+        </div>
+
+        <div class="textDownload">
+            <p>How you <span class="designText"><b>design</b></span> <ion-icon name="brush-outline"></ion-icon> , 
+                <span class="alignText"><b>align</b></span> <ion-icon name="swap-horizontal-outline"></ion-icon> , 
+                and <span class="buildText"><b>build</b></span> <ion-icon name="code-slash-outline"></ion-icon>  matters. 
+                Do it together with Lunacy.
+            </p>
+            <button class="downloadButtonWelcome">Download</button>
+        </div>
+    </div>
+
+
+    <!-- SECTIUNE CU BOX-URI PENTRU PAGINI NOII-->
+    <div class="boxContainers">
+        <div class="boxShortcuts">
+            <a href="#"><img src="./PICTURES/home/keyboard.png" alt="keyboardLogo" width="30px" height="30px">Shortcuts</a>
+        </div>
+        <div class="boxComments">
+            <a href="#"><img src="./PICTURES/home/comments.png" alt="commentsLogo" width="30px" height="30px">Comments</a>
+        </div>
+        <div class="boxCloud">
+            <a href="#"><img src="./PICTURES/home/cloud.png" alt="cloudLogo" width="30px" height="30px">Cloud</a>
+        </div>
+        <div class="boxLibraries">
+            <a href="#"><img src="./PICTURES/home/book.png" alt="librariesLogo" width="30px" height="30px">Libraries</a>
+        </div>
+        <div class="boxInterface">
+            <a href="#"><img src="./PICTURES/home/interaction.png" alt="interfaceLogo" width="30px" height="30px">Interface</a>
+        </div>
+    </div>
+
+
+    <!-- OVO SE BRISE SAMO SLUZI DA BI SE DODALI PRAZNI REDOVI  -->
+    <img class="designLunacy" src="./PICTURES/home/lunacyDesign.jpg" alt="Lunacy design" width="100%" height="350px">
+
+
+    <!-- TEXT DESPRE AI POWERDE LUNACY  -->
+    <div class="aiPower">
+        <div class="pozaAIpower">
+            <img src="./PICTURES/home/AIpowered.jpg" alt="AIpowered" width="800px" height="600px">
+        </div>
+        <div class="textAIpowerd">
+            <p>
+                AI-powered tools
+                Lunacy has a wide range of AI-powered tools that will save you valuable time during the design process:
+                Background remover get rid of photo backgrounds in one click.
+                Image upscaler enlarge images and enhance their resolution.
+                Avatar tool instantly create user avatars when designing contact lists, chats, testimonial carousels, and the like.
+                Text generator forget about lorem ipsum and add meaningful copy to your designs in one click: names, job titles, cities, phone and credit card numbers, and more.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- BLECK LOGO AND TEXT -->
+    <div class="StartCreateFree">
+        <img src="./PICTURES/home/LunacyBlackLoog.jpg" alt="Black logo Lunacy" width="200px" height="200px">
+        <p class="start">Start creating today</p>
+        <p class="free">for free !</p>
+    </div>
+
+
+    <!-- DONATE BUTTON -->  
+    <!-- MOZDA NAPRAVITI MOZDA NE  -->
+
+
+
+
+    <!-- GET STARDED WITH LUNACY -->
+    <div class="startDesignLunacyOutro">
+        <div class="textOutro">
+            <p>
+                Start 
+                <span id="changingText">making</span>
+                <span id="unchangedStart">designing, aligning, building</span>
+            </p>
+            <p id="unchangedEnd">with Lunacy</p>
+        </div>
+
+        <div class="buttonDownloadOutro">
+            <button>Get starded for free</button>
+        </div>
+    </div>
+    <footer>
+        <p>All rights reserved &copy; 2024 Bondokic Nikola</p>
+    </footer>
+    
+
+
+    <!-- SCROL TO TOP BUTTON -->
+    <button id="scrollTopButton" class="hidden" onclick="scrollToTop()">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+    
+
+
+    <script src="script.js"></script>
+    <!-- LINCURI PENTRU A FOLOSI IONICONS  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
