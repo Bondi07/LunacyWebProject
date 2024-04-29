@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- AICI NE CONECTAM CU FISERUL .CSS-->
+    <link rel="stylesheet" href="Comments-style.css">
+    <!-- AICI SE PUNE ICONITA SITE-ULUI WEB-->
+    <link rel="icon" href="./PICTURES/home/LunacyLogoWeb.jpg" type="image/x-icon">
+    <title>Comments</title>
+</head>
+<body>
+    <div class="topMenu">
+        <div class="logoName">
+            <img src="./PICTURES/home/LunacyLogoWeb.jpg" alt="Lunacy logo" width="30px" height="30px">
+            <a href="https://icons8.com/lunacy">Lunacy</a>
+        </div>
+        <div class="pages">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="#howtouse">How to use</a>
+            <a href="Contact.html">Contacts</a>
+        </div>
+        <button class="downloadButton">Download</button>
+    </div>
+
+
+    <div class="menuAndContentContainer">
+        
+        
+        <div class="leftManuContainer">
+            <!-- LEFT SIDE MENU  -->
+            <nav class="left-menu">
+                <ul>
+                    <li><a href="#comments">Comments</a></li>
+                    <li><a href="#text">Adding a text comment</a></li>
+                    <li><a href="#voice">Recording voice comments</a></li>
+                    <li><a href="#stickers">Commenting with stickers layers</a></li>
+                    <li><a href="#view">Viewing and managing comments</a></li>   
+                    <li><a href="#more">More comment actions</a></li> 
+                </ul>
+            </nav>
+        </div>
+
+        <div class="containerComments">
+
+            <h1 id="comments">Comments</h1>
+            <p>Make notes, provide feedback, and share ideas with your teammates</p>
+        
+            <p>Use comments in your documents to leave notes and to-do lists for yourself or share and receive feedback.</p>
+            
+            <p>In Lunacy, there are three type of comments:</p>
+            <ul>
+                <li><a href="#text">Text comments</a></li>
+                <li><a href="#voice">Voice comments</a></li>
+                <li><a href="#stickers">Stickers</a></li>
+            </ul>
+        
+            <p>All shown in the demo below.</p>
+        
+        
+            <video width="1020px" height="600px" autoplay >
+                <source src="./VIDEO/comment1.mp4" type="video/mp4">
+            </video>
+        
+        
+            <h2 id="text">Adding a text comment</h2>
+            <p>To <strong>add a comment</strong> to a document:</p>
+            <ol>
+                <li>Press <code>C</code> or select the <strong>Comment tool.</strong></li>
+                <li>Click over the place on the canvas you want to comment.</li>
+                <li>Type something in the input field.</li>
+                <li>Click <ion-icon name="send-outline"></ion-icon> or press <code>Enter.</code></li>
+            </ol>
+        
+        
+            <h2 id="voice">Recording voice comments</h2>
+            <p>To comment with a voice recording:</p>
+        
+            <ol>
+                <li>Next to the usual comment input field, press the <ion-icon name="mic-outline"></ion-icon>  icon to record your message.</li>
+                <li>
+                    Click <img src="./PICTURES/comments/black-check-box.png" alt="black box" width="10px" height="10px">  
+                    to stop recording. Use the <ion-icon name="caret-forward-outline"></ion-icon> 
+                    button to listen to the recording or the <ion-icon name="trash-outline"></ion-icon> to delete it.
+                </li>
+                <li>Click <ion-icon name="send-outline"></ion-icon> or press <code>Enter.</code></li>
+            </ol>
+        
+        
+            <h2 id="stickers">Commenting with stickers</h2>
+            <p>
+                Unlike text and voice comments, which are visible/playable only once you click on the 
+                comment markers to open them, sticker comments show up right on the canvas.
+            </p>
+        
+            <p>To <strong>comment with a sticker:</strong></p>
+            <ol>
+                <li>
+                    Next to the comment input field, click  to open up a set of stickers you can 
+                    use in place of text comments or as reactions to other users' comments:
+                </li>
+                <img src="./PICTURES/comments/commentSticker.png" alt="comment with sticker" width="450px" height="50px">
+                <li>Click on a sticker to post the comment.</li>
+            </ol>
+        
+        
+            <h2 id="view">Viewing and managing comments</h2>
+        
+            <p>By default, comments are always visible on the canvas.</p>
+        
+            <p>To hide them, disable the the <strong>Comments</strong> option in the <strong>Additional options</strong> menu on the top bar:</p>
+        
+            <img src="./PICTURES/comments/strong.png" alt="strong" width="800px" height="450px">
+        
+        
+            <p>
+                You can view and manage comments in a document by selecting the <strong>Comment 
+                tool</strong> on the toolbar or pressing <code>C</code> to enable comment mode. All the comments 
+                on the current page will be visible on the canvas.
+            </p>
+        
+            <p>Open and read/listen to comments by clicking the comment markers on the canvas.</p>
+        
+            <p>
+                Clicking the <ion-icon name="chatbubble-ellipses-outline"></ion-icon> button on the <strong>top bar</strong> 
+                will open up the <strong>Comment panel</strong> in place of 
+                the right panel, displayng all of the comments available in the document. Here, 
+                you can filter comments by their status (unresolved/all).
+            </p>
+            <img src="./PICTURES/comments/comment.png" alt="comment" width="800px" height="450px">
+        
+        
+        
+            <h2 id="more">More comment actions</h2>
+            <ul>
+                <li>To <strong>move comments,</strong> drag them over the canvas.</li>
+                <li>Add your text, sticker, or voice message below a comment to <strong>reply</strong> to it, then click <ion-icon name="send-outline"></ion-icon> :</li>
+                <img src="./PICTURES/comments/moreComment.png" alt="moreComment" width="800px" height="350px">
+                <li>To <strong>edit/delete</strong> a comment, click <ion-icon name="ellipsis-vertical-outline"></ion-icon> in the top right corner of the comment dialog box and select the corresponding menu option:</li>
+                <img src="./PICTURES/comments/deliteCom.png" alt="delite" width="800px" height="350px">
+                <li>Click <ion-icon name="checkmark-circle-outline"></ion-icon> in the top right corner of the comment dialog box to <strong>resolve a comment</strong> (you can only resolve your own comments at the moment).</li>
+            </ul>
+
+
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>All rights reserved &copy; 2024 Bondokic Nikola</p>
+    </footer>
+    
+
+
+    <!-- SCROL TO TOP BUTTON -->
+    <button id="scrollTopButton" class="hidden" onclick="scrollToTop()">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+    
+
+
+    <script src="script.js"></script>
+    <!-- LINCURI PENTRU A FOLOSI IONICONS  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

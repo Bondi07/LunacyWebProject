@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+::selection {
+    background-color: rgba(247, 204, 107, 0.99);
+    color: black;
+}
+body{
+    background-color:whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+}
+/*licnuri vizitate */
+a:visited {
+    color: black; /* sau orice altă culoare dorită */
+    text-decoration: none;
+}
+
+/*TOP NAVBAR*/
+.topMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+}
+.logoName {
+    color: black;
+    padding: 14px 16px;
+    font-size: 20px;
+}
+.logoName img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.logoName a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.logoName a:visited{
+    text-decoration: none;
+    color: black;
+}
+.pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pages a {
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.pages a:hover {
+    color: red;
+}
+.downloadButton {
+    background-color: #179DE3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 16px;
+    width: 120px;
+    font-size: medium;
+    font-weight: 400;
+}
+.downloadButton:hover{
+    background-color: #5BBCFF;
+}
+
+/* CONTAINER TATA  */
+.menuAndContentContainer {
+    display: flex;
+}
+
+/* CONTAINER SHORTCUTS*/
+.containerShortcuts{
+    width: calc(100% - 350px);
+    margin: 100px auto; 
+    flex-grow: 1; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+/* COD PENTRU TABEL */
+.table-container {
+    margin: 50px auto;
+    width: 80%;
+}
+/* COD PENTUR TABELE */
+.table-container{
+    margin-top: 50px;
+}
+table {
+    width:100%;
+    border-collapse: collapse;
+}
+th, td {
+    border-bottom: 1px solid #727272;
+    text-align: left;
+    padding: 22px 21px;
+    font-weight: 500;
+    font-size: 18px;
+}
+th{
+    background-color: whitesmoke;
+    color: #727272;
+    padding: 22px 21px;
+    font-size: 15px;
+    font-weight: 300;
+}
+h1{
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+h2{
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+p{
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* LEFT MANU */
+.leftManuContainer {
+    width: 300px;
+    flex-shrink: 0; 
+}
+.left-menu {
+    position: fixed; 
+    width: 300px;
+    height: calc(100vh - 150px); 
+    background-color: whitesmoke;
+    overflow-y: auto; 
+    z-index: 1; 
+    flex-shrink: 0; 
+}
+.left-menu ul {
+    margin: 0 0 22px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+.left-menu ul li{
+    font-size: 17px;
+    color: black;
+    margin-left: 50px;
+    padding: 10px 0 0 23px;
+}
+.left-menu li a{
+    color: black;
+}
+
+.left-menu li a:hover{
+    color: #179DE3;
+}
+
+/* BARA DE SCROLL PENTRU LEFT MANU */
+.left-menu::-webkit-scrollbar {
+    width: 0;
+    background: transparent; 
+    
+}
+
+.left-menu:hover::-webkit-scrollbar {
+    width: 5px; 
+}
+
+.left-menu::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.left-menu::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.left-menu::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.left-menu a:hover{
+    color: #179DE3;
+}
+.left-menu a{
+    color: black;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+.left-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-menu li {
+    margin-bottom: 10px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+footer p {
+    margin: 0; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GO TO TOP BUTTON */
+#scrollTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    color: #333;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+#scrollTopButton.hidden {
+    opacity: 0;
+}
+

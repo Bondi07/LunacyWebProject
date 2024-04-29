@@ -41,7 +41,20 @@ function scrollToTop() {
 
 
 
+/* LEFT MANU PAGINA ABOUT */
+window.addEventListener('scroll', function() {
+    var menu = document.querySelector('.left-menu');
+    var scrollPosition = window.scrollY;
 
+    // Verificăm dacă s-a făcut scroll în jos
+    if (scrollPosition > 0) {
+        // Actualizăm poziția meniului
+        menu.style.top = '50px';
+    } else {
+        // Menținem meniul la poziția sa originală
+        menu.style.top = '120px'; // Schimbă această valoare conform designului tău
+    }
+});
 
 
 
