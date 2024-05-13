@@ -139,7 +139,6 @@ a{
 .menuAndContentContainer {
     display: flex;
 }
-/* CONTAINER SHORTCUTS*/
 .containerCloud{
     width: calc(100% - 350px);
     margin: 100px auto; 
@@ -223,15 +222,6 @@ strong{
     font-size: 17px;
     font-family: 'Montserrat', sans-serif;
 }
-
-
-
-
-
-
-
-
-
 
 
 /* FOOTER */

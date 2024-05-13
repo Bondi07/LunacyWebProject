@@ -18,7 +18,7 @@ body{
 }
 /*licnuri vizitate */
 a:visited {
-    color:#179DE3; /* sau orice altă culoare dorită */
+    color: black; /* sau orice altă culoare dorită */
     text-decoration: none;
 }
 
@@ -78,29 +78,28 @@ a:visited {
 .downloadButton:hover{
     background-color: #5BBCFF;
 }
-
-/* CONTENT */
-
+/* CONTAINER CLOUD */
 /* CONTAINER TATA */
 .menuAndContentContainer {
     display: flex;
 }
-/* CONTAINER SHORTCUTS*/
-.containerLibraries{
+.containerInterface{
     width: calc(100% - 350px);
-    margin: 100px auto; 
+    margin-top: 100px;
+    margin-left: 50px; 
     flex-grow: 1; 
     padding: 20px;
     box-sizing: border-box;
+    margin-right: 50px;
 }
 /* LEFT MANU */
 .leftManuContainer {
     width: 300px;
-    flex-shrink: 0;
+    flex-shrink: 0; 
 }
 .left-menu {
     position: fixed; 
-    width: 280px;   
+    width: 300px;   
     height: calc(100vh - 150px); 
     background-color: whitesmoke;
     overflow-y: auto; 
@@ -129,8 +128,8 @@ a:visited {
     scroll-behavior: smooth;
     text-decoration: none;
 }
-.left-menu li {
-    margin-bottom: 5px;
+.left-menu li{
+    margin-bottom: 10px;
 }
 /* BARA DE SCROLL PENTRU LEFT MANU */
 .left-menu::-webkit-scrollbar {
@@ -151,20 +150,6 @@ a:visited {
 .left-menu::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-
-/*  CONTAINER LIBRARIES  */
-.containerLibraires{
-    margin-top: 50px;
-    margin-left: 20px;
-}
-.titlu{
-    letter-spacing: -4px;
-    margin-top: 50px;
-
-}
-#how{
-    font-size: 25px;
-}
 h1{
     font-size: 60px;
     font-weight: 800;
@@ -173,22 +158,21 @@ h1{
 }
 h2{
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 800;
     font-family: 'Montserrat', sans-serif;
 }
 h3{
-    font-size: 40px;
-    font-weight: 600;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
     font-family: 'Montserrat', sans-serif;
 }
 p{
     font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 50px;
     margin-bottom: 50px;
-}
-p a{
-    color: #179DE3;
-    text-decoration: none;
+    text-align: justify;
 }
 ul {
     margin: 0 0 22px;
@@ -196,14 +180,13 @@ ul {
     font-family: 'Montserrat', sans-serif;
 }
 ul li{
-    font-size: 17px;
+    font-size: 18px;
     color: black;
     margin-left: 50px;
     padding: 10px 0 0 23px;
 }
 li a{
-    color:#179DE3;
-    text-decoration: none;
+    color: black;
 }
 li a:hover{
     color: #179DE3;
@@ -227,9 +210,45 @@ ol li a{
 ol li a:hover{
     color: #179DE3;
 }
-
 img{
-    margin:20px
+    vertical-align: middle;
+    margin: 50px;
+}
+code{
+    background-color: #E9F3FF;
+    padding: 3.2px 8px; 
+}
+strong{
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* COD PENTRU TABEL */
+.table-container {
+    margin: 50px auto;
+    width: 80%;
+}
+/* COD PENTUR TABELE */
+.table-container{
+    margin-top: 50px;
+}
+table {
+    width:100%;
+    border-collapse: collapse;
+}
+th, td {
+    border-bottom: 1px solid #727272;
+    text-align: left;
+    padding: 22px 21px;
+    font-weight: 500;
+    font-size: 18px;
+}
+th{
+    background-color: whitesmoke;
+    color: #727272;
+    padding: 22px 21px;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 
@@ -281,4 +300,3 @@ footer p {
 #scrollTopButton.hidden {
     opacity: 0;
 }
-
