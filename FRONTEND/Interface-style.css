@@ -18,7 +18,7 @@ body{
 }
 /*licnuri vizitate */
 a:visited {
-    color: black; /* sau orice altă culoare dorită */
+    color: black; 
     text-decoration: none;
 }
 
@@ -163,7 +163,7 @@ h2{
 }
 h3{
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
 }
@@ -250,9 +250,15 @@ th{
     font-size: 15px;
     font-weight: 300;
 }
-
-
-
+/* STYLE FOR ID'S */
+#logOut{
+    color: red;
+    border-bottom: red 2px dotted;
+    margin-right: 650px;
+}
+#interface{
+    word-spacing: -5px;
+}
 
 
 
@@ -279,6 +285,7 @@ footer {
 }
 footer p {
     margin: 0; 
+    font-size: 16px;
 }
 
 /* GO TO TOP BUTTON */

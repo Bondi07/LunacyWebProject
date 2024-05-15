@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- AICI NE CONECTAM CU FISERUL .CSS-->
+    <link rel="stylesheet" href="Tools-style.css">
+    <!-- AICI SE PUNE ICONITA SITE-ULUI WEB-->
+    <link rel="icon" href="./PICTURES/home/LunacyLogoWeb.jpg" type="image/x-icon">
+    <title>Tools</title>
+</head>
+<body>
+    <div class="topMenu">
+        <div class="logoName">
+            <img src="./PICTURES/home/LunacyLogoWeb.jpg" alt="Lunacy logo" width="30px" height="30px">
+            <a href="https://icons8.com/lunacy">Lunacy</a>
+        </div>
+        <div class="pages">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="HowToUse.html">How to use</a>
+            <a href="Contact.html">Contacts</a>
+        </div>
+        <button class="downloadButton">Download</button>
+    </div>
+
+
+    <div class="menuAndContentContainer">
+        
+        
+        <div class="leftManuContainer">
+            <!-- LEFT SIDE MENU  -->
+            <nav class="left-menu">
+                <ul>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#select">Select tool</a></li>
+                    <li><a href="#frame">Frame tool</a></li>
+                    <li><a href="#shape">Shape tools</a></li>
+                    <li><a href="#text">Text tool</a></li>   
+                    <li><a href="#pen">Pen tool</a></li> 
+                    <li><a href="#pencile">Pencil tool</a></li> 
+                    <li><a href="#image">Image tool</a></li> 
+                    <li><a href="#gui">GUI tool</a></li> 
+                    <li><a href="#icon">Icon tool</a></li> 
+                    <li><a href="#comment">Comment tool</a></li> 
+                </ul>
+            </nav>
+        </div>
+
+        <div class="containerTools">
+
+
+            <h1 id="tools">Tools</h1>
+            <p>Learn about Lunacy's design tools</p>
+
+            <p>All of Lunacy's tools are on the toolbar located on the left of the canvas:</p>
+
+
+            <p>
+                Below is a brief description of all available tools, which we will then 
+                go over in detail. To speed things up, activate the tools with the 
+                corresponding keyboard shortcuts:
+            </p>
+
+            <table>
+                <tr>
+                    <th>Tool</th>
+                    <th>Description</th>
+                    <th>Keyboard Shortcut</th>
+                </tr>
+                <tr>
+                    <td>Select tool</td>
+                    <td>Use it to select, move, and resize layers on the canvas.</td>
+                    <td>V or press Esc when an element or another tool is selected.</td>
+                </tr>
+                <tr>
+                    <td>Frame tool</td>
+                    <td>Used for creating frames.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Shape tools</td>
+                    <td>A set of common shapes you can add to the canvas. Each tool has a shortcut, either a single, double, or repeated press of a button.</td>
+                    <td>
+                        R — rectangle<br>
+                        R, R — rounded rectangle<br>
+                        L — line<br>
+                        L, L — arrow<br>
+                        O — oval<br>
+                        O, O — triangle<br>
+                        O, O, O — polygon<br>
+                        O, O, O, O — star
+                    </td>
+                </tr>
+                <tr>
+                    <td>Text tool</td>
+                    <td>Add text layers to the document. Comes with an on-canvas text generation option.</td>
+                    <td>T</td>
+                </tr>
+                <tr>
+                    <td>Pen tool</td>
+                    <td>Used for creating custom vectors or shapes.</td>
+                    <td>P</td>
+                </tr>
+                <tr>
+                    <td>Image tool</td>
+                    <td>Use it for importing images.</td>
+                    <td>M</td>
+                </tr>
+                <tr>
+                    <td>GUI tools</td>
+                    <td>A set of basic interface element components from UI kits (buttons, checkboxes, radio buttons, and so on) that you can quickly add to your designs.</td>
+                    <td>
+                        B — button<br>
+                        D — text input field<br>
+                        F — checkbox<br>
+                        Y — radio button<br>
+                        J — toggle<br>
+                        W — dropdown
+                    </td>
+                </tr>
+                <tr>
+                    <td>Icon tool</td>
+                    <td>Keeps recently used icons at hand.</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>Comment tool</td>
+                    <td>Activate it to leave comments anywhere on the canvas (only available in cloud documents).</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>Scale tool</td>
+                    <td>Proportionally change the size of the elements on the canvas.</td>
+                    <td>K</td>
+                </tr>
+                <tr>
+                    <td>Eyedropper tool</td>
+                    <td>Use it to sample colors.</td>
+                    <td>I</td>
+                </tr>
+                <tr>
+                    <td>Hand tool</td>
+                    <td>Used for easily navigating the canvas.</td>
+                    <td>Hold down Space or the middle mouse button</td>
+                </tr>
+                <tr>
+                    <td>Hotspot tool</td>
+                    <td>Add hotspots (interactive zones) to your designs when working with prototypes.</td>
+                    <td>H</td>
+                </tr>
+                <tr>
+                    <td>Slice tool</td>
+                    <td>Specify a region, or slice, of the canvas and export it. The slice can include parts of frames, several parts of different frames, and so on.</td>
+                    <td>E</td>
+                </tr>
+                <tr>
+                    <td>Pencil tool</td>
+                    <td>Used for drawing freehand shapes.</td>
+                    <td>P, P</td>
+                </tr>
+                <tr>
+                    <td>Avatar tool</td>
+                    <td>Add randomly generated avatars to your designs.</td>
+                    <td>Q</td>
+                </tr>
+                <tr>
+                    <td>Component tool</td>
+                    <td>Useful when you're creating interface mockups: add placeholder components and then replace them with UI elements later.</td>
+                    <td>S</td>
+                </tr>
+            </table>
+
+            <p>
+                Lunacy also has the <b>Zoom tool</b>, though it doesn't appear on the toolbar. 
+                To activate it, hold down Z and zoom in and out of a specific area on the canvas.
+            </p>    
+
+            <h2 id="select">Select tool</h2>
+
+            <p>The <b>Select tool</b> is active by default when no other tool is in use.</p>
+
+            <p>
+                With it, you can select any layer on the canvas (provided it's not locked), then move and modify the element as you wish:
+            </p>
+
+            <ul>
+                <li>
+                    <b>Select</b> a layer by clicking it. A selection frame with handles will enclose 
+                    the element and its name will be highlighted in the Layer list. Hold down 
+                    <code>Shift</code> and click multiple elements to select all of them. If you need to 
+                    select every element on the page, press <code>Shift + A.</code>
+                </li>
+                <li><b>Move</b> layers by dragging them on the canvas.</li>
+                <li><b>Resize and rotate</b> layers using the handles at the coners of the selection frame.</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/tools/resize.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                You can also select layers through the Layer List. It may be more convenient 
+                in some cases, like when you're dealing with fully overlapping or locked layers.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/tools/layerList.mp4" type="video/mp4">
+            </video>
+
+            <h3>Using the Select tool with grouped layers</h3>
+
+            <p>When you click over a group, you select the entire group.</p>
+
+            <p>To <b>select a specific layer inside a group:</b></p>
+
+            <ul>
+                <li>Click the layer while holding down <code>Ctrl</code> / <code>⌘</code>.</li>
+                <li>Click to select the group, then double-click to select the required layer.</li>
+            </ul>
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/tools/selectGroup.mp4" type="video/mp4">
+            </video>
+
+
+            <p>Then, switch the selection to the other layers in the group by clicking them.</p>
+
+            <h2 id="frame">Frame tool</h2>
+
+            <p>
+                <b>Frames</b> work like containers for your layers. They're more flexible than 
+                layers in a lot of ways and are especially convenient when you're 
+                designing for a specific device or screen size.
+            </p>
+
+            <p>Press <code>A</code> to activate the <b>Frame tool</b> and drag over the canvas to create a frame:</p>
+
+            <img src="./PICTURES/tools/frameTool.png" alt="frame tools" width="850px" height="500px">
+
+
+            <p>
+                Instead of dragging, you can set the frame size using the preset list 
+                that appears in the right panel or snap the frame to a preset by 
+                dragging its corner to one of the blue + icons that appear when 
+                you're adding a frame:
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/tools/presetList.mp4" type="video/mp4">
+            </video>
+
+
+            <h2 id="shape">Shape tools</h2>
+
+            <p>Use these tools to add standard shapes onto the canvas:</p>
+
+            <ul>
+                <li>Rectangle <code>(R)</code></li>
+                <li>Rounded rectangle <code>(R, R)</code></li>
+                <li>Line <code>(L)</code></li>
+                <li>Arrow <code>(L, L)</code></li>
+                <li>Oval <code>(O)</code></li>
+                <li>Triangle <code>(O, O)</code></li>
+                <li>Polygon <code>(O, O, O)</code></li>
+                <li>Star <code>(O, O, O, O)</code></li>
+            </ul>
+            <p>Select the required shape on the toolbar or use the corresponding keyboard shortcut, then:</p>
+            <ul>
+                <li>Click on the canvas to <b>place it as a 100 x 100 shape</b> (works for all shapes except for lines and arrows).</li>
+                <li>Click and drag to <b>adjust the shape's size.</b></li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/tools/shapeSize.mp4" type="video/mp4">
+            </video>
+
+            <p>Some more shape tips:</p>
+
+            <ul>
+                <li>To <b>draw or resize a shape from the center</b>, hold down <code>Alt</code> / <code>⌥</code>.</li>
+                <li>To <b>draw symmetrical shapes</b>, hold down <code>Shift</code> / <code>Shift</code>.</li>
+                <li>Hold down both shortcuts to draw <b>symmetrical shapes from the center.</b></li>
+                <li>To draw a <b>horizontal, vertical, or 45-degree diagonal</b> line, arrow, or path, hold down <code>Shift</code>.</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/tools/drawe.mp4" type="video/mp4">
+            </video>
+
+
+            <h2 id="text">Text tool</h2>
+
+            <p>
+                To <b>add a text layer</b>, press T and click over the area of the canvas where you want to place it. 
+                Type your text or use the handy <b>text generation</b> options that automatically appear when you 
+                create a new text layer:
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/tools/text.mp4" type="video/mp4">
+            </video>
+
+
+            <h2 id="pen">Pen tool</h2>
+
+            <p>
+                <b>The pen is a tool for creating vector paths and shapes.</b> 
+                Activate it by pressing the Pen tool on the toolbar or press 
+                <code>P</code>.
+            </p>
+
+            <p>
+                If you've worked in other graphic editors before, use it like 
+                the Pen tool in those apps. If you're new to design, it might 
+                take you some time and practice to master it. In this section,
+                we'll go over the main capabilities of the tool.
+            </p>
+
+            <p>
+                <b>The pen builds shapes by drawing segments between the points, 
+                or vertices, that you add onto the canvas.</b> The segments 
+                between interconnected vertices are called paths.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/tools/pan.mp4" type="video/mp4">
+            </video>
+
+
+            <h3>Types of paths</h3>
+            <p>Paths can be open or closed:</p>
+            <ul>
+                <li>An <b>open path</b> has a start point and an end point that are not connected.</li>
+                <li>
+                    When the start and end point of a path are connected, i.e. 
+                    the path starts and ends on the same vertex, it's called 
+                    a <b>closed path</b>, or <b>a shape</b>.
+                </li>
+            </ul>
+
+            <img src="./PICTURES/tools/path.png" alt="path" width="850px" height="500px">
+
+            <p>Path segments can be either <b>straight</b> or <b>curved.</b></p>
+
+            <p>To build a shape out of straight lines (e.g. a triangle):</p>
+
+            <ol>
+                <li><b>Press <code>P</code> to activate the pen.</b> This activates Edit mode, and the Edit shape section will appear in the right panel.</li>
+                <li><b>Click over the canvas to place the first point.</b></li>
+                <li><b>Keep clicking to outline the shape that you want.</b> To delete a point, hold down <code>Alt</code> / <code>⌥</code> and click it.</li>
+                <li><b>Close the path by clicking over the starting point</b> or click the Close path in the right panel.</li>
+                <li><b>Press <code>Esc</code> to exit Edit mode.</b></li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/tools/pen2.mp4" type="video/mp4">
+            </video>
+
+            <p>To curve a path, you'll need to be in Edit mode (or don't exit it while drawing with the Pen tool).</p>
+
+            <p>To enable Edit mode, select a vector shape, then:</p>
+
+            <ul>
+                <li>Double-click it</li>
+                <li>Press <code>Enter</code></li>
+                <li>Click the Edit layer icon (<ion-icon name="pencil-outline"></ion-icon>) on the context toolbar</li>
+            </ul>
+
+            <p>To <b>add a curve:</b></p>
+            <ul>
+                <li>Double click on a point</li>
+                <li>Click and drag anywhere on a path</li>
+            </ul>
+            <p>
+                Two adjacent handles will appear around the point. Drag these handles and 
+                change their length to adjust the shape of the curve. You can also move
+                the point around, if necessary:
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/tools/curve.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                Don't worry if the resulting shape isn't exactly what you wanted. Refine it 
+                by modifying curves and straight paths, as well as moving, adding, or deleting points.
+            </p>
+
+            <p>To adjust a shape:</p>
+            <ol>
+                <li>Select it.</li>
+                <li>Enable Edit mode.</li>
+                <li>Make the required changes.</li>
+                <li>Press <code>Esc</code> or click anywhere on the canvas outside the shape to exit Edit mode.</li>
+            </ol>
+
+            <p>You can also change the stroke of the shape, add fills (to closed shapes) and effects in the right panel.</p>
+
+            <p>
+                In the demo below, we added some curves to a heart-shaped layer built with straight lines. 
+                Note how a double-click turns a straight point into a curved point that is also mirrored 
+                (find out about different types of points).
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/tools/moreCurve.mp4" type="video/mp4">
+            </video>
+
+            <h3>Types of points</h3>
+
+            <p>Points can be either straight or curved.</p>
+            <p>Curved points appear with handles when you build Bézier curves, and have three subtypes:</p>
+            <ul>
+                <li>Mirrored points come with identical handles that mirror each other as you drag one of the handles.</li>
+                <li>Disconnected points have totally independent handles.</li>
+                <li>Asymmetric points come with handles that share the same angle but can have different lengths.</li>
+            </ul>
+
+            <img src="./PICTURES/tools/CurvedPoints.png" alt="Curved points" width="850px" height="500px">
+
+
+            <p>
+                You can <code>double-click</code> to switch between straight and mirrored points. 
+                To switch to disconnected or asymmetric points, use the controls that 
+                appear at the top of the right panel when you're using the pen or 
+                have <b>Edit mode</b> enabled:
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/tools/editPoint.mp4" type="video/mp4">
+            </video>
+
+
+            <p>You can also hide one of the handles of a disconnected point by dragging the tip of the handle towards the point:</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/tools/hide.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="pencile">Pencil tool</h2>
+
+            <p>
+                The pencil is a tool for drawing freehand paths. It's great when you need to quickly sketch 
+                something and don't need perfectly refined shapes. That said, using a stylus with a graphic 
+                tablet will give you more precision.
+            </p>
+
+            <p>The pencil stroke is black and 1px wide by default. You can adjust these properties for pencil-drawn layers in the right panel.</p>
+
+            <p>To draw with the <b>Pencil tool:</b></p>
+
+            <ol>
+                <li>Press <code>P</code> twice or select it on the toolbar.</li>
+                <li>Hold down the left mouse button and draw the required path.</li>
+                <li>Release the button when you are done.</li>
+            </ol>
+
+            <p>
+                Unlike the other tools, the Pencil tool doesn't revert back to the Select tool. 
+                It remains active, so you can create as many layers as you want, with each pencil 
+                stroke adding a new layer to the Layer list. You can always group them later.
+            </p>
+
+            <p>Once you're done working with the pencil, press Esc or switch to another tool.</p>
+
+
+            <p>Here are two examples of a word written in one stroke and letter-by-letter (then grouped for convenience) using the pencil. Notice how they appear in the Layer list:</p>
+
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/tools/pencil.mp4" type="video/mp4">
+            </video>
+
+            <h3>Editing paths drawn with the Pencil tool</h3>
+
+            <p>Lunacy automatically smooths the paths that you create. You can also edit pencil-drawn paths like any other vector path:</p>
+
+            <ol>
+                <li>Enable Edit mode.</li>
+                <li>Adjust the paths.</li>
+                <li>Press <code>Esc</code> or click anywhere on the canvas outside the shape once you're done.</li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/tools/editePencile.mp4" type="video/mp4">
+            </video>
+            <p>You can also add borders, shadows, and blurs to paths drawn with the pencil.</p>
+
+            <p>
+                As for fills, keep in mind that the pencil always draws open paths, even if they appear closed.
+                You can try to apply fills, but in many cases the result is going to look a little weird. 
+                If you need to close a path, enable the layer Edit mode and click the Close path button 
+                in the right panel.
+            </p>
+
+            <h2 id="image">Image tool</h2>
+
+            <p>Use the Image tool to quickly add images from your computer onto the canvas.</p>
+
+            <p>Lunacy supports all popular image formats: PNG, JPG, JPEG, WEBP, BMP, ICO, GIF, SVG. The TIFF format is not supported.</p>
+
+            <p>To add an image to your design:</p>
+            <ol>
+                <li>Press <code>M</code> or select the Image tool on the toolbar.</li>
+                <li>In the Open dialog box, choose one or multiple image files.</li>
+                <li>
+                    Click over the area where you want to place the image to add the 
+                    image in its original size. You can also click and drag to 
+                    set the required image size.
+                </li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/tools/mgae.mp4" type="video/mp4">
+            </video>
+            <p>Of course, you can always drag and drop images from your files into Lunacy as well.</p>
+
+            <h2 id="gui">GUI tool</h2>
+
+            <p>The GUI tool features a set of basic UI elements that you can add to your designs as components:</p>
+
+            <ul>
+                <li>Button (<code>B</code>)</li>
+                <li>Text input field (<code>D</code>)</li>
+                <li>Checkbox (<code>F</code>)</li>
+                <li>Radio button (<code>Y</code>)</li>
+                <li>Toggle (<code>J</code>)</li>
+                <li>Dropdown menu (<code>W</code>)</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/tools/tools.mp4" type="video/mp4">
+            </video>
+
+            <p>You can edit the appearance of these components or swap them out entirely.</p>
+
+            <h2 id="icon">Icon tool</h2>
+
+            <p>
+                The Icon tool simplifies your workflow by keeping recently used icons at hand. 
+                To activate it, press X or select it on the toolbar. The Icons content tab 
+                will open up on the left, displaying a variety of icons of different 
+                themes and styles:
+            </p>
+
+            <img src="./PICTURES/tools/icons.png" alt="icons" width="500px" height="850px">
+
+            <p>Also, if you've already added icons to the document, the latest used one will be hovering near the cursor.</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/tools/icons.mp4" type="video/mp4">
+            </video>
+
+            <p>Like with the Component tool, when the Icon tool is active, use X and Shift + X to switch through recently used icons.</p>
+
+            <h2 id="comment">Comment tool</h2>
+
+            <p>
+                Use the Comment tool to leave comments and notes for yourself to view later or to comment on 
+                other people's documents and collect feedback. Commenting is only available in cloud documents. 
+                Apart from text, you can also comment with stickers or voice recordings.
+            </p>
+
+            <p>To add a comment to a document:</p>
+
+            <ol>
+                <li>Press <code>C</code> or select the <b>Comment tool.</b></li>
+                <li>Click over the place on the canvas you want to comment.</li>
+                <li>Type something in the input field.</li>
+                <li>Click <ion-icon name="send-outline"></ion-icon> or press Enter.</li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/tools/comments.mp4" type="video/mp4">
+            </video>
+
+
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>All rights reserved &copy; 2024 Bondokic Nikola</p>
+    </footer>
+    
+
+
+    <!-- SCROL TO TOP BUTTON -->
+    <button id="scrollTopButton" class="hidden" onclick="scrollToTop()">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+    
+
+
+    <script src="script.js"></script>
+    <!-- LINCURI PENTRU A FOLOSI IONICONS  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

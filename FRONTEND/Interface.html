@@ -17,7 +17,7 @@
         <div class="pages">
             <a href="index.html">Home</a>
             <a href="About.html">About</a>
-            <a href="#howtouse">How to use</a>
+            <a href="HowToUse.html">How to use</a>
             <a href="Contact.html">Contacts</a>
         </div>
         <button class="downloadButton">Download</button>
@@ -30,15 +30,16 @@
             <!-- LEFT SIDE MENU  -->
             <nav class="left-menu">
                 <ul>
-                    <li><a href="#cloud">Cloud documents</a></li>
-                    <li><a href="#create">Creating a cloud document</a></li>
-                    <li><a href="#open">Opening a cloud document</a></li>
-                    <li><a href="#share">Sharing a cloud document</a></li>
-                    <li><a href="#join">Joining a document shared with you</a></li>   
-                    <li><a href="#save">Saving cloud documents as local .sketch files</a></li> 
-                    <li><a href="#delete">Deleting a cloud document</a></li> 
-                    <li><a href="#observe">Observer mode</a></li> 
-                    <li><a href="#history">Version history</a></li>
+                    <li><a href="#export">Explore the Lunacy interface</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#interface">Interface scale</a></li>
+                    <li><a href="#canvas">Canvas</a></li>
+                    <li><a href="#layer">Layer list</a></li> 
+                    <li><a href="#right">The right panel</a></li>
+                    <li><a href="#pages">Document pages</a></li> 
+                    <li><a href="#home">Home Tab</a></li> 
+                    <li><a href="#documents">Working with documents</a></li>
+                    <li><a href="#accProfile">Account and profile</a></li> 
                 </ul>
             </nav>
         </div>
@@ -57,7 +58,7 @@
             <h2 id="overview">Overview</h2>
 
             <p>These are the main elements of the interface:</p>
-            <img src="./PICTURES/Interface/overwiew.png" alt="overwiev" width="750px" height="500px" >
+            <img src="./PICTURES/Interface/overwiew.png" alt="overwiev" width="950px" height="600px" >
 
 
             <h3>Content tabs</h3>
@@ -198,7 +199,7 @@
 
             <p>Use it to switch between the light and dark themes.</p>
 
-            <h2>Interface scale</h2>
+            <h2 id="interface">Interface scale</h2>
 
             <p>To adjust the scale of the interface, go to View → Interface scale, or use these shortcuts:</p>
             <ul>
@@ -225,7 +226,7 @@
                 </li>
             </ul>
 
-            <h2>Canvas</h2>
+            <h2 id="canvas">Canvas</h2>
             <p>The <b>canvas</b> is your working area. Add layers to it and place them wherever you want.</p>
 
 
@@ -237,7 +238,7 @@
 
             <p>Read in detail about working with the canvas in the Basics section.</p>
 
-            <h2>Layer list</h2>
+            <h2 id="layer">Layer list</h2>
 
             <p>Open the <b>Layer list</b> by clicking on the <b>Layers</b> content tab. It will display the layers on the current page:</p>
 
@@ -324,7 +325,7 @@
 
             <p>Find out about more useful tips and tricks.</p>
 
-            <h2>The right panel</h2>
+            <h2 id="right">The right panel</h2>
 
 
             <p>The right panel appears on the right of the Lunacy interface when you select a layer.</p>
@@ -338,7 +339,7 @@
 
             <p>Read more about working with the right panel.</p>
 
-            <h2>Document pages</h2>
+            <h2 id="pages">Document pages</h2>
 
             <p>There can be any number of <b>pages</b> in a document.</p>
 
@@ -389,24 +390,254 @@
                 the reusable components. you can create in your designs.
             </p>
 
-            <h2>Home Tab</h2>
+            <h2 id="home">Home Tab</h2>
             <p>In the <b>Home tab</b>, you can manage your:</p>
 
+            <ul>
+                <li>Personal documents (both local and cloud).</li>
+                <li>Teams and team projects.</li>
+                <li>Account and profile information.</li>
+            </ul>
+
+            <p>
+                The Home tab opens up when you start Lunacy if you don't have any 
+                previously opened documents in the app. Otherwise, you'll see 
+                your most recently edited document on startup.
+            </p>
+
+            <p>You can access the Home tab from within a document by clicking <ion-icon name="home-outline"></ion-icon> on the menu bar.</p>
+
+            <p>These are the <b>main sections</b> of the Home tab:</p>
+
+            <img src="./PICTURES/Interface/mainSection.png" alt="main section" width="850px" height="500px">
 
 
+            <ol>
+                <li>
+                    <b>The Sidebar.</b> Access your account page, navigate through documents, 
+                    and manage your team projects. At the bottom of the sidebar, 
+                    you will find links to the onboarding tutorial, Lunacy documentation, 
+                    and social media.
+                </li>
+                <li>
+                    <b>Action Bar.</b> Use it to create, open, and import documents. Switch between 
+                    grid and list views, and sort documents as you like. Use the Search field 
+                    to find documents.
+                </li>
+                <li>
+                    <b>Document Viewer.</b> This section of the Home tab displays previews of your documents and team projects.
+                </li>
+            </ol>
+
+            <h2 id="documents">Working with documents</h2>
+
+            <p>The Home tab makes it easy to create, manage, and organize all of your personal and team docments.</p>
+
+            <h3>Creating documents</h3>
+
+            <p>To <b>create a new document</b>, use any of the following ways depending on the document type:</p>
+
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Local</th>
+                    <th>Cloud</th>
+                </tr>
+                <tr>
+                    <td>On the Home Tab, click</td>
+                    <td><b>New Document</b></td>
+                    <td><b>New Cloud Document</b></td>
+                </tr>
+                <tr>
+                    <td>On the menu bar, select</td>
+                    <td><b>File → New Document</b></td>
+                    <td><b>File → New Cloud Document</b></td>
+                </tr>
+                <tr>
+                    <td>Anywhere in Lunacy, press</td>
+                    <td><code>Ctrl + N</code> / <code>⌘ + N</code></td>
+                    <td><code>Ctrl + Shift + N</code>/<code>⌘ + Shift + N</code></td>
+                </tr>
+                <tr>
+                    <td>At the top of the screen, click</td>
+                    <td><code>+</code>(on the right of the document tabs)</td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <h3>Opening documents</h3>
+
+            <p>To <b>open a cloud document</b>, click on its thumbnail on the Home tab.</p>
+
+            <p>As for other options, use any of these to <b>open local documents:</b></p>
+
+            <ul>
+                <li>Press <code>Ctrl + O</code> / <code>⌘ + O.</code></li>
+                <li>Click the <b>Open</b> button on the action bar.</li>
+                <li>Click <b>File → Open</b> on the menu bar.</li>
+            </ul>
+
+            <p>
+                Supported formats include <code>sketch</code>, <code>svg</code>, <code>png</code>, <code>jpg</code>, 
+                <code>jpeg</code>, <code>bmp</code>, <code>webp</code>, <code>ico</code>, and <code>gif</code>.
+            </p>
+
+            <p>To <b>open a cloud document shared with you:</b></p>
+
+            <ol>
+                <li>Copy the link to the document.</li>
+                <li>Press <code>Ctrl + V</code> / <code>⌘ + V</code> anywhere in the app.</li>
+                <li>Click <b>File → Open URL From Clipboard.</b></li>
+            </ol>
+
+            <h3>Importing documents</h3>
+
+            <p>You can import:</p>
+            <ul>
+                <li>Local <code>.sketch</code> documents to <b>Lunacy Cloud</b></li>
+                <li><b>Figma documents</b> to local <code>.sketch</code> documents (which you can then upload to Lunacy Cloud)</li>
+            </ul>
+
+            <h3>Importing local <code>.sketch</code> files to cloud</h3>
+            <ul>
+                <li>In the action bar, click <b>Import to Cloud.</b></li>
+                <li>At the top right corner of a local document, click <ion-icon name="cloud-upload-outline"></ion-icon> .</li>
+            </ul>
+
+            <h3>Importing Figma documents to <code>.sketch</code></h3>
+
+            <ol>
+                <li>In Figma, set your file's sharing options to <b>Anyone with the link → can view/edit.</b></li>
+                <li>Copy the link to the file.</li>
+                <li>Use <code>Ctrl + V</code> / <code>⌘ + V</code> anywhere in the Lunacy app to open it.</li>
+            </ol>
 
 
+            <p>
+                To import <b>private</b> Figma files, you'll have to enter its link as well 
+                as a <b>personal access token</b> generated in Figma for 
+                third-party app integrations.
+            </p>
+
+            <p>To <b>generate a personal access token</b> in Figma:</p>
+
+            <ol>
+                <li>Click your profile icon in the file browser and choose <b>Settings.</b></li>
+                <li>Scroll down to the <b>Personal access token</b> section.</li>
+                <li>Enter a brief description for the token, and press <code>Enter</code>.</li>
+                <li>Copy the token and return to Lunacy.</li>
+                <li>
+                    Click <b>Import from Figma or File → Import from Figma</b> in the menu 
+                    bar and enter the file's share link and the personal access 
+                    token in the corresponding fields:
+                </li>
+            </ol>
+            <img src="./PICTURES/Interface/importFromFigma.png" alt="import" width="850px" height="500px">
+
+            <h3>Browsing documents</h3>
+            <p>In the sidebar, your documents are divided into three categories:</p>
+            <ul>
+                <li><b>Recent.</b> All of your local and cloud documents, as well as documents shared with you by others.</li>
+                <li><b>My Cloud.</b> Your cloud documents.</li>
+                <li><b>Deleted.</b> Deleted cloud documents.</li>
+            </ul>
+            <p>In any of these sections, you can right-click on a document preview to open the context menu:</p>
+            <img src="./PICTURES/Interface/context.png" alt="context" width="850px" height="500px">
+            <p>To <b>search for documents</b> by keyword, use the search field in the action bar:</p>
+
+            <img src="./PICTURES/Interface/search.png" alt="search" width="950px" height="150px" >
+
+            <p>Use the buttons on the right of the search bar to <b>sort documents</b> and <b>switch views.</b></p>
+
+            <h3>Managing teams and projects</h3>
+
+            <p>
+                You can create <b>teams</b> for collaborating with others. Create <b>projects</b> inside 
+                teams and use them like folders to organize your documents.
+            </p>
+
+            <h2 id="accProfile">Account and profile</h2>
+
+            <p>
+                Log in to your account to get full access to our graphics, 
+                create teams and projects to collaborate with other people, 
+                and share your portfolio online.
+            </p>
+
+            <h3>Logging in to your account</h3>
+
+            <p>In the Home tab, click Log In at the top of the sidebar. Use your existing Icons8 account or via another service:</p>
+
+            <img src="./PICTURES/Interface/login.png" alt="login" width="850px" height="500px">
+
+            <p>To create a new account, click <b>Register.</b></p>
+
+            <h3>Account information and actions</h3>
+
+            <p>Once you're logged in, you will see your <b>profile page:</b></p>
+
+            <img src="./PICTURES/Interface/profilePage.png" alt=" profile page" width="850px" height="400px">
+
+            <p>Use it to:</p>
+            <ul>
+                <li>Manage your profile information</li>
+                <li>Publish documents to your web profile</li>
+                <li>Subscribe to paid plans</li>
+                <li>Log out and delete your account</li>
+            </ul>
+
+            <h3>Managing your profile</h3>
+
+            <p>Edit your name, profile description, and profile picture.</p>
+            <p>
+                Your profile information shows up here and is visible 
+                to people with access to your cloud documents, as well 
+                as the the members of your team.
+            </p>
 
 
+            <h3>Publish documents to your web profile</h3>
 
+            <p>
+                Personal cloud documents show up on your profile page in the 
+                app with a <b>Publish/Unpublish</b> button. Click it to add or 
+                remove documents from your <b>web profile</b>, a public page 
+                where you can showcase your designs.
+            </p>
 
+            <p>Use it as a portfolio of your works:</p>
+            <ol>
+                <li>Click <ion-icon name="ellipsis-horizontal-outline"></ion-icon> at the top right corner of your profile page.</li>
+                <li>Select <b>Web Profile</b>. This will open your public web profile in the browser.</li>
+                <li>Copy the link in the address bar.</li>
+                <li>Share it anywhere you like!</li>
+            </ol>
 
+            <h3>Subscribe to paid plans</h3>
+            <p>Icons8 graphics are free for personal and commercial use as long as you include an attribution link to us.</p>
+
+            <p>
+                SVG files and high-resolution photos are unavailable on the free plan. 
+                To get these options and use our graphics without mandatory attribution, 
+                consider a paid graphics subscription.
+            </p>
+
+            <p>You can also upgrade to a <b>cloud</b> or <b>team</b> plan for more freedom with cloud documents, team creation, and document management.</p>
+
+            <p>
+                You can also access the list of our graphics subscriptions by <b>Unlock All Assets</b> on 
+                your profile page, then <b>See Pricing</b>. To see all product and subscription options 
+                available to you, as well as your Downloads (assets you've previously downloaded), 
+                click <ion-icon name="ellipsis-horizontal-outline"></ion-icon> and select <b>Billing</b>.
+            </p>
+
+            <h3 id="logOut">Log out and delete your account</h3>
+            <p>
+                Exit your account by clicking the <b>Log out</b> button at the top right corner of the 
+                account page. To delete your account, open the context menu and click <b>Delete account.</b>
+            </p>
         </div>
     </div>
-
-
-
-
 
     <footer>
         <p>All rights reserved &copy; 2024 Bondokic Nikola</p>

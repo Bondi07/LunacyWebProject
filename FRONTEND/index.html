@@ -17,7 +17,7 @@
         </div>
         <div class="pages">
             <a href="About.html">About</a>
-            <a href="#howtouse">How to use</a>
+            <a href="HowToUse.html">How to use</a>
             <a href="Contact.html">Contacts</a>
         </div>
         <button class="downloadButton">Download</button>
@@ -42,7 +42,53 @@
                 and <span class="buildText"><b>build</b></span> <ion-icon name="code-slash-outline"></ion-icon>  matters. 
                 Do it together with Lunacy.
             </p>
-            <button class="downloadButtonWelcome">Download</button>
+            
+            <button class="downloadButtonWelcome" id="buttonDownload">Download</button>
+
+
+            <div id="signInSignUpModal" class="modal hidden">
+                <div class="modal-content">
+                    <!-- Close button -->
+                    <button class="close" onclick="closeForm()">Close</button>
+
+                    <!-- Sign-in form -->
+                    <div id="signInFormContainer">
+                        <h2>Sign In</h2>
+                        <form id="signInForm">
+                            <input type="email" placeholder="Email" required>
+                            <input type="password" placeholder="Password" required>
+                            <button type="submit">Sign In</button>
+                        </form>
+                    </div>
+
+                    <!-- Sign-up form -->
+                    <div id="signUpFormContainer" class="hidden">
+                        <h2>Sign Up</h2>
+                        <form id="signUpForm">
+                            <input type="text" placeholder="Username" required>
+                            <input type="email" placeholder="Email" required>
+                            <input type="password" placeholder="Password" required>
+                            <button type="submit">Sign Up</button>
+                        </form>
+                    </div>
+
+                    <!-- Sign-in and Sign-up buttons -->
+                    <button id="showSignUpButton" onclick="showSignUpForm()">Sign Up</button>
+                    <button id="showSignInButton" onclick="showSignInForm()">Sign In</button>
+                </div>
+            </div>
+
+
+            
+            
+
+
+
+
+
+
+
+
         </div>
     </div>
 
@@ -121,7 +167,7 @@
     </div>
     
     <footer>
-        <p>All rights reserved &copy; 2024 Bondokic Nikola</p>
+        <p>&copy; 2024 Bondokic Nikola. All rights reserved.</p>
     </footer>
     
     <!-- SCROL TO TOP BUTTON -->

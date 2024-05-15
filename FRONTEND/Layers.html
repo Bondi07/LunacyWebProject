@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- AICI NE CONECTAM CU FISERUL .CSS-->
+    <link rel="stylesheet" href="Layers-style.css">
+    <!-- AICI SE PUNE ICONITA SITE-ULUI WEB-->
+    <link rel="icon" href="./PICTURES/home/LunacyLogoWeb.jpg" type="image/x-icon">
+    <title>Layers</title>
+</head>
+<body>
+    <div class="topMenu">
+        <div class="logoName">
+            <img src="./PICTURES/home/LunacyLogoWeb.jpg" alt="Lunacy logo" width="30px" height="30px">
+            <a href="https://icons8.com/lunacy">Lunacy</a>
+        </div>
+        <div class="pages">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="HowToUse.html">How to use</a>
+            <a href="Contact.html">Contacts</a>
+        </div>
+        <button class="downloadButton">Download</button>
+    </div>
+
+
+    <div class="menuAndContentContainer">
+        
+        
+        <div class="leftManuContainer">
+            <!-- LEFT SIDE MENU  -->
+            <nav class="left-menu">
+                <ul>
+                    <li><a href="#layers">Layers</a></li>
+                    <li><a href="#properties">Layer properties</a></li>
+                    <li><a href="#locking">Locking and hiding layers</a></li>
+                    <li><a href="#frames">Frames</a></li>
+                    <li><a href="#add">Adding frames</a></li>   
+                    <li><a href="#work">Working with layers</a></li> 
+                    <li><a href="#duplicating">Duplicating layers</a></li> 
+                    <li><a href="#arr">Arranging layers</a></li> 
+                    <li><a href="#aligning">Aligning and distributing layers</a></li> 
+                    <li><a href="#creating">Creating hyperlinks between layers</a></li> 
+                    <li><a href="#moving">Moving layers</a></li> 
+                </ul>
+            </nav>
+        </div>
+
+        <div class="containerLayers">
+
+            <h1 id="layers">Layers</h1>
+
+            <p>Learn how to work with different types of layers in Lunacy</p>
+
+            <p>A layer is any element you see on the canvas.</p>
+
+            <p>There are several types of layers in Lunacy:</p>
+
+            <ul>
+                <li>Frames</li>
+                <li>Text layers</li>
+                <li>Vectors</li>
+                <li>Shapes</li>
+                <li>Images</li>
+                <li>Components and component instances</li>
+                <li>Icons</li>
+                <li>Hotspots</li>
+                <li>Slices</li>
+            </ul>
+
+            <!-- MOZDA IZBACITI IZ SAJTA !!! -->
+            <p>
+                Follow the links above to learn how to work with specific layers in detail. 
+                In this section, we'll go over the basics: how to create, edit, 
+                and organize layers on the canvas and the Layer list.
+            </p>
+
+            <h2 id="properties">Layer properties</h2>
+
+            <p>
+                The properties displayed in the right panel when a layer is selected depend 
+                on the type of layer. The ones listed below are universal for almost 
+                all layer types:
+            </p>
+
+            <table>
+                <tr>
+                    <th>Right Panel Properties</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/aligment.png" alt="aligment" width="200px" height="30px"></td>
+                    <td><b>Alignment and distribution controls</b> appear when you select two or more layers.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/layerSize.png" alt="layout" width="200px" height="80px"></td>
+                    <td><b>Layer size and position.</b> Change the size of your layers and their position on the canvas. Use the buttons next to the position controls to flip your images and toggle the lock button on and off to preserve aspect ratio when resizing. Controls vary depending on the selected layer.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/rotation.png" alt="rotation" width="200px" height="30px"></td>
+                    <td><b>Rotation and corner radius.</b> Rotate your layers and change their corner radius properties.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/component.png" alt="components" width="200px" height="100px"></td>
+                    <td><b>Component options.</b> Use this section to manage components. Create new component states, switch between them, and detach instances from main components.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/style.png" alt="style" width="200px" height="100px"></td>
+                    <td>The <b>Style</b> section Displays the styles applied to your layer (text styles, color styles, effect styles, etc.) You can add styles from UI kits, create your own, and detach layers from applied styles.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/blend.png" alt="clend" width="200px" height="30px"></td>
+                    <td><b>Opacity and blend mode settings.</b> Set the overall opacity of a layer and its blending mode.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/files.png" alt="files" width="200px" height="100px"></td>
+                    <td><b>Fills.</b> Change the color of your layer.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/border.png" alt="border" width="200px" height="100px"></td>
+                    <td><b>Borders.</b> Add borders to your layers.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/efects.png" alt="efects" width="200px" height="30px"></td>
+                    <td><b>Effects.</b> Add effects (shadows, blurs) to your layers.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/prototypeing.png" alt="prototypeing" width="200px" height="30px"></td>
+                    <td><b>Prototyping.</b> Activate prototyping options and turn your static designs into interactive prototypes. Here's how it works.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/selection.png" alt="selection" width="200px" height="100px"></td>
+                    <td><b>Selection properties.</b> Shows the colors and fonts used in selected layers.</td>
+                </tr>
+            </table>
+
+
+            <h2 id="locking">Locking and hiding layers</h2>
+
+            <p>Lock layers to protect them from accidental edits using the <code>Ctrl + Shift + L</code> / <code>⌘ + Shift + L</code> shortcuts.</p>
+
+            <p>To hide a layer from the canvas, press <code>Ctrl + Shift + H</code> / <code>⌘ + Shift + H</code>.</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/layers/lock.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="frames">Frames</h2>
+
+            <p><b>Frames</b> are special types of layers that work like containers for your designs.</p>
+
+            <p>Using frames is optional, but they come in handy when you're designing for a specific screen size or device, and they are a must for prototyping.</p>
+
+            <p>This is how frames appear in the Layer list:</p>
+
+            <img src="./PICTURES/layers/frames.png" alt="frames" width="850px" height="500px">
+
+            <h2 id="add">Adding frames</h2>
+
+            <p>To create a frame:</p>
+            <ol>
+                <li>Press <code>A</code> or select the Frame tool on the toolbar.</li>
+                <li>
+                    Click and drag to add a custom frame or choose a preset from the right panel. 
+                    The list features presets for popular devices, screen resolutions, and social media templates.
+                </li>
+            </ol>
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/layers/frame.mp4" type="video/mp4">
+            </video>
+
+
+            <p>You can place layers inside frames by:</p>
+            <ul>
+                <li>Selecting one or several layers and pressing <code>Ctrl + Alt + G</code> / <code>⌘ + ⌥ + G</code>.</li>
+                <li>Drawing a frame over them.</li>
+            </ul>
+
+            <p>To remove a frame, use the ungroup shortcut: <code>Ctrl + Shift + G</code> / <code>⌘ + Shift + G</code>.</p>
+
+            <p>Frame properties</p>
+
+            <table>
+                <tr>
+                    <th>Properties</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/layers/framePreset.png" alt="framePreset" width="200px" height="100px"></td>
+                    <td>Frame preset, size, and position. The same options as for layers. You can also change your frame size preset.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/layers/clip.png" alt="clip" width="200px" height="50px"></td>
+                    <td>Clip content. Select this checkbox to hide content outside of the frame boundaries.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/layers/autoLay.png" alt="autoLay" width="200px" height="350px"></td>
+                    <td>Auto layout. A set of parameters for configuring auto layouts.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/layers/backcolor.png" alt="background color" width="200px" height="100px"></td>
+                    <td>Background color and content behavior. Change the frame background and choose whether its content changes as you resize it.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/layers/layGrid.png" alt="layGrid" width="200px" height="50px"></td>
+                    <td>Layout grid. Add a layout grid to the frame.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/layers/grid.png" alt="grid" width="200px" height="50px"></td>
+                    <td>Grid.Add a square grid to the frame.</td>
+                </tr>
+            </table>
+
+            <h2 id="work">Working with layers</h2>
+
+            <p>This section covers basic operations with layers, including selecting, grouping, duplicating, arranging, moving, and resizing layers.</p>
+
+
+            <h3>Selecting layers</h3>
+
+            <p><b>You can select layers in the Layer list or directly on the canvas.</b></p>
+
+            <p><b>To select a layer on the canvas, click on it when the Select tool (<code>V</code>) is active.</b> Hold <code>Shift</code> to select several layers. You can also drag to create a selection around one or several layers.</p>
+
+            <p><b>Clicking on a group of layers selects the entire group.</b> To select individual layers inside it, hold down <code>Ctrl</code> / <code>⌘</code> as you click, or first click to select the group, then double click to select the layer. Read more about groups below.</p>
+
+            <p>To <b>select all layers</b> on the canvas (except for locked layers), press <code>Ctrl + A</code> / <code>⌘ + A</code>.</p>
+
+            <p><b>To select a layer in the Layer list</b>, find it in the list and click on it.</p>
+
+            <p><b>Hold down <code>Shift</code> or <code>Ctrl</code> / <code>⌘</code> to select multiple layers.</b></p>
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/layers/multiple.mp4" type="video/mp4">
+            </video>
+
+            <h3>Grouping layers</h3>
+
+            
+            <p><b>You can combine multiple layers together in a group.</b> You can then modify the group and resize it along with the elements it contains.</p>
+
+            <p><b>Frames are more versatile, but groups are also a great way to organize the Layer list,</b> which can include hundreds of items or more in some projects. You can nest groups in other groups or inside frames in whatever way is most convenient to you.</p>
+
+            <p>To create a group, select two or more layers and press <code>Ctrl + G</code> / <code>⌘ + G</code> or click the Group button (<code>□</code>) on the context toolbar at the top of the canvas.</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/layers/groupLayers.mp4" type="video/mp4">
+            </video>
+
+
+            <p>To select a layer inside a group:</p>
+            <ul>
+                <li>Hold down the <code>Ctrl</code> key and click the required layer.</li>
+                <p>OR</p>
+                <li>Click to select the group, then double click to select the layer.</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/layers/layerInside.mp4" type="video/mp4">
+            </video>
+
+            <p>After you select a layer within a group, you can switch to other layers of that group simply by clicking them.</p>
+
+            <p>
+                If needed, you can also enable the Select group's content on click 
+                option in the right panel, so a click over a group automatically 
+                selects the layers inside it.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/layers/groupLay1.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                Alternatively, you can select layers inside groups through the Layer list, which 
+                may be more convenient in some cases (for example, when handling 
+                fully overlapping layers).
+            </p>
+
+            <p>You can <b>move layers into or out of a group</b> by dragging them in the Layer list.</p>
+
+            <p>
+                To ungroup layers, select the group and press <code>Ctrl + Shift + G</code> / <code>⌘ + Shift + G</code> or 
+                click the Ungroup (<ion-icon name="layers-outline"></ion-icon>) button on the <b>context toolbar</b>.
+            </p>
+
+
+            <h2 id="duplicating">Duplicating layers</h2>
+
+            <ul>
+                <li>Select it and press <code>Ctrl + D</code> / <code>⌘ + D</code>.</li>
+                <p>OR</p>
+                <li>Hold down <code>Alt</code>, select the layer, and drag to where you want to place the copy.</li>
+            </ul>
+            
+            <p>You can also use the standard <code>Ctrl / ⌘ + C / V</code> shortcuts, but in this case, the layer copies will appear right on top of the original.</p>
+            
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/layers/duplicateLay.mp4" type="video/mp4">
+            </video>
+
+
+            <h3>Repeat grid</h3>
+
+            <p>
+                Another convenient way to duplicate elements is to use the Repeat grid feature.
+                You select two or more layers, drag the <ion-icon name="return-down-back-outline"></ion-icon> near the lower-right corner of 
+                the bounding box to duplicate the elements in a grid.
+            </p>
+            
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/layers/repeteGrid.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                Combining Repeat grid with the Avatar tool and generated texts can save 
+                you a lot of time when designing UIs with placeholder elements.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/layers/combinGrid.mp4" type="video/mp4">
+            </video>
+
+            <h3>Copy/Paste style</h3>
+
+            <p>You can quickly copy and paste styling properties (fills, borders, effects) between layers.</p>
+
+            <p>To copy the properties of a layer:</p>
+
+            <ol>
+                <li>Press <code>Ctrl + Alt + C</code> / <code>⌘ + ⌥ + C</code>.</li>
+                <li>Select another layer and press <code>Ctrl + Alt + V</code> / <code>⌘ + ⌥ + V</code>.</li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/layers/copy.mp4" type="video/mp4">
+            </video>
+
+            <table>
+                <tr>
+                    <th>Menu Option</th>
+                    <th>Shortcut</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Copy</td>
+                    <td><code>Ctrl + C</code> / <code>⌘ + C</code></td>
+                    <td>Copies the selected layer.</td>
+                </tr>
+                <tr>
+                    <td>Cut</td>
+                    <td><code>Ctrl + X</code> / <code>⌘ + X</code></td>
+                    <td>Cuts the selected layer and copies it to the clipboard.</td>
+                </tr>
+                <tr>
+                    <td>Paste</td>
+                    <td><code>Ctrl + V</code> / <code>⌘ + V</code></td>
+                    <td>Pastes the content of the clipboard onto the canvas.</td>
+                </tr>
+                <tr>
+                    <td>Paste here</td>
+                    <td>-</td>
+                    <td>Pastes the content of the clipboard onto the canvas, depending on where the cursor is.</td>
+                </tr>
+                <tr>
+                    <td>Paste over</td>
+                    <td>-</td>
+                    <td>Pastes the content of the clipboard over the selected layer.</td>
+                </tr>
+                <tr>
+                    <td>Copy as Text</td>
+                    <td>-</td>
+                    <td>Only available for text layers. Copies only the text content of the layer, excluding its properties.</td>
+                </tr>
+                <tr>
+                    <td>Copy as CSS/SVG/XAML/PNG</td>
+                    <td>-</td>
+                    <td>These options allow you to copy the code of the selected layer in the required format.</td>
+                </tr>
+                <tr>
+                    <td>Copy style/Paste style</td>
+                    <td><code>Ctrl + Alt + C</code> / <code>⌘ + ⌥ + C</code></td>
+                    <td>These options allow you to copy the style of the selected layer and apply them to another layer.</td>
+                </tr>
+                <tr>
+                    <td>Export as PNG to cloud, Copy URL</td>
+                    <td><code>Alt + C</code> / <code>⌥ + C</code></td>
+                    <td>Exports the selection to the Icons8 cloud and copies the link to your clipboard. You can share the link to your design with other people.</td>
+                </tr>
+            </table>
+
+            <h2 id="arr">Arranging layers</h2>
+
+            <h3>Auto Z-index</h3>
+
+            <p>
+                Lunacy automatically determines the order of layers (the Z-index) on the 
+                canvas depending on their size. For example, if you drag a smaller layer 
+                (that's at the bottom of the layer list) over a larger one, Lunacy places 
+                the small layer on top.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/layers/autoZ.mp4" type="video/mp4">
+            </video>
+
+            <p>You can <b>adjust layer order manually</b> in the <b>Layer list</b> and also use shortcuts or context menu commands:</p>
+
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                    <th>Windows/Linux Shortcut</th>
+                    <th>MacOS Shortcut</th>
+                </tr>
+                <tr>
+                    <td>Bring forward</td>
+                    <td>Moves the selected layer one step forward.</td>
+                    <td><code>Ctrl + ]</code></td>
+                    <td><code>⌘ + ]</code></td>
+                </tr>
+                <tr>
+                    <td>Bring to front</td>
+                    <td>Places the selected layer at the top of the stack, above all other elements.</td>
+                    <td><code>Ctrl + Shift + ]</code></td>
+                    <td><code>⌘ + Shift + ]</code></td>
+                </tr>
+                <tr>
+                    <td>Send backward</td>
+                    <td>Moves the selected layer one step backward.</td>
+                    <td><code>Ctrl + [</code></td>
+                    <td><code>⌘ + [</code></td>
+                </tr>
+                <tr>
+                    <td>Send to back</td>
+                    <td>Places the selected layer to the bottom of the stack.</td>
+                    <td><code>Ctrl + Shift + [</code></td>
+                    <td><code>⌘ + Shift + [</code></td>
+                </tr>
+            </table>
+
+
+            <h2 id="aligning">Aligning and distributing layers</h2>
+            <p>
+                To quickly align and distribute layers on the canvas, use the Align and 
+                Distribute spacing controls in the top row of the right panel.
+            </p>
+
+            <img src="./PICTURES/layers/aligning.png" alt="align" width="550px" height="300px">
+
+            <p>
+                They become active when you select two or more layers on the canvas 
+                or when you select a single layer on a frame (in this case, Lunacy 
+                will align the layer relative to the borders of the frame).
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/layers/align.mp4" type="video/mp4">
+            </video>
+
+
+            <table>
+                <tr>
+                    <th>Icon</th>
+                    <th>Description</th>
+                    <th>Windows/Linux Shortcut</th>
+                    <th>MacOS Shortcut</th>
+                </tr>
+                <tr>
+                    <td>Align left</td>
+                    <td>Aligns the selected layers to the left of the selection.</td>
+                    <td><code>Ctrl + Shift + ←</code></td>
+                    <td><code>⌘ + Shift + ←</code></td>
+                </tr>
+                <tr>
+                    <td>Align horizontally</td>
+                    <td>Horizontally centers the selected layers.</td>
+                    <td><code>Ctrl + Shift + -</code></td>
+                    <td><code>⌘ + Shift + -</code></td>
+                </tr>
+                <tr>
+                    <td>Align right</td>
+                    <td>Aligns the selected layers to the right of the selection.</td>
+                    <td><code>Ctrl + Shift + →</code></td>
+                    <td><code>⌘ + Shift + →</code></td>
+                </tr>
+                <tr>
+                    <td>Distribute vertical spacing</td>
+                    <td>Distributes vertical spacing evenly between the selected layers.</td>
+                    <td><code>Ctrl + Shift + V</code></td>
+                    <td><code>⌘ + Shift + V</code></td>
+                </tr>
+                <tr>
+                    <td>Align top</td>
+                    <td>Aligns the selected layers to the top of the selection.</td>
+                    <td><code>Ctrl + Shift + ↑</code></td>
+                    <td><code>⌘ + Shift + ↑</code></td>
+                </tr>
+                <tr>
+                    <td>Align vertically</td>
+                    <td>Vertically centers the selected layers.</td>
+                    <td><code>Ctrl + Shift + |</code></td>
+                    <td><code>⌘ + Shift + |</code></td>
+                </tr>
+                <tr>
+                    <td>Align bottom</td>
+                    <td>Aligns the selected layers to the bottom of the selection.</td>
+                    <td><code>Ctrl + Shift + ↓</code></td>
+                    <td><code>⌘ + Shift + ↓</code></td>
+                </tr>
+                <tr>
+                    <td>Distribute horizontal spacing</td>
+                    <td>Distributes horizontal spacing evenly between the selected layers.</td>
+                    <td><code>Ctrl + Shift + H</code></td>
+                    <td><code>⌘ + Shift + H</code></td>
+                </tr>
+            </table>
+
+
+            <h2 id="creating">Creating hyperlinks between layers</h2>
+
+            <p>
+                You can create hyperlinks from one layer to another in your document, even if the 
+                layers are on different pages. his can be useful, for example, for 
+                simplifying navigation in large documents.
+            </p>
+            <p>To do this:</p>
+            <ol>
+                <li>
+                    Select the target layer and press <code>Ctrl + L</code> / <code>⌘ + L</code> (or select Copy/Paste as → Copy link on the context menu).
+                </li>
+                <li>
+                    Select the layer that should lead to the target layer.
+                </li>
+                <li>
+                    Press <code>F2</code> to rename the layer, paste the target layer link from your clipboard, and press Enter.
+                </li>
+                <li>
+                    Hold down <code>Ctrl / ⌘</code> and click the layer you renamed, and you'll be redirected to the target layer.
+                </li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/layers/links.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="moving">Moving layers</h2   >
+            <p>To move a layer, just click and drag it</p>
+            <p>If you want to restrict layer movement to the X or Y axis, hold down <code>Shift</code> while you're moving the layer.</p>
+
+            <h2>Scaling layers</h2>
+            <p>Use the Scale tool to resize a layer while preserving the aspect ratio and adjusting the size of any borders/effects applied to the layer.</p>
+
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <p>All rights reserved &copy; 2024 Bondokic Nikola</p>
+    </footer>
+    
+
+
+    <!-- SCROL TO TOP BUTTON -->
+    <button id="scrollTopButton" class="hidden" onclick="scrollToTop()">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+    
+
+
+    <script src="script.js"></script>
+    <!-- LINCURI PENTRU A FOLOSI IONICONS  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

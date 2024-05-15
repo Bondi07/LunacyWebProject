@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Basics-style.css">
+    <!-- AICI SE PUNE ICONITA SITE-ULUI WEB-->
+    <link rel="icon" href="./PICTURES/home/LunacyLogoWeb.jpg" type="image/x-icon">
+    <title>How To Use</title>
+</head>
+<body>
+
+    <div class="topMenu">
+        <div class="logoName">
+            <img src="./PICTURES/home/LunacyLogoWeb.jpg" alt="Lunacy logo" width="30px" height="30px">
+            <a href="https://icons8.com/lunacy">Lunacy</a>
+        </div>
+        <div class="pages">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="HowToUse.html">How to use</a>
+            <a href="Contact.html">Contacts</a>
+        </div>
+        <button class="downloadButton">Download</button>
+    </div>
+
+
+    <div class="menuAndContentContainer">
+        
+        
+        <div class="leftManuContainer">
+            <!-- LEFT SIDE MENU  -->
+            <nav class="left-menu">
+                <ul>
+                    <li><a href="#navigation">Navigation</a></li>
+                    <li><a href="#rightPanel">Right panel properties</a></li>
+                    <li><a href="#rulers">Rulers and guides</a></li>
+                    <li><a href="#grids">Grids</a></li>
+                    <li><a href="#measuring">Measuring distances</a></li>   
+                    <li><a href="#zooming">Zooming options</a></li> 
+                    <li><a href="#context">Context menu</a></li> 
+                    <li><a href="#privacy">Advanced privacy settings</a></li> 
+                </ul>
+            </nav>
+        </div>
+
+        <div class="containerBasic">
+
+            <h1>Basics</h1>
+            
+            <p>An overview of Lunacy's basic features and capabilities</p>
+
+            <p>Learn more about Lunacy's features, interface capabilities, and useful tips and tricks to speed up your design process.</p>
+
+            <h1>Working with the canvas</h1>
+
+            <h2 id="navigation">Navigation</h2>
+
+            <p>
+                If your design is taking up too much space on the canvas, use the 
+                mouse wheel to scroll vertically. To scroll horizontally, 
+                additionally hold down <code>Shift.</code>
+            </p>
+
+            <p>
+                Another way to navigate the canvas is to hold down <code>Space</code> to activate 
+                the <b>Hand</b> tool and drag the canvas to wherever you need.
+            </p>
+
+            <video width="950px" height="500px" autoplay>
+                <source src="./VIDEO/howToUse/moving.mp4" type="video/mp4">
+            </video>
+
+            <p>You can always use the scroll bars on the right and bottom of the workspace, but it's not as convenient as the other options.</p>
+
+            <h3>Zooming in and out</h3>
+
+            <p>
+                The easiest way to zoom in and out in Lunacy is by holding 
+                down <code>Ctrl</code> / <code>⌘</code> and moving the mouse wheel. To <b>zoom slower</b>, 
+                additionally hold down <code>Shift</code>.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/howToUse/zoom.mp4" type="video/mp4">
+            </video>
+
+            <p>When the zoom value exceeds 500, Lunacy displays a pixel grid. If you want to disable this feature:</p>
+
+            <ol>
+                <li>In the menu bar, select <b>View → Pixel grid.</b></li>
+                <li>Deselect all layers on the canvas and clear the <b>Show pixel grid</b> checkbox in the <b>right panel.</b></li>
+            </ol>
+
+            <h3>Changing the canvas color</h3>
+            <ol>
+                <li>Deselect all layers.</li>
+                <li>Use the <b>Workspace color</b> control in the right panel.</li>
+            </ol>
+
+            <img src="./PICTURES/howToUse/basics/color.png" alt="change color" width="850px" height="350px">
+
+            <p>Press <ion-icon name="reload-outline"></ion-icon> to reset the canvas to the default color.</p>
+
+            <p>
+                You can also set the canvas color opacity to 0 so it becomes transparent. 
+                You'll see a checkerboard pattern instead of a fill.
+            </p>
+
+            <h2 id="rightPanel">Right panel properties</h2>
+
+            <p>There are three tabs at the top of the right panel: <b>Design</b>, <b>Export</b>, and <b>Code.</b></p>
+
+            <p>The <b>Design</b> tab is the one you'll interact with the most when working on your designs.</p>
+
+            <p>
+                The set of controls and settings it displays depends on the type 
+                of the selected layer. These properties are universal for almost all layer types:
+            </p>
+
+            <table>
+                <tr>
+                    <th>Right Panel Properties</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/aligment.png" alt="aligment" width="200px" height="30px"></td>
+                    <td><b>Alignment and distribution controls</b> appear when you select two or more layers.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/layerSize.png" alt="layout" width="200px" height="80px"></td>
+                    <td><b>Layer size and position.</b> Change the size of your layers and their position on the canvas. Use the buttons next to the position controls to flip your images and toggle the lock button on and off to preserve aspect ratio when resizing. Controls vary depending on the selected layer.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/rotation.png" alt="rotation" width="200px" height="30px"></td>
+                    <td><b>Rotation and corner radius.</b> Rotate your layers and change their corner radius properties.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/component.png" alt="components" width="200px" height="100px"></td>
+                    <td><b>Component options.</b> Use this section to manage components. Create new component states, switch between them, and detach instances from main components.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/style.png" alt="style" width="200px" height="100px"></td>
+                    <td>The <b>Style</b> section Displays the styles applied to your layer (text styles, color styles, effect styles, etc.) You can add styles from UI kits, create your own, and detach layers from applied styles.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/blend.png" alt="clend" width="200px" height="30px"></td>
+                    <td><b>Opacity and blend mode settings.</b> Set the overall opacity of a layer and its blending mode.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/files.png" alt="files" width="200px" height="100px"></td>
+                    <td><b>Fills.</b> Change the color of your layer.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/border.png" alt="border" width="200px" height="100px"></td>
+                    <td><b>Borders.</b> Add borders to your layers.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/efects.png" alt="efects" width="200px" height="30px"></td>
+                    <td><b>Effects.</b> Add effects (shadows, blurs) to your layers.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/prototypeing.png" alt="prototypeing" width="200px" height="30px"></td>
+                    <td><b>Prototyping.</b> Activate prototyping options and turn your static designs into interactive prototypes. Here's how it works.</td>
+                </tr>
+                <tr>
+                    <td><img src="./PICTURES/howToUse/basics/selection.png" alt="selection" width="200px" height="100px"></td>
+                    <td><b>Selection properties.</b> Shows the colors and fonts used in selected layers.</td>
+                </tr>
+            </table>
+
+            <p>
+                Click on the <b>Export</b> tab to open up export settings for your entire project
+                or click individual/multiple layers to export just them. Read 
+                in detail about export settings.
+            </p>
+
+            <p>
+                You can also use the <b>Linked Design</b> option to include embed links to 
+                Lunacy layers directly into website code: when you update them in Lunacy, 
+                they'll be automatically updated on your website. Learn more about linked 
+                design in this section.
+            </p>
+
+            <p>The Code tab displays the code corresponding to your layers.</p>
+
+            <h3>Right panel properties with no selected layers</h3>
+
+            <p>When all layers are deselected, the right panel shows these settings:</p>
+
+            <img src="./PICTURES/howToUse/basics/rightPanel.png" alt="right panel" width="850px" height="500px">
+
+            <ul>
+                <li><b>Workspace color.</b> Change the color of the canvas.</li>
+                <li><b>Show pixel grid.</b> Toggles the pixel grid on/off when the zoom value exceeds 500.</li>
+                <li>
+                    <b>Nudge amount settings.</b> Nudge layers by moving arrow keys and set custom values 
+                    for small nudges (using just the arrow keys) and big ones (arrow keys + <code>Shift</code>).
+                </li>
+                <li><b>Color palette section.</b> Use it to generate various base color palettes for your documents.</li>
+            </ul>
+
+            <p>If you need more space, you can hide the right panel panel by selecting <b>View → Right Panel</b> on the menu bar.</p>
+
+            <h3>Changing values in the right panel</h3>
+
+            <p>To change values in the right panel input fields:</p>
+
+            <ul>
+                <li>Type a value manually.</li>
+                <li>Click over a field and use the mouse wheel to gradually increase or decrease the value.</li>
+                <li>Hover the cursor over a field, wait a moment until the cursor turns into a double-headed arrow, and drag the cursor up or down.</li>
+                <li>Enter an arithmetic operation.</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/howToUse/changingValues.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="rulers">Rulers and guides</h2>
+
+            <p>Rulers and guides help to position and align layers.</p>
+            <h3>Rulers</h3>
+
+            <p>Rulers are enabled by default and use pixels as a measurement unit. They appear at the top and on the left side of the canvas.</p>
+
+            <p>To toggle rulers on and off, use the <code>Ctrl + R</code> / <code>⌘ + R</code> shortcut or select View → Rulers on the menu bar.</p>
+
+            <h3>Guides</h3>
+
+            <p>
+                To create a guide, click anywhere on a ruler and drag the guide onto the canvas. 
+                You can now position layers along the guide. Moving a layer close to it snaps 
+                the layer to the guide.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/howToUse/guides.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                To move a guide, drag it to another position or select it and use arrow keys 
+                to nudge it. To remove a guide, click it (hold down <code>Shift</code> to select multiple guides) 
+                and press <code>Delete</code>.
+            </p>
+
+            <p>You can also open up all of these guide settings by right-clicking over a ruler:</p>
+
+            <img src="./PICTURES/howToUse/basics/ruler.png" alt="ruler" width="850px" height="500px">
+
+
+            <h2 id="grids">Grids</h2>
+
+            <p>Lunacy has <b>square</b> and <b>layout grids</b>. If needed, you can display both of them at the same time.</p>
+
+            <h3>Square grid</h3>
+
+            <p>
+                If there are no frames on the canvas, Lunacy displays a square grid. 
+                Toggle it on and off by clicking the <b>Show/Hide</b> grid button on the 
+                right panel or pressing <code>Ctrl + '</code> / <code>⌘ + '</code>.
+            </p>
+            <p>If you have frames on the canvas, use the same button to toggle grids on and off:</p>
+
+            <ul>
+                <li><b>For each frame</b>. To do this, deselect all frames and layers on the canvas, then press <b>Show/Hide grid.</b></li>
+                <li><b>For an individual frame.</b> Do the same with a frame or layer selected.</li>
+            </ul>
+
+            <p>To set the size of grid cells, enter the desired value in the Grid size field.</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/howToUse/grid.mp4" type="video/mp4">
+            </video>
+
+            <h3>Layout grid</h3>
+
+            <p>
+                Layout grids are useful for positioning design elements within your frame. 
+                If you have several frames on a page, you can toggle layout grids on and 
+                off for them just like with sqaure grids, using the corresponding button 
+                in the right panel.
+            </p>
+
+            <p>Each frame can have its own layout grid settings:</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/howToUse/frame.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="measuring">Measuring distances</h2>
+
+            <p>
+                Lunacy has a variety of options for measuring distances between elements. 
+                The measurement option depends on whether a layer is distinct, grouped 
+                with other layers, or nested in a frame.
+            </p>
+
+            <h3>Individual layers</h3>
+            <p>To <b>measure the distance between two layers:</b></p>
+            <ol>
+                <li>Select the first layer.</li>
+                <li>Hold down <code>Alt</code> / <code>⌥</code>.</li>
+                <li>Hover the cursor over the other layer.</li>
+            </ol>
+
+            <p>To measure the <b>distance from a layer within a frame to the frame's boundaries:</b></p>
+
+            <ul>
+                <li>Hover the cursor over the layer and hold down <code>Alt</code> / <code>⌥</code>.</li>
+                <li>Select the layer, hover the cursor over an empty area within the frame, and hold down <code>Alt</code> / <code>⌥</code>.</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/howToUse/distance.mp4" type="video/mp4">
+            </video>
+
+            <p>You can also use this function to <b>position layers in a precise location or relative to one another:</b></p>
+
+            <ol>
+                <li>Select one of the layers.</li>
+                <li>Point the cursor over an empty area or over another layer.</li>
+                <li>Hold down <code>Alt</code> / <code>⌥</code> and move the selected layer using the arrow keys.</li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/howToUse/preciseLocation.mp4" type="video/mp4">
+            </video>
+
+            <h3>Grouped layers</h3>
+
+            <p>Use the steps described above to measure the distances between:</p>
+
+            <ul>
+                <li>A grouped layer and layer.</li>
+                <li>Two layers inside the same group.</li>
+                <li>A grouped layer and the frame boundaries.</li>
+            </ul>
+
+            <p>To measure the <b>distance between a layer inside a group and the group's boundaries:</b></p>
+
+            <ol>
+                <li>Point the cursor over a grouped layer.</li>
+                <li>Hold down <code>Ctrl + Alt</code> / <code>⌘ + ⌥</code>.</li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/howToUse/distanceInside.mp4" type="video/mp4">
+            </video>
+
+            <p>To measure the <b>distance between a layer inside a group and the borders of the frame where it's nested:</b></p>
+
+            <ol>
+                <li>Select a grouped layer.</li>
+                <li>Hold down <code>Alt</code> / <code>⌥</code>.</li>
+                <li>Point the cursor anywhere outside the other grouped layers.</li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/howToUse/borderDistance.mp4" type="video/mp4">
+            </video>
+
+            <p>To measure the <b>distance between two layers in different groups:</b></p>
+
+            <ol>
+                <li>Select a grouped layer.</li>
+                <li>Hold down <code>Alt + Shift</code> / <code>⌥ + Shift</code>.</li>
+                <li>Hover the cursor over a layer in the other group.</li>
+            </ol>
+            
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/howToUse/distanceBetwenLayers.mp4" type="video/mp4">
+            </video>
+
+
+            <p>Here's a handy shortcut list for all of the distance measurement options:</p>
+
+            <table>
+                <tr>
+                    <th>Element Types</th>
+                    <th>Measurement Option</th>
+                </tr>
+                <tr>
+                    <td>Two separate layers</td>
+                    <td>Select the first layer, hold down <code>Alt</code> / <code>⌥</code>, and hover the cursor over the other layer.</td>
+                </tr>
+                <tr>
+                    <td>A layer inside a frame → the frame's boundaries</td>
+                    <td>
+                        <ol>
+                            <li>Hover the cursor over the layer and hold down <code>Alt</code> / <code>⌥</code>.</li>
+                            <li>Select the layer, hover the cursor over an empty area within the frame, and hold down Alt / ⌥.</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>A grouped layer → individual layer</td>
+                    <td>Select the grouped layer, hold down <code>Alt</code> / <code>⌥</code>, and hover the cursor over the other layer.</td>
+                </tr>
+                <tr>
+                    <td>Two layers inside the same group</td>
+                    <td>Select the first layer in the group, hold down <code>Alt</code> / <code>⌥</code>, and hover the cursor over the other layer in the group.</td>
+                </tr>
+                <tr>
+                    <td>A grouped layer → frame boundaries</td>
+                    <td>Select the first layer in the group, hold down<code>Alt</code> / <code>⌥</code>, and hover the cursor over an empty area within the frame.</td>
+                </tr>
+                <tr>
+                    <td>A layer inside a group → the group's boundaries</td>
+                    <td>Point the cursor over a grouped layer and hold down <code>Ctrl + Alt</code> / <code>⌘ + ⌥</code>.</td>
+                </tr>
+                <tr>
+                    <td>A layer inside a group → the boundaries of the frame where it's nested</td>
+                    <td>Select a grouped layer, hold down <code>Alt</code> / <code>⌥</code>, and hover the cursor anywhere outside the other grouped layers.</td>
+                </tr>
+                <tr>
+                    <td>Two layers in different groups</td>
+                    <td>Select a grouped layer, hold down <code>Alt</code> / <code>⌥</code>, hover the cursor over a layer in another group.</td>
+                </tr>
+            </table>
+
+            <h2 id="zooming">Zooming options</h2>
+
+            <p>Use the <b>Zoom tool</b> and the <b>Zoom control</b> to explore more of Lunacy's zooming options.</p>
+            <p>The <b>Zoom tool</b> enables you to zoom in to a selected layer or canvas area. To use the tool:</p>
+            <ol>
+                <li>Press and hold <code>Z</code>.</li>
+                <li>
+                    Click on a layer or drag over an area on the canvas (the smaller the area, the higher the zoom value).
+                </li>
+                <li>To zoom out, hold down <code>Alt + Z</code> / <code>⌥ + Z</code> and click or drag over the layer/area.</li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/howToUse/zoomTool.mp4" type="video/mp4">
+            </video>
+
+            <p>The <b>zoom control</b> is on the right of the document tabs. To change the zoom value, you can:</p>
+
+            <ul>
+                <li>Manually enter a zoom value.</li>
+                <li>
+                    Hover the cursor over the zoom control field, wait a moment until the 
+                    cursor turns into a double-headed arrow, and drag the cursor up or down.
+                </li>
+                <li>Click over the zoom control field and move the mouse wheel.</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/howToUse/zoomControl.mp4" type="video/mp4">
+            </video>
+
+            <p>You can also alter zoom options using preset values:</p>
+
+            <img src="./PICTURES/howToUse/basics/zoomOption.png" alt="zoom option" width="850px" height="500px">
+
+            <p>Here are all the essential zoom options and corresponding shortcuts:</p>
+
+            <table>
+                <tr>
+                    <th>Operation</th>
+                    <th>Description</th>
+                    <th>Windows Shortcut</th>
+                    <th>Mac Shortcut</th>
+                </tr>
+                <tr>
+                    <td>Zoom in/out</td>    
+                    <td>Zooms the canvas in/out.</td>
+                    <td><code>+/-</code> / <code>Ctrl</code> <code>+ "+/-"</code></td>
+                    <td><code>⌘ +</code> <code>"+/-"</code></td>
+                </tr>
+                <tr>
+                    <td>Zoom to 100%</td>
+                    <td>Sets the zoom value to 100%.</td>
+                    <td><code>Ctrl + 0</code></td>
+                    <td><code>⌘ + 0</code></td>
+                </tr>
+                <tr>
+                    <td>Zoom to All Layers</td>
+                    <td>Shows all the layers on the page.</td>
+                    <td><code>Ctrl + 1</code></td>
+                    <td><code>⌘ + 1</code></td>
+                </tr>
+                <tr>
+                    <td>Zoom to Selection</td>
+                    <td>Zooms in and displays the selected layer in the center of the screen.</td>
+                    <td><code>Ctrl + 2</code></td>
+                    <td><code>⌘ + 2</code></td>
+                </tr>
+                <tr>
+                    <td>Zoom to fit width</td>
+                    <td>Zooms the canvas so that all horizontally distributed layers fit the screen.</td>
+                    <td><code>Ctrl + 3</code></td>
+                    <td><code>⌘ + 3</code></td>
+                </tr>
+                <tr>
+                    <td>Zoom to fit height</td>
+                    <td>Zooms the canvas so that all vertically distributed layers fit the screen.</td>
+                    <td><code>Ctrl + 4</code></td>
+                    <td><code>⌘ + 4</code></td>
+                </tr>
+            </table>
+
+            <p>These options are also accessible through the <b>View</b> section on the menu bar:</p>
+            <img src="./PICTURES/howToUse/basics/zoomTo.png" alt="zoom to" width="850px" height="500px">
+
+            <h3>Show pixels on zoom</h3>
+
+            <p>
+                By default, Lunacy displays the canvas in the <b>vector mode</b>, which means that all layers 
+                (except for rasterized ones) will preserve their quality regardless of the zoom value. 
+                If you need to see individual pixels, you can use the <b>Show pixels on zoom</b> button. 
+                It displays pixels when the zoom value exceeds 100.
+            </p>
+
+            <p>Here is the same layer with the feature disabled (left) and enabled (right):</p>
+
+            <img src="./PICTURES/howToUse/basics/pixels.png" alt="pixels" width="850px" height="500px">
+
+            <p>You can also toggle this feature on and off in the menu bar by selecting <b>View → Pixels on Zoom.</b></p>
+
+            <h2 id="context">Context menu</h2>
+
+            <p>The <b>context menu</b> is a pop-up list of commands and options for basic operations with layers.</p>
+            <p>
+                It appears when you right-click on a layer. The items on the menu vary depending on the layer you select.
+            </p>
+
+            <p>Almost all context menu options have shortcuts you can use to speed up your workflow:</p>
+
+            <img src="./PICTURES/howToUse/basics/contextManu.png" alt="context Manu" width="850px" height="500px">
+
+            <p>These context menu options are universal for almost all layer types:</p>
+
+            <table>
+                <tr>
+                    <th>Context Menu Button</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><ion-icon name="copy-outline"></ion-icon></td>
+                    <td>Copy the layer.</td>
+                </tr>
+                <tr>
+                    <td><ion-icon name="clipboard-outline"></ion-icon></td>
+                    <td>Paste an element at the position of the cursor.</td>
+                </tr>
+                <tr>
+                    <td><ion-icon name="duplicate-outline"></ion-icon></td>
+                    <td>Duplicate the selected layer.</td>
+                </tr>
+                <tr>
+                    <td><ion-icon name="lock-closed-outline"></ion-icon></td>
+                    <td>Protect the layer from accidental edits.</td>
+                </tr>
+                <tr>
+                    <td><ion-icon name="eye-off-outline"></ion-icon></td>
+                    <td>Hide the layer from the canvas.</td>
+                </tr>
+                <tr>
+                    <td><ion-icon name="trash-outline"></ion-icon></td>
+                    <td>Deletes the selected layer.</td>
+                </tr>
+                <tr>
+                    <td>Paste Over</td>
+                    <td>Paste an element over the layer.</td>
+                </tr>
+                <tr>
+                    <td>Cut</td>
+                    <td>Cut the selected layer.</td>
+                </tr>
+                <tr>
+                    <td>Rename</td>
+                    <td>Rename the layer.</td>
+                </tr>
+                <tr>
+                    <td>Comment</td>
+                    <td>Comment on the layer.</td>
+                </tr>
+                <tr>
+                    <td>Copy/Paste as</td>
+                    <td>Opens a submenu with copy/paste options.</td>
+                </tr>
+                <tr>
+                    <td>Move to page</td>
+                    <td>Move the layer to another page in the document.</td>
+                </tr>
+                <tr>
+                    <td>Send to Back</td>
+                    <td>Move the layer to the bottom of the Layer list.</td>
+                </tr>
+                <tr>
+                    <td>Bring Forward</td>
+                    <td>Move a layer one step higher in the Layer list.</td>
+                </tr>
+                <tr>
+                    <td>Group Selection</td>
+                    <td>Group two or more selected layers together.</td>
+                </tr>
+                <tr>
+                    <td>Ungroup</td>
+                    <td>Ungroup a selected group of layers.</td>
+                </tr>
+                <tr>
+                    <td>Create Component</td>
+                    <td>Create a reusable component from the layer.</td>
+                </tr>
+            </table>
+
+            <h2 id="privacy">Advanced privacy settings</h2>
+
+            <p>Turn off some or all of these features for a completely private experience:</p>
+
+            <!-- OVA SLIKA NIJE DOBRA ZATO STO NIJE UCITANA  -->
+            <img src="./PICTURES/howToUse/basics/privacy.png" alt="privacy" width="850px" height="500px">
+
+            <p>All users can disable Google Analytics and Google Fonts, and you can disable the rest of the features with a subscription.</p>
+
+            <!-- HERE IS STARING NEXT PAGE NEX CHAPTER -->
+
+
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2024 Bondokic Nikola. All rights reserved</p>
+    </footer>
+    
+    <!-- SCROL TO TOP BUTTON -->
+    <button id="scrollTopButton" class="hidden" onclick="scrollToTop()">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+    
+
+
+    <script src="script.js"></script>
+    <!-- LINCURI PENTRU A FOLOSI IONICONS  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
