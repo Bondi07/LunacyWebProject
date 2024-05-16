@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Text-style.css">
+    <!-- AICI SE PUNE ICONITA SITE-ULUI WEB-->
+    <link rel="icon" href="./PICTURES/home/LunacyLogoWeb.jpg" type="image/x-icon">
+    <title>Text</title>
+</head>
+<body>
+    <div class="topMenu">
+        <div class="logoName">
+            <img src="./PICTURES/home/LunacyLogoWeb.jpg" alt="Lunacy logo" width="30px" height="30px">
+            <a href="https://icons8.com/lunacy">Lunacy</a>
+        </div>
+        <div class="pages">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="HowToUse.html">How to use</a>
+            <a href="Contact.html">Contacts</a>
+        </div>
+        <button class="downloadButton">Download</button>
+    </div>
+
+
+    <div class="menuAndContentContainer">
+        
+        
+        <div class="leftManuContainer">
+            <!-- LEFT SIDE MENU  -->
+            <nav class="left-menu">
+                <ul>
+                    <li><a href="#text">Text</a></li>
+                    <li><a href="#add">Adding text layers</a></li>
+                    <li><a href="#editing">Editing text</a></li>
+                    <li><a href="#textGenerate">Text generation</a></li>
+                    <li><a href="#auto">Auto refresh</a></li>   
+                    <li><a href="#style">Text styles and effects</a></li> 
+                    <li><a href="#shapes">Text and shapes</a></li> 
+                    <li><a href="#missing">Missing fonts</a></li> 
+                    <li><a href="#fonts">Fonts embedding</a></li> 
+                </ul>
+            </nav>
+        </div>
+
+        <div class="containerText">
+
+            <h1 id="text">Text</h1>
+
+            <p>Learn how to work with text in Lunacy</p>
+
+            <p>This section describes how to add and modify text layers in Lunacy, and how to use the built-in placeholder text generation tool.</p>
+
+            <h2 id="add">Adding text layers</h2>
+            <p>To <b>add a text layer</b>, press <code>T</code> or select  on the toolbar to activate the Text tool, then:</p>
+
+            <ul>
+                <li>
+                    <b>Click anywhere on the canvas</b> to place the text layer. You can either type 
+                    your own text or use the generated text options that appear 
+                    in the dropdown menu as you create the layer. Lunacy applies horizontal resize mode to text added this way.
+                </li>
+                <p>OR</p>
+                <li><b>Click and drag</b> to place a text layer with your custom size. Placeholder texts 
+                    will appear inside the layer you're creating, with their font size set automatically.
+                </li>
+            </ul>
+
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/text.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                Generated text options include names, job titles, emails, countries, headings, 
+                paragraphs, and over a dozen more placeholders for you to choose from.
+            </p>
+
+            <h2 id="editing">Editing text</h2>
+
+            <p>To <b>edit a text layer:</b></p>
+
+            <ol>
+                <li>Click the layer on the canvas or select it in the Layer list.</li>
+                <li>Press <code>Enter</code> or click the Edit Layer button (<code><ion-icon name="pencil-outline"></ion-icon></code>) on the context toolbar to enable Edit mode.</li>
+                <li>Type a new text or edit the existing one and modify any text properties in the Text section of the right panel.</li>
+                <li>Once you're done, press <code>Esc</code> to exit the edit mode.</li>
+            </ol>
+
+            <p>Editing a layer with generated texts won't detach it from the generated content. You'll still be able to refresh it.</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/edit.mp4" type="video/mp4">
+            </video>
+
+            <h3>Font list</h3>
+
+            <p>To change fonts, click on the font list menu in the right panel, then:</p>
+
+            <ul>
+                <li>Type the font family name in the field.</li>
+                <li>Expand the dropdown menu with the list of available fonts, then select one from the list.</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/font.mp4" type="video/mp4">
+            </video>
+
+
+            <p>
+                The font list displays available fonts and their samples, with your three most 
+                recently used fonts displayed at the top. If a font name is too long and seems 
+                truncated, hover a cursor over it to view the full name.
+            </p>
+            <p>You can filter fonts using the buttons above the list:</p>
+
+            <ul>
+                <li><b>All:</b> Shows the full list of available fonts.</li>
+                <li><b>System:</b> Shows the list of fonts installed on your computer.</li>
+                <li><b>Google:</b> Shows the list of fonts available in the Google Fonts library.</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/filter.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                Lunacy's integration with Google Fonts solves most problems with missing fonts. 
+                Before you apply a Google font for the first time, it appears without a matching 
+                sample. Click on a Google font for Lunacy to automatically download and apply 
+                it to the selected text layer.
+            </p>
+
+            <h3>Font style</h3>
+            <p>
+                Open the font style dropdown menu to change a text's styling properties (<b>Bold</b>, <i>Italic</i>, <b><i>Bold Italic</i></b>, etc.) 
+                If a font only has one style, this menu will be grayed out.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/boldItalic.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                To change the properties of an individual word, you don't necessarily have to select it. 
+                Just set the cursor anywhere inside or at the end of a word and change the properties.
+                If you set the cursor at the very end of the text, the formatting options will be 
+                applied to the entire text. You can also use standard text editor shortcuts 
+                to speed things up:
+            </p>
+
+            <ul>
+                <li><code>Ctrl + B</code> / <code>⌘ + B</code> — Bold</li>
+                <li><code>Ctrl + I</code> / <code>⌘ + I</code> — Italic</li>
+                <li><code>Ctrl + U</code> / <code>⌘ + U</code> — Underline</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/italic.mp4" type="video/mp4">
+            </video>
+
+            <h3>Font size</h3>
+
+            <p>
+                Use this field to set the font size or press <code>Ctrl + Alt + "+"</code> / <code>⌥ + ⌘ + "+"</code> and 
+                <code>Ctrl + Alt + "-"</code> / <code>⌥ + ⌘ + "-"</code> to increase and decrease the font size respectively.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/fontSize.mp4" type="video/mp4">
+            </video>
+
+            <p>You can also change the font size directly on the canvas by dragging the circular handle at the bottom of the text layer bounding box:</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/fontSizeCanvas.mp4" type="video/mp4">
+            </video>
+
+            <h3>Line, letter, and paragraph spacing</h3>
+
+            <p>Use these settings to adjust the spacing between lines, letters, and paragraphs.</p>
+            <p>
+                The default <b>line spacing</b> depends on the selected font, as well as its style and size. 
+                It appears grayed out, but you can change the value manually anytime. To <b>restore the 
+                default line spacing value</b>, delete the current value and press <code>Enter</code>.
+            </p>
+            <p>The default letter and paragraph spacing is set to <code>0</code>.</p>
+
+            <p>You can change spacing values by:</p>
+
+            <ul>
+                <li>Selecting the required font size from the list.</li>
+                <li>Entering a value in the input field.</li>
+                <li>Hovering over the input field and scrolling with the middle mouse button.</li>
+                <li>Using shortcuts:
+                    <ul>
+                        <li><code>Ctrl + Alt + &gt;</code> / <code>⌥ + ⌘ + &gt;</code> or <code>Ctrl + Alt + &lt;</code> / <code>⌥ + ⌘ + &lt;</code> — increase or decrease line spacing.</li>
+                        <li><code>Ctrl + Shift + &gt;</code> / <code>⌘ + Shift + &gt;</code> or <code>Ctrl + Shift + &lt;</code> / <code>⌘ + Shift + &lt;</code> — increase or decrease letter spacing.</li>
+                        <li>There is no shortcut for paragraph spacing.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/space.mp4" type="video/mp4">
+            </video>
+
+            <h3>Text color</h3>
+            <p>Use this field to change the text color:</p>
+
+            <ul>
+                <li>Click on the color circle to open up the standard color picker.</li>
+                <li>Choose a color style from the document colors.</li>
+                <li>Enter a color code manually.</li>
+            </ul>
+            
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/txColor.mp4" type="video/mp4">
+            </video>
+
+            <h3>Resizing options</h3>
+
+            <p>These three buttons determine how text boxes change in size depending on the content:</p>
+            <ul>
+                <li><b>Horizontal resize:</b> The text box expands horizontally to fit the text content on a single line.</li>
+                <li><b>Vertical resize:</b> The text box adjusts vertically to fit the text content, while the width of the text box remains unchanged.</li>
+                <li><b>Fixed size:</b> In this mode, the size of the text box is fixed and does not adjust to fit the text content.</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/resize.mp4" type="video/mp4">
+            </video>
+
+            <h3>Some notes:</h3>
+            <ul>
+                <li>If you drag and shrink a text box around a single-line text, the resize 
+                    mode will adjust automatically. Double-click on it to reset the box to
+                    horizontal resize mode and transform the multiline text into a single line again.
+                </li>
+                <video width="950px" height="500px" autoplay loop>
+                    <source src="./VIDEO/text/textNote.mp4" type="video/mp4">
+                </video>
+                <li>If your text box is larger than the text inside it, click on the text 
+                    box borders to enable auto-resize mode and make the text box fit 
+                    snugly around the text.
+                </li>
+                <video width="950px" height="500px" autoplay loop>
+                    <source src="./VIDEO/text/autoResize.mp4" type="video/mp4">
+                </video>
+            </ul>
+
+            <h3>Text alignment</h3>
+            <p>Use these buttons to align text inside the text box or use these shortcuts:</p>
+
+            <ul>
+                <li><code>Ctrl + Alt + {</code> / <code>⌥ + ⌘ + {</code> — align text to the left</li>
+                <li><code>Ctrl + Alt + }</code> / <code>⌥ + ⌘ + }</code> — align text to the right</li>
+                <li><code>Ctrl + Alt + T</code> / <code>⌥ + ⌘ + T</code> — center text</li>
+                <li><code>Ctrl + Alt + J</code> / <code>⌥ + ⌘ + J</code> — justify</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/textAlign.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                You can also align text within text boxes using the alignment magnets 
+                that appear around the text box when you select it. They combine the 
+                functions of text alignment and text position so you can position 
+                your text right on the canvas.
+            </p>
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/magnets.mp4" type="video/mp4">
+            </video>
+
+            <p>If you want to hide the magnets, uncheck the Text Alignment Magnets option in the View section of the menu bar.</p>
+
+            <h3>Text position</h3>
+            <p>Adjust the position of text content within the text box:</p>
+            <ul>
+                <li>Position text to the top border (default option)</li>
+                <li>Position text to the bottom border</li>
+                <li>Center the text within the layer</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/textPosition.mp4" type="video/mp4">
+            </video>
+
+            <h3>Additional text options</h3>
+            <p>Click <ion-icon name="git-compare-outline"></ion-icon> in the <b>Text</b> section of the right panel to access additional text formatting options. They include:</p>
+
+
+            <ul>
+                <li><b>Transform options</b>. Choose the letter case for your text:
+                    <ul style="list-style-type:none;">
+                        <li><b>Aa</b>: Title Case</li>
+                        <li><b>AA</b>: UPPER CASE</li>
+                        <li><b>aa</b>: lower case</li>
+                    </ul>
+                </li>
+                <li><b>Decorations</b>. Apply underline or strikethrough effects.</li>
+                <li><b>List type</b>. Choose from numbered or bullet point list styles.</li>
+                <li><b>Features</b>. Add special features like subscript and superscript to your text.</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/lower.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="textGenerate">Text generation</h2>
+
+            <p>
+                When you need to add placeholder text to your designs, there's no 
+                need to leave the app to google them or think of anything yourself: 
+                Lunacy does the work for you. Generated texts include names, job 
+                titles, various types of contact information, headings and paragraphs, 
+                as well as over a dozen more options.
+            </p>
+            <p>To use text generation, activate the Text tool (<code>T</code>) and click on the canvas, then:</p>
+            <ul>
+                <li>Choose one of the text generation options that appear in the dropdown menu below the cursor.</li>
+                <p>OR</p>
+                <li>Start typing the desired placeholder option (“name,” “paragraph,” “email,” etc.) and choose from the narrowed list of options.</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/textGenerate.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                When you click and drag to create a custom size text layer, Lunacy automatically 
+                fills the layer with placeholder texts. Auto font size sets the size of the 
+                text depending on the width and height of the text box: Lunacy guesses whether 
+                you're creating a heading, paragraph, email field, and so on. You can either 
+                leave these texts or go ahead with your own options.
+            </p>
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/autoFontSize.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="auto">Auto refresh</h2>
+
+            <p>To refresh the generated text, click <ion-icon name="refresh-outline"></ion-icon> or press <code>Shift + R</code>.</p>
+
+            <p>Also, anytime you copy a layer with generated text, a new generated placeholder will appear in the duplicate.</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/autoRefresh.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                This happens due to <b>Auto Refresh</b>, which you can turn off by selecting 
+                <b>Detach from Generated Content</b> in the layer context menu or in the 
+                <b>Layer → Content Generation</b> section of the menu bar.
+            </p>
+
+            <p>
+                Combine text generation with other handy Lunacy features, like 
+                the Avatar tool and Repeat grid so your design process stays 
+                distraction-free:
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/generateAuto.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="style">Text styles and effects</h2>
+
+            <p>In addition to text settings, you can also apply standard layer effects to your text layers, including:</p>
+
+
+            <ul>
+                <li>Fills</li>
+                <li>Borders</li>
+                <li>Drop shadows</li>
+                <li>Inner shadows</li>
+                <li>Blurs</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/shadow.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                You can save combinations of layer effects and text settings as text styles 
+                which you can reuse across your document. Text styles appear alongside other 
+                layer styles in the dropdown menu of the Style section in the right panel.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/style.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="shapes">Text and shapes</h2>
+            <h3>Adding text to shapes</h3>
+
+            <p>
+                You can add a perfectly centered text layer to a shape by selecting the 
+                shape, then pressing T to activate the text tool. Lunacy will group the 
+                shape and the resulting text layer. The text you enter in the layer 
+                will be in Fixed size mode, restricted by the borders.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/addText.mp4" type="video/mp4">
+            </video>
+
+            <h3>Converting text to outlines</h3>
+            <p>You can convert text into outlines, so that every letter becomes a vector shape:</p>
+
+            <ul>
+                <li>Press <code>Ctrl + Shift + O</code> / <code>⌘ + Shift + O</code>.</li>
+                <li>Select <b>Outline stroke</b> on the context menu.</li>
+                <li>Select <b>Text → Convert to Outlines</b> on the menu bar.</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/outline.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="missing">Missing fonts</h2>
+            <p>
+                When you open a document, Lunacy checks whether all the required fonts 
+                are available on your computer. If some of them are missing but they 
+                are available in the Google Fonts library, Lunacy will download and 
+                apply them, provided your computer is connected to the internet.
+            </p>
+            <p>
+                If they aren't part of Google Fonts, the missing fonts button (T<ion-icon name="help-outline"></ion-icon>) appears on the 
+                top bar. Lunacy renders the text layers using the default Inter font, and when 
+                you select these layers, the name of the missing font appears in red in the font menu.
+            </p>
+            <p>Click the missing fonts button to open up a dialog box with options to replace 
+                the missing fonts with alternatives so you can edit the layers.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/missing.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="fonts">Fonts embedding</h2>
+
+            <p>
+                You can embed fonts into your document before sharing it with other people to 
+                ensure that the text layers will look exactly as you designed them, even on 
+                computers without the fonts used in the document.
+            </p>
+
+            <p><b>To embed fonts:</b></p>
+
+            <ol>
+                <li>Go to <b>Text → Fonts Embedding</b> on the menu bar.</li>
+                <li>Select the required fonts and click <b>Embed fonts</b>.</li>
+            </ol>
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/text/embeded.mp4" type="video/mp4">
+            </video>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Bondokic Nikola. All rights reserved</p>
+    </footer>
+    
+    <!-- SCROL TO TOP BUTTON -->
+    <button id="scrollTopButton" class="hidden" onclick="scrollToTop()">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+    
+
+    <script src="script.js"></script>
+    <!-- LINCURI PENTRU A FOLOSI IONICONS  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

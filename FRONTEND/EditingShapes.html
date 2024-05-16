@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EditingShapes-style.css">
+    <!-- AICI SE PUNE ICONITA SITE-ULUI WEB-->
+    <link rel="icon" href="./PICTURES/home/LunacyLogoWeb.jpg" type="image/x-icon">
+    <title>Editing Shapes</title>
+</head>
+<body>
+    <div class="topMenu">
+        <div class="logoName">
+            <img src="./PICTURES/home/LunacyLogoWeb.jpg" alt="Lunacy logo" width="30px" height="30px">
+            <a href="https://icons8.com/lunacy">Lunacy</a>
+        </div>
+        <div class="pages">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="HowToUse.html">How to use</a>
+            <a href="Contact.html">Contacts</a>
+        </div>
+        <button class="downloadButton">Download</button>
+    </div>
+
+
+    <div class="menuAndContentContainer">
+        
+        
+        <div class="leftManuContainer">
+            <!-- LEFT SIDE MENU  -->
+            <nav class="left-menu">
+                <ul>
+                    <li><a href="#editing">Editing shapes</a></li>
+                    <li><a href="#edit">Edit mode</a></li>
+                    <li><a href="#on">On-canvas controls for editing shapes</a></li>
+                    <li><a href="#arc">Arc editor</a></li>
+                    <li><a href="#panel">Editing shapes through the right panel</a></li>   
+                    <li><a href="#vector">Vector editing</a></li> 
+                    <li><a href="#bool">Boolean operations</a></li> 
+                    <li><a href="#flat">Flatten selection</a></li> 
+                    <li><a href="#masks">Masks</a></li> 
+                    <li><a href="#rasterizing">Rasterizing vector shapes</a></li> 
+                </ul>
+            </nav>
+        </div>
+
+        <div class="containerEditingShapes">
+
+            <h1 id="editing">Editing shapes</h1>
+
+            <p>Make sure that you know everything about working with shapes in Lunacy</p>
+
+            <p>Shapes are types of layers in Lunacy, typically created with the Shape tools.</p>
+
+            <img src="./PICTURES/editingShapes/shapes.png" alt="shapes" width="850px" height="100px">
+
+
+            <p>The tools include several pre-made shapes you can add by selecting the Shape icon on the toolbar — or simply by using shortcuts:</p>
+
+            <ul id="symbols">
+                <li><code>R</code> — rectangle</li>
+                <li><code>R, R</code> — rounded rectangle</li>
+                <li><code>L</code> — line</li>
+                <li><code>L, L</code> — arrow</li>
+                <li><code>O</code> — oval</li>
+                <li><code>O, O</code> — triangle</li>
+                <li><code>O, O, O</code> — polygon</li>
+                <li><code>O, O, O, O</code> — star</li>
+            </ul>
+
+            <p>Once you select the shape:</p>
+
+            <ul>
+                <li>Click on the canvas to place it as a 100 x 100 shape (works for all shapes except for lines and arrows).</li>
+                <li>Click and drag to adjust the shape's size.</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/editingShapes/drag.mp4" type="video/mp4">
+            </video>
+
+            <p>You can also make shapes using the Pen and Pencil tools. Create vector paths, then close them to make a shape outline you can then edit.</p>
+            
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/editingShapes/pen.mp4" type="video/mp4">
+            </video>
+
+
+            <p>
+                This section focuses on how to edit and transform the form of vector shapes using 
+                the standard layer Edit mode, on-canvas controls, Boolean operations, and the right 
+                panel. To learn about adding fills, borders, and effects to shapes and other 
+                layers, check out the Styling page.
+            </p>
+
+
+            <h2 id="edit">Edit mode</h2>
+
+            <p>The most basic way to edit a shape is to use Edit mode:</p>
+            <ol>
+                <li>
+                    Select the shape you want to edit, and press <code>Enter</code>. You can also double-click 
+                    the shape or select <ion-icon name="pencil-outline"></ion-icon> on the context toolbar.
+                </li>
+                <li>
+                    The cursor will switch over to the Pen tool. You can drag the paths and vertices of the shape as you see fit, 
+                    add new points and adjust their properties in the right panel.
+                </li>
+                <li>Press <code>Enter</code> again or click on an empty area on the canvas to exit Edit mode.</li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/editingShapes/edit.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="on">On-canvas controls for editing shapes</h2>
+            <h3>Corner radius</h3>
+            
+            <p>
+                <b>Round the corners</b> for any shape (except for the triangle) by dragging 
+                the handles at the corners of the shape on the canvas.
+            </p>
+
+            <p>
+                For <b>rectangles or rounded rectangles</b>, drag any of the handles 
+                at the corners to adjust their radius. To change the radius 
+                of an individual rectangle corner, hold Alt while dragging.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/editingShapes/rectangle.mp4" type="video/mp4">
+            </video>
+
+            <p>For stars and polygons, drag the handle below the topmost corner of the shape.</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/editingShapes/star.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="arc">Arc editor</h2>
+
+            <p>With the <b>Arc editor</b>, you can quickly create rings and semirings, design pie charts or other fancy circular elements.</p>
+
+            <p>
+                Draw an oval and use the handles in the middle of the shape to adjust its sweep and ratio. 
+                Sweep creates a gap in the oval, while Ratio changes the oval into an arc. Once you change 
+                the sweep, the Start handle will also appear on the shape, indicating where the arc begins.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/editingShapes/arc.mp4" type="video/mp4">
+            </video>
+
+            <h3>Transforming stars and polygons</h3>
+
+            <p>You can change the shape of stars and polygons right on the canvas without reaching into the right panel.</p>
+            <p>To <b>change the ratio of a star</b>, drag the handles at the inner intersection points of its sides.</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/editingShapes/starRatio.mp4" type="video/mp4">
+            </video>
+
+
+            <p>To change the number of corners in a star or polygon, drag the handle below the shape's top right corner.</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/editingShapes/starCoenrer.mp4" type="video/mp4">
+            </video>
+
+
+            <h2 id="panel">Editing shapes through the right panel</h2>
+
+            <p>The transform options mirror the on-canvas controls:</p>
+
+            <p>
+                <b>Corner radius.</b> Rounds the corners of a shape. Available for most of 
+                pre-made shapes, except for ovals, triangles, lines, and arrows.
+            </p>
+            <p><b>Count.</b> Adjusts the number of points for stars/the number of angles for polygons.</p>
+
+            <p><b>Ratio.</b> Changes the ratio of a star or oval.</p>
+            <p><b>Sweep.</b> Creates a gap in an oval.</p>
+            <p><b>Start.</b> Determines the starting point of an arc made from an oval.</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/editingShapes/angle.mp4" type="video/mp4">
+            </video>
+
+
+            <h2 id="vector">Vector editing</h2>
+
+            <p>This section expands on transforming vector shapes and paths with Edit mode.</p>
+
+            <p>In general, vector editing is all about manipulations with points and paths:</p>
+
+            <img src="./PICTURES/editingShapes/points.png" alt="points" width="850px" height="500px">
+
+            <ul>
+                <li><b>To select a point,</b> just click it. <b>To select multiple points,</b> 
+                    drag over them or hold down <code>Shift</code> when clicking several points.
+                </li>
+                <li><b>To move a point,</b> select and drag it. This works with multiple points selected as well.</li>
+                <li>
+                    <b>To add a new point to a path,</b> hover the cursor over the path, 
+                    then click it to place a straight point or double-click to place a mirrored point.
+                </li>
+                <li><b>Switch between point types</b> in the Edit shape section of the right panel.</li>
+                <li><b>To bend paths,</b> use curved points.</li>
+                <li>
+                    <b>To round the corner above a straight point,</b> use the corner radius field. 
+                    It only becomes active when you select a straight point.
+                </li>
+                <li><b>To delete a point or several points,</b> select it/them and press <code>Delete</code>.</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/editingShapes/selectePoints.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="bool">Boolean operations</h2>
+
+            <p>Use Boolean operations to combine shapes into more complex forms:</p>
+
+            <img src="./PICTURES/editingShapes/boolPoints.png" alt="points" width="850px" height="500px">
+
+            <ol>
+                <li>Select two or more overlapping shapes.</li>
+                <li>On the context toolbar, select the Boolean operation you need.</li>
+            </ol>
+
+            <ul>
+                <li><b>Union.</b> Creates a shape from the sum of the areas of the selected shapes (<code>Ctrl + Shift + U</code> / <code>Ctrl + Shift + U</code>).</li>
+                <li><b>Subtract.</b> The opposite of Union. Removes the overlapping area(s) from the shape layer at the bottom of the selection (<code>Ctrl + Shift + P</code> / <code>Ctrl + Shift + P</code>).</li>
+                <li><b>Intersect.</b> The resulting shape only includes the area where all selected shapes overlap (<code>Ctrl + Shift + I</code> / <code>Ctrl + Shift + I</code>).</li>
+                <li><b>Difference.</b> The opposite of Intersect. Creates a shape from the areas where the selected shapes do not overlap (<code>Ctrl + Shift + X</code> / <code>Ctrl + Shift + X</code>).</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/editingShapes/union.mp4" type="video/mp4">
+            </video>
+
+
+            <p>When you apply a Boolean operation, the selected shapes become a Boolean group, this is how it looks in the Layer list:</p>
+
+            <img src="./PICTURES/editingShapes/bollOperation.png" alt="operations" width="850px" height="300px">
+
+            <p>
+                The icon next to the title of the shape layers indicates the type of the Boolean 
+                operation applied to the layer. Click it to open up a menu where you can select 
+                another operation or remove Boolean operations entirely.
+            </p>
+            <p>
+                You can select individual shapes within the group through the Layer list or on the canvas. 
+                If necessary, you can move and resize them on the canvas to modify the resulting shape.
+            </p>
+
+            <h2 id="flat">Flatten selection</h2>
+
+            <p>
+                The Flatten selection operation is another method of creating complex forms by combining two or 
+                more primitive shapes. It's similar to the Boolean Union operation, the difference being that 
+                the result of flattening is a single layer that cannot be disconnected.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/editingShapes/editShapeFlat.mp4" type="video/mp4">
+            </video>
+
+            <p>The Flatten selection option appears on the context toolbar and is also available in the Layer section of the menu bar.</p>
+
+            <img src="./PICTURES/editingShapes/flatt.png" alt="flatt" width="850px" height="500px">
+
+            <h2 id="masks">Masks</h2>
+
+            <p>Use masks to display parts of layers and hide the rest.</p>
+
+            <p>To create a mask:</p>
+            <ol>
+                <li>Add the shape you want to use as a mask to the canvas.</li>
+                <li>Place it below the layers that will be masked (you can leave it on top if it's a photo).</li>
+                <li>Select the mask shape and the target layer(s).</li>
+                <li>On the context toolbar, click the Toggle mask button (<code>⌘ + M</code> / <code>Ctrl + M</code>). The option is also available on the context menu.</li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/editingShapes/shapeMask.mp4" type="video/mp4">
+            </video>
+            <p>When you apply a mask, Lunacy creates a mask group:</p>
+
+            <img src="./PICTURES/editingShapes/maskGroup.png" alt="mask group" width="850px" height="300px">
+
+            <p>
+                You can select the mask shape right within the group and move, edit, or resize the mask.
+
+                To remove a mask, select the mask group in the Layer list or on the canvas and press <code>Ctrl + M</code> / <code>⌘ + M</code>.
+            </p>
+
+            <h3>Outline stroke</h3>
+
+            <p>
+                The Outline stroke command (<code>Ctrl + Shift + O</code> / <code>⌘ + Shift + O</code>), when applied to shapes, 
+                converts borders into separate layer. It appears on the context menu when you select 
+                a shape that has a border (you can also find the option in the Layer 
+                section of the menu bar).
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/editingShapes/outline.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="rasterizing">Rasterizing vector shapes</h2>
+
+            <p>You can rasterize any vector layer in Lunacy to create pixel images (when you need elements as simple images, for example).</p>
+
+            <img src="./PICTURES/editingShapes/vectoreShape.png" alt="vectore shape" width="850px" height="500px">
+
+            <p>To rasterize any shape (or path):</p>
+            <ol>
+                <li>Select it.</li>
+                <li>Right-click the selection, then select Rasterize selection on the context menu.</li>
+            </ol>
+            <p>This option is also available in the Layer section of the menu bar.</p>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Bondokic Nikola. All rights reserved</p>
+    </footer>
+    
+    <!-- SCROL TO TOP BUTTON -->
+    <button id="scrollTopButton" class="hidden" onclick="scrollToTop()">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+    
+
+
+    <script src="script.js"></script>
+    <!-- LINCURI PENTRU A FOLOSI IONICONS  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

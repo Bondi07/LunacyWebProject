@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styling-style.css">
+    <!-- AICI SE PUNE ICONITA SITE-ULUI WEB-->
+    <link rel="icon" href="./PICTURES/home/LunacyLogoWeb.jpg" type="image/x-icon">
+    <title>Styling</title>
+</head>
+<body>
+    <div class="topMenu">
+        <div class="logoName">
+            <img src="./PICTURES/home/LunacyLogoWeb.jpg" alt="Lunacy logo" width="30px" height="30px">
+            <a href="https://icons8.com/lunacy">Lunacy</a>
+        </div>
+        <div class="pages">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="HowToUse.html">How to use</a>
+            <a href="Contact.html">Contacts</a>
+        </div>
+        <button class="downloadButton">Download</button>
+    </div>
+
+
+    <div class="menuAndContentContainer">
+        
+        
+        <div class="leftManuContainer">
+            <!-- LEFT SIDE MENU  -->
+            <nav class="left-menu">
+                <ul>
+                    <li><a href="#fills">Fills, borders, effects</a></li>
+                    <li><a href="#add">Adding styling options</a></li>
+                    <li><a href="#managing">Managing and deleting styling options</a></li>
+                    <li><a href="#fills1">Fills</a></li>
+                    <li><a href="#types">Fill types</a></li>   
+                    <li><a href="#tints">Tints</a></li> 
+                    <li><a href="#borders">Borders</a></li> 
+                    <li><a href="#effects">Effects</a></li> 
+                </ul>
+            </nav>
+        </div>
+
+        <div class="containerStyling">
+
+            <h1 id="fills">Fills, borders, effects</h1>
+            <p>Learn how to work with styling options in Lunacy</p>
+
+            <p>Use styling options to define the color and effects of a layer, including:</p>
+            <ul>
+                <li><b>Fills and tints</b>. Choose from solid, gradient, or image fills and apply tints to customize the colors.</li>
+                <li><b>Borders</b>. Add them to your layers to create clear distinctions or define boundaries.</li>
+                <li><b>Shadows</b>. Experiment with outer and inner shadows to add depth and dimension to your elements.</li>
+                <li><b>Blurs</b>. Add Gaussian or background blurs to your layers.</li>
+            </ul>
+            <p>These options appear in the right panel whenever you select layer.</p>
+            <img src="./PICTURES/style/stylingOption.png" alt="style" width="850px" height="300px">
+
+            <p>
+                You can apply them to all types of layers, except for hotspots, and slices, though not all 
+                layers have all of the styling options available. For example, groups have tints instead 
+                of fills, and component instances have both these options.
+            </p>
+
+            <p>
+                Save time by creating layer styles for individual or multiple styling options. 
+                You can easily reuse them across different layers, keeping your designs consistent.
+            </p>
+
+            <h2 id="add">Adding styling options</h2>
+            <p>To <b>apply a fill, border, or any other styling option</b> to a layer:</p>
+
+            <ol>
+                <li>Select a layer.</li>
+                <li>Click <code>+</code> next to the required styling section in the right panel.</li>
+                <li>Adjust the settings to define styling parameters for the layer.</li>
+            </ol>
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/style/style.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="managing">Managing and deleting styling options</h2>
+
+            <p>
+                Each layer can have multiple styling options of the same type (except for blurs). 
+                For example, you can apply an image fill to a layer and a semi-transparent solid 
+                fill on top of it. Also, a layer can have several borders or shadows. 
+                Just click the <code>+</code> icon to add another styling setting.
+            </p>
+            <p>To adjust a layer's appearance, rearrange the order of the styling settings within each section.</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/style/add.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                You can temporarily hide some of the settings by clicking <ion-icon name="eye-outline"></ion-icon>. 
+                To delete a styling setting, click <ion-icon name="trash-outline"></ion-icon> .
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/style/hide.mp4" type="video/mp4">
+            </video>
+
+            <h3>Applying styling options to multiple layers</h3>
+
+            <p>
+                To apply styling options to multiple layers, 
+                select them and click <code>+</code> next to any of the styling sections in the right panel.
+            </p>
+
+            <img src="./PICTURES/style/multiple.png" alt="multiple" width="850px" height="400px">
+
+            <p>
+                If you see <b>Click + to replace mixed content</b> in any of the styling sections in 
+                the right panel, it means that the selected layers already have different 
+                settings for this option.
+            </p>
+
+            <p>Click <code>+</code> to override the current settings and apply the same styling option to the selected layers.</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/style/same.mp4" type="video/mp4">
+            </video>
+
+
+            <h2 id="fills1">Fills</h2>
+
+            <p>
+                Fills define the color of a layer. Fill options are available in all 
+                styling sections (except for blurs) and define the color of the selected layer, borders, or shadows.
+            </p>
+
+            <p>There are several ways to change the fill color. You can:</p>
+
+            <ul>
+                <li>Open the color picker/slider by clicking the color swatch in the Fill section.</li>
+                <li>Use the Eyedropper tool (I) and click on a color you want to use for your layer.</li>
+                <li>Pick a color variable or a preset color.</li>
+                <li>
+                    Inside the color picker, type or paste the HEX, RGBA, HSB, 
+                    or HLS value for a solid fill into the color code input field.
+                </li>
+                <li>Enter the HEX value for solid fills manually into the color text box in the Fill section or the color picker.</li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/style/fils.mp4" type="video/mp4">
+            </video>
+
+            <h3>Color picker</h3>
+            <p>To open the color picker, click the color swatch in one of the styling sections in the right panel.</p>
+            <img src="./PICTURES/style/colorPicker.png" alt="color picker" width="850px" height="400px">
+
+            <p>Fill type. Available for the Fill and Border color pickers only.</p>
+            <ul>
+                <li><b>Fill type.</b> Available for the Fill and Border color pickers only.</li>
+                <li><b>Color selection box.</b> This is where you select the color.</li>
+                <li><b>The eyedropper tool.</b> Click it and use the tool to sample colors from other layers or the interface.</li>
+                <li><b>Color selection slider.</b> Slide along the bar to switch colors.</li>
+                <li><b>Opacity slider.</b> Slide along the bar to adjust the opacity.</li>
+                <li><b>Color code.</b> Displays the code of the currently selected color:
+                    <ul>
+                        <li><code>HEX</code></li>
+                        <li><code>RGB</code></li>
+                        <li><code>HSB</code></li>
+                        <li><code>HSL</code></li>
+                    </ul>
+                </li>
+                <li><b>Color code input field.</b> Paste HEX, RGBA, HSB, or HLS values here for maximum accuracy.</li>
+                <li><b>The opacity entry field.</b> Manually enter the opacity percentage.</li>
+                <li><b>Create color variable.</b> This button opens the color variable editing mode.</li>
+                <li><b>Preset colors.</b> To speed up your work with colors, you can save them here and select them directly from this panel later. There are two types of preset colors:
+                    <ul>
+                        <li><b>Global colors</b> appear in the color picker in all documents.</li>
+                        <li><b>Document colors</b> are available in the current document only.</li>
+                    </ul>
+                </li>
+                <li><b>Global and document presets.</b> To switch between global and document colors, open the dropdown menu. To delete a color preset, right-click over it, then select Remove.</li>
+                <li><b>Switch view.</b> Use this button to switch the presets between list and grid views. In list view, you’ll be able to rename colors: right-click a color, then select Rename.</li>
+                <li><b>Add color preset.</b> Use this button to add the currently selected color to Global or Document presets.</li>
+            </ul>
+
+            <h3>Color variables</h3>
+            <p>
+                With color variables, you can efficiently manage colors in your documents 
+                and instantly recolor all the layers using the same variable. You can use 
+                color variables for fills, borders, and shadows.
+            </p>
+
+            <p>In the right panel, color variables appear as round color swatches, 
+                while regular fills, border and shadow colors appear as square swatches.
+            </p>
+
+            <img src="./PICTURES/style/colorVariable.png" alt="color variable" width="850px" height="500xp">
+
+            <h3>To create a color variable:</h3>
+            <ol>
+                <li>Select a layer.</li>
+                <li>Open up the color picker by clicking the color swatch in the right panel.</li>
+                <li>Choose a color.</li>
+                <li>Click Create Color Variable.</li>
+            </ol>
+            <img src="./PICTURES/style/create.png" alt="color variable" width="850px" height="500xp">
+
+
+            <h3>To apply an existing color variable to a layer:</h3>
+
+            <ol>
+                <li>Select a layer.</li>
+                <li>Open up the color dropdown menu.</li>
+                <li>Select the required color variable.</li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/style/applay.mp4" type="video/mp4">
+            </video>
+
+            <p>To <b>edit a color variable</b>, open up the color dropdown menu, and click <ion-icon name="git-compare-outline"></ion-icon> to edit the color.</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/style/edit.mp4" type="video/mp4">
+            </video>
+
+            <p>With a layer selected, use one of these ways to detach a layer from a color variable:</p>
+
+            <ul>
+                <li>Change its color.</li>
+                <li>Click <code>+</code> in the right panel to add a new fill and delete the color variable fill.</li>
+            </ul>
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/style/deleteLayers.mp4" type="video/mp4">
+            </video>
+
+            <h3>Color palettes and auto shape colors</h3>
+            <p>
+                All newly created documents have a color palette which includes document 
+                color variables for main, accent, background, and text colors.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/style/autoColor.mp4" type="video/mp4">
+            </video>
+
+            <p>To <b>see the entire palette</b>, deselect all layers.</p>
+            <p>To <b>generate a new one</b>, press <ion-icon name="refresh-outline"></ion-icon> .</p>
+            <p>To <b>change palette colors manually</b>, click on the color swatches to open the color picker.</p>
+
+            <p>
+                Using the document color palette, Lunacy applies color to shapes automatically
+                depending on their size and predicted purpose. Larger shapes have background 
+                colors while smaller elements are assigned primary or accent colors.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/style/colorChane.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                If you want the default shape color to be the usual gray, delete all palette 
+                colors by pressing <ion-icon name="trash-outline"></ion-icon> next to each one.
+            </p>
+
+            <h2 id="types">Fill types</h2>
+            <p>There are three major types of fills:</p>
+
+            <ol>
+                <li>Solid fills (default)</li>
+                <li>Gradient fills:
+                    <ul >
+                        <li>Linear</li>
+                        <li>Radial</li>
+                        <li>Angular</li>
+                    </ul>
+                </li>
+                <li>Image fills</li>
+            </ol>
+            <p>You can set these fills for a layer and adjust them in the Fill section of the right panel.</p>
+
+            <p><b>Color picker:</b> The color swatch matches the color of the selected layer. Click it to open the color picker.</p>
+            <p><b>HEX color code:</b> Displays the HEX code of a fill. Alternatively, this field shows the name of the color variable applied to the layer.</p>
+            <p><b>Color variables:</b> Opens the dropdown menu to view the list of document color variables.</p>
+            <p><b>Fill opacity:</b> The opacity of the fill. You can also adjust the opacity inside the color picker itself.</p>
+            <p><b>Show/hide fill:</b> Hides the fill.</p>
+            <p><b>Delete fill:</b> Removes the fill from the layer.</p>
+            <p><b>Add fill:</b> Adds another fill on top of the current one. You can move fills around by dragging the leftmost part of a fill up or down.</p>
+            <p><b>Fill properties:</b> This button opens the panel where you can select between the Non-Zero and Even-Odd options for filling overlapping paths.</p>
+            <p><b>Blend mode:</b> Blend mode determines how the fill blends with the layer underneath. Activate it to set the blend mode for a fill (when active, the option will replace the Hide and Delete buttons) and click it again to hide it.</p>
+
+
+            <h3>Solid fills</h3>
+            <p>To define a solid fill, use any of the ways described in the section above.</p>
+
+
+            <h3>Gradients</h3>
+            <p>Gradients are combinations of two or more colors blended into each other inside the same fill layer.</p>
+
+            <p>To add a gradient fill:</p>
+
+            <ol>
+                <li>In the Fills section of the right panel, click the color swatch to open up the color picker.</li>
+                <li>At the top of the color picker, click one of these buttons to select the gradient type:
+                    <ul>
+                        <li>Linear</li>
+                        <li>Radial</li>
+                        <li>Angular </li>
+                    </ul>
+                </li>
+                <li>The gradient bar with two handles will show up in the color picker.</li>
+                <li>Also, you will see a gradient control with two color points over the layer. The appearance of the gradient control depends on the selected gradient type.</li>
+                <li>Use the gradient control and/or the gradient bar to get the desired effect.</li>
+            </ol>
+            <img src="./PICTURES/style/linear.png" alt="linear" width="850px" height="500px">
+
+            <p>Here's a list of actions applicable to all types of gradients:</p>
+
+            <ul>
+                <li><b>Change the color</b> of a gradient point by clicking it (or the corresponding gradient bar handle) and selecting the required color.</li>
+                <li><b>To add a color</b> to a gradient, just click over the gradient bar or the gradient control. To adjust the color, move the handles or the color points.</li>
+                <li><b>To delete a gradient color,</b> point the cursor over the respective color point or handle, then press <code>Del</code>.</li>
+                <li><b>To save a gradient as a color preset,</b> select the variable type (Global or Document) and click <code>+</code>.</li>
+                <li><b>To invert a gradient,</b> use the <code>⤒</code> button next to the gradient bar.</li>
+            </ul>
+
+            <h3>Linear gradients</h3>
+
+            <p>Working with linear gradients is pretty straight-forward.</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/style/linear.mp4" type="video/mp4">
+            </video>
+
+            <h3>Radial gradients</h3>
+
+            <p>When you select the radial type, the gradient control is the radius of a circle. You can:</p>
+
+            <ul>
+                <li>Select the edge color point to change the size of the circle.</li>
+                <li>Select the center color point and drag it to reposition the origin point of the gradient.</li>
+                <li>Drag the square handles on the edge of the circle to resize or reshape it into an ellipse.</li>
+            </ul>
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/style/radial.mp4" type="video/mp4">
+            </video>
+
+
+            <h3>Angular gradients</h3>
+
+            <p>
+                When you select an angular gradient, the gradient control takes the form of a 
+                circle with color points on its edges. Drag the points around the circle 
+                to get the desired gradient effect and add some extra color points if needed.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/style/angular.mp4" type="video/mp4">
+            </video>
+
+            <h3>Image fills</h3>
+            <p>To create an image fill:</p>
+
+            <ol>
+                <li>Click the color swatch.</li>
+                <li>In the top bar of the color picker, click <ion-icon name="apps-outline"></ion-icon>.</li>
+                <li>Click Choose image.</li>
+                <li>Select an image from on your computer and click <b>Open</b>.</li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/style/imageFils.mp4" type="video/mp4">
+            </video>
+            <p>
+                Use the drop-down list below the <b>Choose image</b> button to select the 
+                fill method: - <b>Fill</b>. Adjusts the image size to the layer's width. - <b>Fit</b>. 
+                Adjusts the image size to fit the layer's height. - <b>Stretch</b>. Stretches 
+                the image to fit the layer's width and height. - <b>Tile</b>. Duplicates the 
+                image in a tile pattern to fit the layer. The size of 
+                tiles is adjustable.
+            </p>
+
+            <p>
+                You can quickly replace an image or image fill by holding down 
+                <code>Ctrl</code> / <code>⌘</code> and dropping an image from your desktop or the Photos 
+                library in the left panel onto a layer, like in the demo below.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/style/replace.mp4" type="video/mp4">
+            </video>
+
+
+            <h2 id="tints">Tints</h2>
+
+            <p>
+                Tints are a quick and easy way to apply a color to groups and component instances. 
+                They are particularly useful when you need to adjust the color of a semi-filled layer or a complex icon.
+            </p>
+            
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/style/tints.mp4" type="video/mp4">
+            </video>
+            <p>The <b>Tints</b> section only appears in the right panel when you select a group or a component instance.</p>
+
+            <p>Unlike other styling options, you can only apply one tint to a layer.</p>
+
+            <h3>Tint overrides</h3>
+            <p>
+                Overrides to tints added to component instances are useful when you 
+                are designing tabs or panels with elements that have different states 
+                expressed through different colors.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/style/overide.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="borders">Borders</h2>
+
+            <p>You can add borders to any layer except for hotspots and slices.</p>
+
+            <p>
+                The <b>Border</b> section opens up in the right panel when you add a border to 
+                an element. Here, you can adjust a border's color, thickness, and shape. 
+                In this same section, you can adjust the appearance of lines, curves, arrows, 
+                and other open paths since they work more or less like partial borders.
+            </p>
+
+            <p><b>Color swatch.</b> The color swatch matches the color of the border. Click it to open the border color picker.</p>
+
+            <p>
+                <b>HEX color code.</b> Shows the name of a color variable or the HEX code of a fill. 
+                Open the dropdown menu to view the list of document color variables.
+            </p>
+
+            <p><b>Color variables.</b> Opens the dropdown menu to view the list of document color variables.</p>
+
+
+            <p>
+                <b>Border position.</b> You can choose to place borders on the inside, outside, or 
+                center (default) of the layer's bounding box. The only option available for 
+                open paths (lines, arrows, curves, etc.) is center.
+            </p>
+
+            <p><b>Show/hide border.</b> Hides the border.</p>
+            <p><b>Borders thickness.</b> Determines the thickness of a border or an open path.</p>
+            <p><b>Advanced border settings.</b> More adjustment options for the shape and appearance of a border. Read more about advanced settings for borders below.</p>
+            <p><b>Add border.</b> Adds another border on top of the current one. You can move borders around by dragging the leftmost part of a border up or down.</p>
+            <p><b>Delete border.</b> Removes the border from the layer.</p>
+
+
+            <h2 id="effects">Effects</h2>
+
+            <p>Open up the Effects section in the right panel to add shadows or blurs to your layers:</p>
+
+            <ol>
+                <li>Click <code>+</code> next to <b>Effects</b> in the right panel.</li>
+                <li>Select an effect from the dropdown menu.</li>
+                <li>Click <ion-icon name="git-compare-outline"></ion-icon> to open up the effect settings and adjust them as you need.</li>
+            </ol>
+
+            <img src="./PICTURES/style/efectes.png" alt="efectes" width="850px" height="500px">
+
+            <h3>Shadows</h3>
+            
+            <p>
+                You can add drop shadows and inner shadows to your layers. Both types 
+                have the same settings that include color, X and Y offsets, blur, and 
+                spread. You can overlay multiple shadows of the same or different 
+                types in one layer.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/style/shadow.mp4" type="video/mp4">
+            </video>
+
+            <h3>Blursp</h3>
+
+            <p>There are two types of blur effects you can add to layers:</p>
+
+            <p><b>Gaussian</b> — blurs the selected layer.</p>
+            <p>
+                <b>Background</b> — blurs the layer underneath the selected layer. To see 
+                the background blur effect, delete or hide the fill of the selected 
+                layer or bring its fill opacity below 100%. When using this type of 
+                blur, you can also adjust the saturation of the blurred layer.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/style/blure.mp4" type="video/mp4">
+            </video>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Bondokic Nikola. All rights reserved</p>
+    </footer>
+    
+    <!-- SCROL TO TOP BUTTON -->
+    <button id="scrollTopButton" class="hidden" onclick="scrollToTop()">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+    
+
+
+    <script src="script.js"></script>
+    <!-- LINCURI PENTRU A FOLOSI IONICONS  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
