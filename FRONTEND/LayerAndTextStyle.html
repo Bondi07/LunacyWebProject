@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LayerAndTextStyle-style.css">
+    <!-- AICI SE PUNE ICONITA SITE-ULUI WEB-->
+    <link rel="icon" href="./PICTURES/home/LunacyLogoWeb.jpg" type="image/x-icon">
+    <title>Layer And Text Style</title>
+</head>
+<body>
+    <div class="topMenu">
+        <div class="logoName">
+            <img src="./PICTURES/home/LunacyLogoWeb.jpg" alt="Lunacy logo" width="30px" height="30px">
+            <a href="https://icons8.com/lunacy">Lunacy</a>
+        </div>
+        <div class="pages">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="HowToUse.html">How to use</a>
+            <a href="Contact.html">Contacts</a>
+        </div>
+        <button class="downloadButton">Download</button>
+    </div>
+
+
+    <div class="menuAndContentContainer">
+        
+        
+        <div class="leftManuContainer">
+            <!-- LEFT SIDE MENU  -->
+            <nav class="left-menu">
+                <ul>
+                    <li><a href="#layer">Layer and text styles</a></li>
+                    <li><a href="#styles">Layer styles</a></li>
+                    <li><a href="#color">Color palettes and auto shape colors</a></li>
+                    <li><a href="#text">Text styles</a></li>
+                    <li><a href="#external">External styles</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="containerLayerText">
+
+            <h1 id="layer">Layer and text styles</h1>
+            <p>Learn how to speed up your work with layer and text styles</p>
+
+            <p>
+                Layer and text styles are predefined sets of layer and text properties 
+                that you can reuse in your designs. With the help of styles you can 
+                dramatically save your time and make your designs look more 
+                professional and consistent. When you modify a style, Lunacy 
+                immediately applies them to all the layers using this style.
+            </p>
+
+            <p>You will store your custom layer and text styles on the <b>Styles tab</b>.</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/styleText/styles-mainview.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="styles">Layer styles</h2>
+
+            <p>Layer style properties include:</p>
+            <ul>
+                <li>Fills</li>
+                <li>Borders</li>
+                <li>Shadows</li>
+                <li>Inner shadows</li>
+                <li>Blurs</li>
+            </ul>
+            <p>They appear in the Inspector when you select a layer.</p>
+
+            <img src="./PICTURES/styleText/style.png" alt="style" width="650px" height="500px">
+
+            <h3>Adding a layer style</h3>
+            <p>There are two ways of adding layer styles.</p>
+            <p>
+                <b>Way 1.</b> By clicking the plus icon in the left panel and defining 
+                all the required properties in the Inspector.
+            </p>
+            
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/styleText/way1.mp4" type="video/mp4">
+            </video>
+            <p><b>Way 2.</b> By first defining the properties of a layer and then saving them as a style.</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/styleText/way2.mp4" type="video/mp4">
+            </video>
+
+            <h3>Applying styles to layers</h3>
+
+            <p>Click the required layer and select the style you want to apply to it from the menu in the Inspector.</p>
+
+
+            <img src="./PICTURES/styleText/layerStyle.png" alt="layer style" width="650px" height="400px">
+
+            <p>
+                Optionally, after selecting the layer you can click the required style 
+                in the left panel and then click the replacement icon as shown below.
+            </p>
+
+            <img src="./PICTURES/styleText/replace.png" alt="replace" width="650px" height="400px">
+
+            <p>You can also apply a style to multiple selected layer at a time (see the demo below).</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/styleText/multiple.mp4" type="video/mp4">
+            </video>
+
+            <h3>Modifying a layer style</h3>
+
+            <p>There are two ways to modify a style.</p>
+            <p><b>Way 1.</b></p>
+
+            <ol>
+                <li>
+                    Switch to the Styles tab, then click the style you want to modify. 
+                    The Edit Layer Style panel appears on the right.
+                </li>
+                <li>Use the panel to make the required changes.</li>
+                <li>
+                    Click the Save button below the preview window. To discard 
+                    all changes that you have made but have not saved yet, use the Reset button.
+                </li>
+            </ol>
+
+            <img src="./PICTURES/styleText/modifyLayer.png" alt="modify" width="650px" height="700px">
+
+            <p><b>Way 2.</b></p>
+            <ol>
+                <li>Select a layer using the style you want to modify.</li>
+                <li>
+                    Make the required changes in the Inspector. When you are done, 
+                    you will see an asterisk (*) next to the style name in the Inspector. 
+                    It indicates that changes have been made to the style.
+                    <ul style="list-style-type: none;">
+                        <li><img src="./PICTURES/styleText/modigyWay2.png" alt="modify" width="250px" height="250px"></li>
+                    </ul>
+                </li>
+                <li>Use one of the following options:
+                    <ul style="    list-style-type: disc;">
+                        <li><b>Create New Layer Style (1):</b> Saves the changes to a new style.</li>
+                        <li><b>Update Style (2):</b> Saves the changes to the existing style.</li>
+                        <li><b>Reset Style (3):</b> Discards all changes that you have made.</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>Detaching a style</h3>
+
+            <p>Select the required layer and click the Detach style button shown below.</p>
+
+            <img src="./PICTURES/styleText/detaching1.png" alt="detach" width="250px" height="250px">
+
+            <p>The appearance of the layer remains the same, but it is no longer 
+                associated with the style and further changes to the style will not affect the layer.
+            </p>
+
+            <h3>Organizing styles</h3>
+
+            <p>It is a good practice to organize styles into categories similar to those shown in the figure below.</p>
+
+            <img src="./PICTURES/styleText/organized.png" alt="organized" width="350px" height="450px">
+
+            <p>To divide your styles into categories, consider the following format of style names:</p>
+
+            <p><code>Category name / Subcategory name / Style name</code></p>
+
+            <p>For example, to organize your styles of backgrounds, you can give them the following names:</p>
+
+            <ul>
+                <li>Backgrounds / Light</li>
+                <li>Backgrounds / Dark</li>
+                <li>etc.</li>
+            </ul>
+            <p>
+                You don't need to manually create categories and subcategories. 
+                Lunacy will show them automatically based on style names. 
+                The number of nesting levels for subcategories is not limited.
+            </p>
+            <p>To rename a style:</p>
+            <ol>
+                <li>
+                    In the left panel, right-click the style and select Rename 
+                    on the displayed menu or press <code>F2</code>, if you prefer shortcuts.
+                </li>
+                <li>Type the new name and press <code>Enter</code>.</li>
+            </ol>
+            <p>
+                To rename a style category, right-click the category you want 
+                to rename and select the respective command on the displayed menu.
+            </p>
+            <p>Style categories and styles appear in the A-Z order in the left panel.</p>
+
+            <p>
+                To unfold/fold the content of all style categories, right-click 
+                anywhere over the category list and select Expand All/Collapse All on the displayed menu.
+            </p>
+
+            <h3>Duplicating styles</h3>
+            <p>You can duplicate your existing styles and quickly create new ones based on their parents.</p>
+
+
+            <p>To duplicate a style:</p>
+
+            <ul>
+                <li>Click the style in the list and press <code>Ctrl + D</code>.</li>
+                <p>OR</p>
+                <li>Right-click the style in the list and select <b>Duplicate</b> on the displayed menu.</li>
+            </ul>
+            <p>Also, you can select and duplicate several styles at a time.</p>
+
+            <h3>Copying styles between documents</h3>
+
+            <p>To copy styles between documents:</p>
+            <ol>
+                <li>
+                    Select one or several styles in the source document 
+                    (hold down <code>Ctrl</code> or <code>Shift</code> to select multiple items).
+                </li>
+                <li>Right-click and select <b>Copy style</b> on the displayed menu.</li>
+                <li>Switch to the target document.</li>
+                <li>Open the <b>Styles tab</b>.</li>
+                <li>Right-click over the left panel and select Paste style on the displayed menu.</li>
+            </ol>
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/styleText/layerstyles-copy.mp4" type="video/mp4">
+            </video>
+
+            <h3>Deleting styles and categories</h3>
+            <p>To delete a style:</p>
+            <ul>
+                <li>Click the style in the list and press <code>Delete</code>.</li>
+                <p>OR</p>
+                <li>Right-click the style in the list and select <code>Delete</code> on the displayed menu.</li>
+            </ul>
+
+            <p>
+                To delete a style category, right-click the category you want to delete 
+                and select the respective command on the displayed menu.
+            </p>
+
+            <p>Also, you can select and delete several styles at a time.</p>
+
+
+            <h2 id="color">Color palettes and auto shape colors</h2>
+
+            <p>
+                All newly created documents have a color palette which includes 
+                document color variables for main, accent, background, and text
+                colors. Deselect all layers to see the palette in the right 
+                panel and press  to generate a new palette.
+            </p>
+            <p>To change palette colors manually, click on the color circles to open the color picker.</p>
+
+            <p>If you want the default shape color to be the usual gray, delete all color variables by pressing.</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/styleText/colorPalets.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                Using the document color palette, Lunacy applies color to shapes 
+                automatically depending on their size and predicted purpose. Larger 
+                shapes have background colors while smaller elements are assigned 
+                primary or accent colors.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/styleText/documentColor.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="text">Text styles</h2>
+            <p>
+                The only difference between text styles and layer styles is that in 
+                addition to such properties as fills, shadows and blurs, text styles 
+                also feature a set of typography properties that include font size, 
+                font family, line spacing and others. All the procedures with text 
+                styles are the same as in layer styles.
+            </p>
+
+            <img src="./PICTURES/styleText/textColor.png" alt="text color" width="650px" height="500px">
+
+            <h2 id="external">External styles</h2>
+            <p>
+                You can make use of layer and text styles from UI kits supplied with 
+                Lunacy or your own files. In the latter case you should first add this 
+                file to the UI Kits library. For details about <b>UI kits</b>, click here.
+            </p>
+            <p>To apply an external style to a layer:</p>
+
+            <ol>
+                <li>Select the layer on the canvas.</li>
+                <li>In the <b>Appearance</b> section of the Inspector, click the down arrowhead to invoke the menu.</li>
+                <li>In the <b>UI kits</b> section of the menu, navigate to the required style.</li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/styleText/externalStyle.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                You cannot make changes to external styles, but you can use the Unlink 
+                from Library feature. This feature will add a copy of the style you 
+                need to your document assets, i.e. to the list of your layer or text 
+                styles. After that, you can do whatever you want with the unlinked 
+                style as with any other style within your document.
+            </p>
+
+            <p>There are two ways to unlink styles:</p>
+
+            <p>
+                <b>Way 1.</b> Select a layer with the style you want to unlink, 
+                then click Unlink from Library in the Inspector.
+            </p>
+
+            <p>
+                <b>Way 2.</b> Select a style or several styles in a UI kit, then 
+                right-click and select Unlink from Library on the context menu.
+            </p>
+
+            <p>The demo below shows both these methods.</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/styleText/unlinkStyle.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Bondokic Nikola. All rights reserved</p>
+    </footer>
+    
+    <!-- SCROL TO TOP BUTTON -->
+    <button id="scrollTopButton" class="hidden" onclick="scrollToTop()">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+    
+
+    <script src="script.js"></script>
+    <!-- LINCURI PENTRU A FOLOSI IONICONS  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

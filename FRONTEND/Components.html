@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LayerAndTextStyle-style.css">
+    <!-- AICI SE PUNE ICONITA SITE-ULUI WEB-->
+    <link rel="icon" href="./PICTURES/home/LunacyLogoWeb.jpg" type="image/x-icon">
+    <title>Components</title>
+</head>
+<body>
+    <div class="topMenu">
+        <div class="logoName">
+            <img src="./PICTURES/home/LunacyLogoWeb.jpg" alt="Lunacy logo" width="30px" height="30px">
+            <a href="https://icons8.com/lunacy">Lunacy</a>
+        </div>
+        <div class="pages">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="HowToUse.html">How to use</a>
+            <a href="Contact.html">Contacts</a>
+        </div>
+        <button class="downloadButton">Download</button>
+    </div>
+
+
+    <div class="menuAndContentContainer">
+        
+        
+        <div class="leftManuContainer">
+            <!-- LEFT SIDE MENU  -->
+            <nav class="left-menu">
+                <ul>
+                    <li><a href="#layer">Layer and text styles</a></li>
+                    <li><a href="#styles">Layer styles</a></li>
+                    <li><a href="#color">Color palettes and auto shape colors</a></li>
+                    <li><a href="#text">Text styles</a></li>
+                    <li><a href="#external">External styles</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="containerComponents">
+            <h1 id="components">Components</h1>
+
+            <p>Increase the speed and productivity of your design workflow with reusable components</p>
+
+            <p>
+                Components are reusable design elements that speed up your workflow and 
+                keep your designs consistent.
+            </p>
+
+            <p>
+                The main advantage of using components is that you can edit multiple 
+                instances of an element at once. For example, if you need to make 
+                a change to a button that appears in several places in your design, 
+                you can update the button component and the change will apply to 
+                all its instances:
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/components/components.mp4" type="video/mp4">
+            </video>
+
+            <h2>Component basics</h2>
+            <p>These are the basic terms related to components and their functions:</p>
+
+            <ul>
+                <li><b>Main component</b>. The original layer that you convert into a component.</li>
+                <li>
+                    <b>Component instance</b>. You create a component instance any time 
+                    you duplicate a main component. When you edit a main component, the 
+                    changes apply to all of its instances at once.
+                </li>
+                <li>
+                    <b>Override</b>. When you modify an instance, you create an override. 
+                    The main component won't be affected, and if you edit it later, 
+                    the changes won't apply to instances with overrides.
+                </li>
+                <li>
+                    <b>Component page</b>. A dedicated document page used for storing 
+                    main components. Lunacy adds it automatically when you create 
+                    a component.
+                </li>
+                <li>
+                    <b>Component state</b>. Components from the same category or subcategory 
+                    are called component states. They define the different styles for 
+                    one component.
+                </li>
+                <li><b>Nested components</b>. You can nest several components in a more 
+                    complex component. This gives you the most freedom and flexibility 
+                    in editing your designs, and i's an even more powerful feature 
+                    when coupled with nested auto layouts.
+                </li>
+            </ul>
+
+
+            <h2>Creating components</h2>
+            <p><b>To create a component:</b></p>
+
+            <ol>
+                <li>Select the layer you want to convert into a component.</li>
+                <li>
+                    Click <code>+</code> in the Component section of the right 
+                    panel or press <code>Ctrl + Alt + K</code> / <code>⌘ + ⌥ + K</code>.
+                </li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/components/create.mp4" type="video/mp4">
+            </video>
+            <p>
+                You can also select a layer and click <ion-icon name="grid-outline"></ion-icon> 
+                in the context toolbar at the 
+                top of the canvas or select the Create component option on the 
+                context menu.
+            </p>
+
+            
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Bondokic Nikola. All rights reserved</p>
+    </footer>
+    
+    <!-- SCROL TO TOP BUTTON -->
+    <button id="scrollTopButton" class="hidden" onclick="scrollToTop()">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+    
+
+    <script src="script.js"></script>
+    <!-- LINCURI PENTRU A FOLOSI IONICONS  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
