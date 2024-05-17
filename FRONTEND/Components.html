@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="LayerAndTextStyle-style.css">
+    <link rel="stylesheet" href="Components-style.css">
     <!-- AICI SE PUNE ICONITA SITE-ULUI WEB-->
     <link rel="icon" href="./PICTURES/home/LunacyLogoWeb.jpg" type="image/x-icon">
     <title>Components</title>
@@ -31,11 +31,19 @@
             <!-- LEFT SIDE MENU  -->
             <nav class="left-menu">
                 <ul>
-                    <li><a href="#layer">Layer and text styles</a></li>
-                    <li><a href="#styles">Layer styles</a></li>
-                    <li><a href="#color">Color palettes and auto shape colors</a></li>
-                    <li><a href="#text">Text styles</a></li>
-                    <li><a href="#external">External styles</a></li>
+                    <li><a href="#components">Components</a></li>
+                    <li><a href="#basics">Component basics</a></li>
+                    <li><a href="#create">Creating components</a></li>
+                    <li><a href="#reusing">Reusing components</a></li>
+                    <li><a href="#managing">Managing components</a></li>
+                    <li><a href="#states">Component states</a></li>
+                    <li><a href="#organizing">Organizing components</a></li>
+                    <li><a href="#editing">Editing components</a></li>
+                    <li><a href="#swapping">Swapping components</a></li>
+                    <li><a href="#managInstante">Managing instances</a></li>
+                    <li><a href="#creatingOverrides">Creating overrides</a></li>
+                    <li><a href="#autoLayouts">Components and auto layouts</a></li>
+                    <li><a href="#menuOptions">Component-related shortcuts and menu options</a></li>
                 </ul>
             </nav>
         </div>
@@ -62,7 +70,7 @@
                 <source src="./VIDEO/components/components.mp4" type="video/mp4">
             </video>
 
-            <h2>Component basics</h2>
+            <h2 id="basics">Component basics</h2>
             <p>These are the basic terms related to components and their functions:</p>
 
             <ul>
@@ -95,7 +103,7 @@
             </ul>
 
 
-            <h2>Creating components</h2>
+            <h2 id="create">Creating components</h2>
             <p><b>To create a component:</b></p>
 
             <ol>
@@ -116,14 +124,519 @@
                 context menu.
             </p>
 
+            <h3>Layers vs. Frames</h3>
+            <p>
+                When you create a component from a layer or layer group, Lunacy automatically 
+                frames it and transfers it to a separate Components page where it's stored 
+                as a main component. An instance of the newly created component remains 
+                on the canvas.
+            </p>
+
+            <p>
+                If you create a component out of a frame, it will stay on the canvas 
+                as a main component, which you can then copy to create instances.
+            </p>
+
+            <p>The difference is shown here:</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/components/diference.mp4" type="video/mp4">
+            </video>
+
+            <h3>Components and instances in the Layer list</h3>
+
+            <img src="./PICTURES/componentss/components.png" alt="components" width="850px" height="350px">
+
+            <p>Main components are bold and colored pink in the Layer list, and there's a 
+                component symbol in front of their name.
+            </p>
+
+            <p>
+                Component instance names aren't bold but have the instance symbol
+                and the same pink color. When they're selected, their properties and 
+                options appear in the Component section of the right panel.
+            </p>
+
+            <h2 id="reusing">Reusing components</h2>
+            <p>All the components in your document appear in the Components tab in the left panel.</p>
+
+            <p>To add a component instance to the canvas, drag it from the left panel to where you want to place it:</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/components/add.mp4" type="video/mp4">
+            </video>
+
+            <p>Right-click a component in the left panel to bring up the context menu with these options:</p>
+
+            <ul>
+                <li>Rename component</li>
+                <li>Edit component</li>
+                <li>Delete component</li>
+                <li>Duplicate component</li>
+                <li>Group</li>
+                <li>Expand all</li>
+                <li>Collapse all</li>
+            </ul>
+
+            <h2 id="managing">Managing components</h2>
+
+            <h3>Main component properties</h3>
+            <p>When you select a main component, the Component section in the right panel displays these properties:</p>
+
+            <img src="./PICTURES/componentss/managing.png" alt="managing" width="850px" height="350px">
+            <h3>Component type</h3>
+
+            <p>Select one of the presets to organize your components by type.</p>
+
+            <h3>Resizing behavior</h3>
+            <p>Choose whether to adjust the content of the component when it's resized.</p>
+            <h3>Color picker, opacity, and visibility</h3>
+            <p>Set the component's background color and show/hide it by pressing the <ion-icon name="folder-outline"></ion-icon> / <ion-icon name="eye-off-outline"></ion-icon> icons.</p>
+
+            <h3>Include background in export</h3>
+            <p>Include/exclude the component's background when exporting it.</p>
+
+            <h3>Include in instances</h3>
+            <p>Include/exclude the component's background in its instances.</p>
+
+            <h3>Components page</h3>
+            <p>
+                You can use Components page that Lunacy generates automatically 
+                to store all of your main components. Alternatively, you can 
+                turn any page into a Components page:
+            </p>
+            <ol>
+                <li>Right-click the page in the Page list.</li>
+                <li>Select Set as Components Page.</li>
+            </ol>
+
+            <h2 id="states">Component states</h2>
+            <p>
+                You can create several states for a component and switch between 
+                them as needed in the right panel.
+            </p>
+
+            <p>To create a component state:</p>
+
+            <ol>
+                <li>Select a component instance.</li>
+                <li>
+                    Click <code>+</code> in the Component section of the right panel 
+                    or press <code>Ctrl + Alt + P</code> / <code>⌘ + ⌥ + P</code>.
+                </li>
+                <li>Adjust your component for the new state and name it.</li>
+                <li>Click on any empty area on the canvas.</li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/components/componentState.mp4" type="video/mp4">
+            </video>
+
+            <p>A new component will appear near the default main component, defining the new component state.</p>
+
+            <p>
+                Lunacy also changes the name of components when you create new 
+                states, automatically placing them into categories. You can edit 
+                categories anytime in the Components tab.
+            </p>
+            <p>
+                New component states for a distinct component will be displayed 
+                in the right panel as you select the component's instances.
+            </p>
+            <p><b>To switch through component states:</b></p>
+
+            <ol>
+                <li>Select a component instance.</li>
+                <li>Choose the new component state in the right panel.</li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/components/switch.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="organizing">Organizing components</h2>
+
+            <p>
+                As your document grows along with the number of components in it, 
+                you'll probably want to organize them so you can quickly find the 
+                necessary component when you need it.
+            </p>
+
+            <p>This is how componenet categories and subcategories appear in the Components tab:</p>
+
+            <img src="./PICTURES/componentss/componentsTab.png" alt="tab" width="850px" height="500px">
+
+            <p>They also appear in the Component state dropdown menu in the right panel.</p>
+
+            <p>
+                You can manually place your components in categories in the 
+                left panel (the <b>Group</b> option on the context menu) or use <code>/</code> in 
+                component names, like this:
+            </p>
+            <p><code>Category name / Subcategory name /Component name.</code></p>
+
+            <p>Here's an example with just the category name and component name:</p>
+
+
+            <img src="./PICTURES/componentss/catName.png" alt="name" width="850px" height="500px">
             
+            <p>Still, the quickest way to categorize your components is to create component states.</p>
 
 
+            <h3>Deleting components</h3>
+
+            <p>
+                Delete main components from the Components tab (using the context menu) 
+                or the Components page (simply delete the component frame).
+            </p>
+
+            <p>When you delete a component, all of its instances turn into frames.</p>
 
 
+            <h2 id="editing">Editing components</h2>
+            <p>You can edit a main component:</p>
+
+            <ul>
+                <li>In the Component editor.</li>
+                <li>Directly in the Components page.</li>
+            </ul>
+
+            <h3>Making edits in the Component editor</h3>
+
+            <ol>
+                <li>Select a component instance and press <code>Enter</code> or choose Edit component in the context menu.</li>
+                <li>
+                    The main component will appear over the selected instance, while the 
+                    rest of the canvas will be dimmed. The contents of the component 
+                    will appear in the Layer list.
+                </li>
+                <li>Edit the component.</li>
+                <li>
+                    Click <ion-icon name="pencil-outline"></ion-icon> on the context toolbar, click anywhere over the dimmed area, 
+                    or press <code>Esc</code> to exit the component editor.
+                </li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/components/edit.mp4" type="video/mp4">
+            </video>
+
+            <h3>Making edits in the Components page</h3>
+            <ol>
+                <li>Right-click on an instance and select Go to Main Component in the 
+                    right panel or manually switch to the Components page.
+                </li>
+                <li>Edit the required component.</li>
+                <li>Once you're done:
+                    <ul style="list-style-type: disc;">
+                        <li> 
+                            If you used the Go to Main Component option, click the 
+                            Back to instance button at the top left corner of the canvas.
+                        </li>
+                        <li>
+                            If you manually opened the Components page, simply switch 
+                            back to the previous page to continue working with the document.
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/components/edit1.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="swapping">Swapping components</h2>
+
+            <p>
+                Use the Components tab or the right panel swap between instances from 
+                entirely different components. Simply select an instance you want to 
+                replace and use one of the following methods.
+            </p>
+            <p><b>Method 1:</b></p>
+
+            <ol>
+                <li>Go to the Components tab.</li>
+                <li>Find the required component and click <ion-icon name="refresh-outline"></ion-icon> next to it: </li>
+            </ol>
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/components/swap1.mp4" type="video/mp4">
+            </video>
+
+            <p><b>Method 2:</b></p>
+
+            <ol>
+                <li>Open the component state menu in the Component section of the right panel.</li>
+                <li>Select the required category and component state.</li>
+            </ol>
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/components/swap2.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="managInstante">Managing instances</h2>
+            <p>
+                We already covered how to create component instances to the canvas from 
+                the Components tab. You can also duplicate or copy/paste instances 
+                directly onto the canvas.
+            </p>
+
+            <p>With a main component or instance selected:</p>
+
+            <ul>
+                <li>Press <code>Ctrl + D</code> or <code>Ctrl + C → Ctrl + V</code>.</li>
+                <li>Hold down <code>Alt</code>, then drag to place an instance on the canvas.</li>
+            </ul>
+            <h3>Component instance properties</h3>
+            <p>For a component instance, the Component section in the right panel will look like this:</p>
+
+            <img src="./PICTURES/componentss/componenteInstante.png" alt="instante" width="850px" height="500px">
+
+            <h3>Component state menu</h3>
+
+            <p>A dropdown menu displaying the current state of the component. When open, 
+                it shows all other components and UI kits available in the document.
+            </p>
+
+            <p>If you didn't create any component states, this property will read Default State.</p>
+
+            <h3>Component states</h3>
+            <p>Select one of the presets to organize your components by type. 
+                Changing this for a component instance will affect its main 
+                component and vice versa.
+            </p>
+            <h3>Detach from component</h3>
+            <p>Detach the instance from its main component or press 
+                <code>Ctrl + Alt + D</code> / <code>⌘ + ⌥ + B</code>.
+            </p>
+
+            <h3>Reset instance size</h3>
+
+            <p>If you resized the instance, click this button to revert it to the size of the main component.</p>
+
+            <h3>Go to main component</h3>
+
+            <p>Redirects you to the instance's main component.</p>
+            <h3>Component type</h3>
+
+            <p>See the corresponding main component property.</p>
+
+            <p>Once you modify an instance, the <ion-icon name="refresh-outline"></ion-icon> button appears in this section, 
+                indicating that the instance has an override:
+            </p>
+
+            <p>Click it to reset the override and revert the instance back to the style of the main component.</p>
+
+            <h2 id="creatingOverrides">Creating overrides</h2>
 
 
+            <p>To reiterate, an override is any edit you make to a component instance. Let's go over them in detail.</p>
 
+
+            <p>Click <code><ion-icon name="caret-down-outline"></ion-icon></code> next to the title of a component instance in the Layer list to expand 
+                its contents. You can modify all the layers inside it to apply the changes 
+                to this component instance only, creating an override:
+            </p>
+
+            <img src="./PICTURES/componentss/overides.png" alt="overides" width="850px" height="300px">
+
+            <p>Some basic overrides you can make are changes to layer color, text, or image content.</p>
+
+
+            <p>Below, we have a simple example of a card component consisted of an image 
+                (an oval with an Image fill) and a labeled button. We make three types 
+                of overrides to the card, changing the button color, the button label, 
+                and the image.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/components/cardVideo.mp4" type="video/mp4">
+            </video>
+            <p>
+                You can easily reset all of these overrides by pressing <ion-icon name="refresh-outline"></ion-icon> in the 
+                Component section, like in the demo above.
+            </p>
+
+            <p>Here's a full list of layers and properties you can create overrides for:</p>
+
+            <ul>
+                <li>Fills and images</li>
+                <li>Text content and properties</li>
+                <li>Layer and text styles</li>
+                <li>Auto layouts</li>
+                <li>Tints</li>
+                <li>Hotspots</li>
+            </ul>
+
+            <h3>Understanding overrides</h3>
+
+            <p>To understand how all of them work, we'll use more complex examples. 
+                Also, instead of making some overrides (like text and image edits) 
+                manually, we'll use some of Lunacy's handy time-saving features like 
+                text generation and the Avatar tool.
+            </p>
+
+            <p>One of the examples we'll use is this profile card UI:</p>
+
+            <img src="./PICTURES/componentss/cardUI.png" alt="ui" width="850px" height="500px">
+
+
+            <p>
+                All the components used in the layout are on the left, and their instances 
+                are nested in the profile card frame, which is a component itself.
+            </p>
+
+            <p>When using complex components such as this one, you can easily change 
+                the states of the nested components, manually edit them, or modify all 
+                instances by adjusting the main component.
+            </p>
+
+            <h3>Fills and images</h3>
+
+            <p>The two images in the card are easily editable. The background behind 
+                the profile photo is a simple shape with an Image fill.
+            </p>
+
+            <p>
+                To change it in an instance, you only need to click it, then select the 
+                color icon in the Fill section and choose an image:
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/components/cardUI.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                You can do the same with the profile picture, provided it's a circle 
+                with an Image fill. To speed up the process, we recommend using 
+                Lunacy's Avatar tool for placeholder profile pictures: simply 
+                press Q to place a randomly generated avatar picture directly 
+                onto the canvas.
+            </p>
+
+            <p>Now, when you make a component instance, a new avatar is generated automatically:</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/components/automatic11.mp4" type="video/mp4">
+            </video>
+
+            <h3>Text content and properties</h3>
+            <p>You can easily change the text and/or its properties in the component instance text layers.</p>
+
+            <p>Use the Text section in the right panel to:</p>
+
+            <ul>
+                <li>Change the content of the text layer.</li>
+                <li>Set new fonts and text colors.</li>
+                <li>Edit typographic properties.</li>
+                <li>Alter the text's advanced settings.</li>
+            </ul>
+            
+            <h2 id="autoLayouts">Components and auto layouts</h2>
+            <p>
+                You've seen how using components makes the design process faster and much easier. 
+                Adding auto layouts to the mix speeds things up even more.
+            </p>
+
+            <p>
+                Creating components with auto layout, then nesting those in larger auto layout 
+                frames makes it easy to manage complex designs and quickly update them when needed.
+            </p>
+            <p>
+                If any spacing or padding distances seem off or you're still in drafting 
+                mode, using components and auto layouts is the fastest way to test different 
+                versions of your designs.
+            </p>
+
+            <p>For example, there's quite a few auto layouts in our profile card examples:</p>
+
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/components/profile.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="menuOptions">Component-related shortcuts and menu options</h2>
+
+            <p>To recap, here's a list of context menu options and shortcuts you can 
+                use to work with components, along with corresponding shortcuts,
+                if available.
+            </p>
+
+            <p><b>Main component options</b></p>
+            <table>
+                <tr>
+                    <th>Option</th>
+                    <th>Description</th>
+                    <th>Windows and Linux Shortcut / Menu Option</th>
+                    <th>MacOS Shortcut / Menu Option</th>
+                </tr>
+                <tr>
+                    <td>Create Component</td>
+                    <td>Create a new component from a layer. You can also click <span class="symbol">&#x2388;</span> in the context toolbar at the top of the canvas.</td>
+                    <td>Ctrl + Alt + K</td>
+                    <td>&#x2318; + &#x2325; + K</td>
+                </tr>
+                <tr>
+                    <td>Convert Component to Frame</td>
+                    <td>Right-click a main component and select the option to convert it into a frame. All of its instances will also turn into frames.</td>
+                    <td>Ctrl + Shift + Y</td>
+                    <td>&#x2318; + Shift + Y</td>
+                </tr>
+            </table>
+
+            <p><b>Component instance options</b></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Option</th>
+                        <th>Description</th>
+                        <th>Windows and Linux Shortcut / Menu Option</th>
+                        <th>MacOS Shortcut / Menu Option</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Create New Component State</b></td>
+                        <td>Add a new state for the component.</td>
+                        <td>Ctrl + Alt + S</td>
+                        <td class="symbol">&#x2318; + &#x2325; + S</td>
+                    </tr>
+                    <tr>
+                        <td><b>Go to Main Component</b></td>
+                        <td>Brings you to the main component of the selected instance. To return to the instance from the main component, click the <b>Back to instance</b> button that appears at the top-left corner of the canvas.</td>
+                        <td>Ctrl + Alt + E</td>
+                        <td class="symbol">&#x2318; + &#x2325; + E</td>
+                    </tr>
+                    <tr>
+                        <td><b>Detach from Components</b></td>
+                        <td>When you detach an instance from its main component, it becomes a group. All further changes to the main component will no longer apply to the detached instance.</td>
+                        <td>Ctrl + Alt + D</td>
+                        <td class="symbol">&#x2318; + &#x2325; + B</td>
+                    </tr>
+                    <tr>
+                        <td><b>Detach from Library</b></td>
+                        <td>This command only applies to components from UI kits. Detached components become native to the document and appear on the <b>Components tab</b> and the <b>Components page</b>.</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><b>Reset Instance Size</b></td>
+                        <td>Restore the original size of any component instance.</td>
+                        <td>Ctrl + Alt + R</td>
+                        <td class="symbol">&#x2318; + &#x2325; + R</td>
+                    </tr>
+                    <tr>
+                        <td><b>Reset Overrides</b></td>
+                        <td>Use this command to undo all overrides and revert the instance to the style of its main component. You can also use the <b>Reset overrides</b> button in the <b>Component section</b> of the right panel.</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><b>Send to Component page</b></td>
+                        <td>This command only applies to main components and becomes available when a component isn’t on the dedicated <b>Components page</b>.</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
