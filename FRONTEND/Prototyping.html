@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Prototyping-style.css">
+    <!-- AICI SE PUNE ICONITA SITE-ULUI WEB-->
+    <link rel="icon" href="./PICTURES/home/LunacyLogoWeb.jpg" type="image/x-icon">
+    <title>Prototyping</title>
+</head>
+<body>
+    <div class="topMenu">
+        <div class="logoName">
+            <img src="./PICTURES/home/LunacyLogoWeb.jpg" alt="Lunacy logo" width="30px" height="30px">
+            <a href="https://icons8.com/lunacy">Lunacy</a>
+        </div>
+        <div class="pages">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="HowToUse.html">How to use</a>
+            <a href="Contact.html">Contacts</a>
+        </div>
+        <button class="downloadButton">Download</button>
+    </div>
+
+
+    <div class="menuAndContentContainer">
+        
+        
+        <div class="leftManuContainer">
+            <!-- LEFT SIDE MENU  -->
+            <nav class="left-menu">
+                <ul>
+                    <li><a href="#proto">Prototyping</a></li>
+                    <li><a href="#creating">Creating a prototype</a></li>
+                    <li><a href="#previewing">Previewing prototypes</a></li>
+                    <li><a href="#hotspots">Hotspots</a></li>
+                    <li><a href="#protoSettings">Prototyping settings</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="containerProto">
+            <h1 id="proto">Prototyping</h1>
+
+            <p>Learn how to create interactive prototypes in Lunacy</p>
+
+            <p>You can build prototypes to test and polish the UX of your designs before sending 
+                them over to development.
+            </p>
+
+            <p>
+                Prototyping is based on linking frames and creating interactive zones, or 
+                hotspots, on your designs so you can preview how your interface behaves 
+                based on user actions.
+            </p>
+
+            <h2 id="creating">Creating a prototype</h2>
+
+            <h3>Linking frames</h3>
+            <p>The easiest way to create a prototype is to add a link from one frame to another.</p>
+
+            <img src="./PICTURES/proto/proto.png" alt="proto" width="850px" height="650px">
+
+            <h3>Here's how it works:</h3>
+            <ol>
+                <li>On a frame, select a layer for the user to interact with (e.g. a button).</li>
+                <li>In the right panel, click <code>+</code> next to the Prototyping section. An arrow-shaped prototyping link will appear.</li>
+                <li>Point the arrow to the target frame and click or use the 
+                    Target dropdown list in the Prototyping section to set the 
+                    target frame. With that, you have a basic prototype with 
+                    a layer linked to a frame.
+                </li>
+                <li>To make it a bit more versatile, we repeat the steps above and create a link from a layer in the second frame to Frame 1.</li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/proto/proto.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="previewing">Previewing prototypes</h2>
+
+            <p>To preview a prototype, select the frame you want to start with and 
+                click the Play button (<ion-icon name="caret-forward-outline"></ion-icon>) at the top right corner of the interface. 
+                The preview window will show up in your default browser.
+            </p>
+            
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/proto/play.mp4" type="video/mp4">
+            </video>
+
+            <p>You can link your frames in any sequence you need to test the user flow for your interfaces.</p>
+
+            <h3>Commenting on prototype previews</h3>
+
+            <p>
+                To comment on a prototype right from the browser, log in to your Lunacy account. 
+                The Log in button appears once you hover the cursor at the top of the prototype 
+                window to display the top bar.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/proto/comment.mp4" type="video/mp4">
+            </video>
+
+            <p>To comment, click the <b>Comment</b> button on the top bar, leave a 
+                comment, then click <ion-icon name="send-outline"></ion-icon> or press <code>Shift +</code> Enter to post it.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/proto/comm.mp4" type="video/mp4">
+            </video>
+
+
+            <h3>Scrollable prototypes</h3>
+
+            <p>To create a <b>scrollable prototype:</b></p>
+
+            <ol>
+                <li>Create a frame using a preset.</li>
+                <li>Resize the frame vertically. Resized frames have the label 
+                    <b>Resized</b> in the right panel:
+                    <img src="./PICTURES/proto/resize.png" alt="resize" width="850px" height="500px">
+                </li>
+                <li>Fill the frame with content and link it with other frames.</li>
+            </ol>
+            <p>Preview the prototype as usual and scroll down to test out the interface.</p>
+
+
+            <h2 id="hotspots">Hotspots</h2>
+
+            <p>Hotspots are another convenient way to link frames for prototyping. 
+                These are special types of layers that acts as an interactive zone 
+                anywhere on a frame.
+            </p>
+
+            <p>
+                Hotspots come in handy when the size of an element you want to make 
+                interactive or tappable is too small for comfortable use. By adding 
+                a hotspot, you can enlarge the interactive area around the layer.
+            </p>
+
+            <p>You can also use hotspots as parts of components and override their targets as needed.</p>
+
+            <p>There are two ways to add a hotspot:</p>
+
+            <ul>
+                <li>Use the Hotspot tool.</li>
+                <li>
+                    Select a layer linked to a frame, then click Create separate hotspot 
+                    layer in the Prototyping section of the right panel. This creates 
+                    a hotspot of the same size as the selection frame around the layer. 
+                    You can resize it as you need by dragging the layer's bounding 
+                    box handles.
+                </li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/proto/hotspots.mp4" type="video/mp4">
+            </video>
+
+            <p>This is how hotspots and linked layers appear in the Layer list:</p>
+
+            <img src="./PICTURES/proto/hotspots.png" alt="layers and hotspots" width="850px" height="500px">
+
+            <p>
+                To <b>hide/show hotspots and prototyping links on the canvas</b>, 
+                enable/disable the <b>Show prototyping</b> option in the <b>Additional 
+                options</b> menu on the top bar:
+            </p>
+
+
+            <img src="./PICTURES/proto/proto1.png" alt="proto" width="850px" height="500px">
+
+            <p>To <b>delete a hotspot</b>, select it and press <code>Del</code>.</p>
+
+            <p>To see the prototype in action, you'll need to preview it.</p>
+
+            <h2 id="protoSettings">Prototyping settings</h2>
+
+            <p>Here are the settings that appear in the Prototyping section 
+                of the right panel when you select a layer linked to a 
+                frame or a hotspot:
+            </p>
+
+            <img src="./PICTURES/proto/settings.png" alt="settings" width="850px" height="500px">
+
+            <p><strong>Create separate hotspot layer.</strong> Click it to create a hotspot over the selected layer.</p>
+
+            <p><strong>Remove link from layer.</strong> Deletes the prototyping setting 
+                for the selected layer or deletes the selected hotspot.</p>
+
+            <p><strong>Target frame.</strong> Displays the current target frame of the 
+                selected layer/hotspot. Open it to change the target frame and view all
+                of the frames available in the document. In multi-page documents, 
+                the frames in this list are organized by pages (you can link frames 
+                that are on different pages).</p>
+            <ul>
+                <li><strong>None →</strong> sets a null target.</li>
+                <li><strong>Previous frame →</strong> clicking a layer with this target 
+                    redirects you back to the previous view.
+                </li>
+            </ul>
+
+            <p><strong>Go to hotspot target.</strong> Clicking this button redirects you 
+                to the frame set as the target frame for the selected layer.
+            </p>
+
+            <p><strong>Transition animations.</strong> Determine the type of animation 
+                for the transitions between frames in the prototype.
+            </p>
+
+            <p><strong>Fix the frame position on scroll.</strong> Enable this setting 
+                if you want the selected layer to preserve its position when you scroll 
+                the screen (for instance, a floating button).
+            </p>
+
+            <p><strong>Maintain scroll position after click.</strong> With this checkbox 
+                enabled, scrollable frames preserve their position during the prototype 
+                preview. When you get back to the frame, it will be in the same position 
+                you left it. With the checkbox cleared, the frame will always return 
+                to the top.
+            </p>
+
+
+
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Bondokic Nikola. All rights reserved</p>
+    </footer>
+    
+    <!-- SCROL TO TOP BUTTON -->
+    <button id="scrollTopButton" class="hidden" onclick="scrollToTop()">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+    
+
+    <script src="script.js"></script>
+    <!-- LINCURI PENTRU A FOLOSI IONICONS  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

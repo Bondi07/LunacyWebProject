@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LoginForm-style.css">
+    <!-- AICI SE PUNE ICONITA SITE-ULUI WEB-->
+    <link rel="icon" href="./PICTURES/home/LunacyLogoWeb.jpg" type="image/x-icon">
+    <title>Login page</title>
+</head>
+<body>
+    <div class="topMenu">
+        <div class="logoName">
+            <img src="./PICTURES/home/LunacyLogoWeb.jpg" alt="Lunacy logo" width="50px" height="50px">
+            <a href="https://icons8.com/lunacy">Lunacy</a>
+        </div>
+        <div class="pages">
+            <h1>Login Page</h1>
+        </div>
+    </div>
+
+
+    <!-- login form -->
+    <div class="loginContainer">
+
+        
+        <div class="wrapper">
+            <div class="title-text">
+                <div class="title login">Login Form</div>
+                <div class="title signup">Signup Form</div>
+            </div>
+            <div class="form-container">
+                <div class="slide-controls">
+                <input type="radio" name="slide" id="login" checked>
+                <input type="radio" name="slide" id="signup">
+                <label for="login" class="slide login">Login</label>
+                <label for="signup" class="slide signup">Signup</label>
+                <div class="slider-tab"></div>
+                </div>
+                <div class="form-inner">
+                    <form action="#" class="login">
+                        <div class="field">
+                            <input type="text" placeholder="Ussername" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+
+                        <div class="pass-link"><a href="#">Forgot password?</a></div>
+
+                        <div class="field btn">
+
+                        <div class="btn-layer"></div>
+                            <input type="submit" value="Login">
+                        </div>
+
+                        <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+                    </form>
+
+                    <form action="/submit_form" method="POST" class="signup">
+                        <div class="field">
+                            <input type="text" name="first_name" placeholder="First name" required>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="last_name" placeholder="Last name" required>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="username" placeholder="Username" required>
+                        </div>
+                        <div class="field">
+                            <input type="email" name="email" placeholder="E-mail" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" name="password" placeholder="Password" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" name="confirm_password" placeholder="Confirm password" required>
+                        </div>
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Signup">
+                        </div>
+                    </form>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- end of login fomr -->
+        
+    <footer>
+        <p>&copy; 2024 Bondokic Nikola. All rights reserved</p>
+    </footer>
+    
+    <!-- SCROL TO TOP BUTTON -->
+    <button id="scrollTopButton" class="hidden" onclick="scrollToTop()">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+    
+
+    <!-- SCRIPT PENTRU LOGIN FORM -->   
+    <script src="login.js"></script>
+    <!-- SCRIPT PENTRU GO TO TOP BUTTON -->
+    <script src="script.js"></script>
+    <!-- LINCURI PENTRU A FOLOSI IONICONS  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

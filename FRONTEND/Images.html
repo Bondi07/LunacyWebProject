@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Images-style.css">
+    <!-- AICI SE PUNE ICONITA SITE-ULUI WEB-->
+    <link rel="icon" href="./PICTURES/home/LunacyLogoWeb.jpg" type="image/x-icon">
+    <title>Images</title>
+</head>
+<body>
+    <div class="topMenu">
+        <div class="logoName">
+            <img src="./PICTURES/home/LunacyLogoWeb.jpg" alt="Lunacy logo" width="30px" height="30px">
+            <a href="https://icons8.com/lunacy">Lunacy</a>
+        </div>
+        <div class="pages">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="HowToUse.html">How to use</a>
+            <a href="Contact.html">Contacts</a>
+        </div>
+        <button class="downloadButton">Download</button>
+    </div>
+
+
+    <div class="menuAndContentContainer">
+        
+        
+        <div class="leftManuContainer">
+            <!-- LEFT SIDE MENU  -->
+            <nav class="left-menu">
+                <ul>
+                    <li><a href="#img">Images</a></li>
+                    <li><a href="#add">Adding images to the canvas</a></li>
+                    <li><a href="#imgFile">Adding image fills</a></li>
+                    <li><a href="#replace">Replacing images</a></li>
+                    <li><a href="#editing">Editing images</a></li>   
+                    <li><a href="#back">Background remover</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="containerImages">
+
+            <h1 id="img">Images</h1>
+
+            <p>Optimize your work with images in Lunacy</p>
+
+            <p>This section covers how to work with raster images.</p>
+
+            <p>
+                Lunacy supports these image formats: <code>PNG</code>, <code>JPG</code>, 
+                <code>JPEG</code>, <code>WEBP</code>, <code>BMP</code>, <code>ICO</code>, <code>GIF</code>, 
+                <code>SVG</code>. The <code>TIFF</code> format is not supported.
+            </p>
+
+            <h2 id="add">Adding images to the canvas</h2>
+
+            <p>There are several ways to add images to the canvas:</p>
+
+            <ul>
+                <li>Using the Image tool to add images from your computer</li>
+                <li>Importing images from Lunacy's Photos library</li>
+                <li>Drag-and-dropping images from the file explorer</li>
+                <li>Copying images from your desktop or browser and paste it onto the canvas</li>
+                <li>Importing images from your web browser via link</li>
+            </ul>
+
+            <h3>Using the Image tool</h3>
+
+            <p>To add images via the Image tool:</p>
+            <ol>
+                <li>Press <code>M</code> or select the Image tool on the toolbar.</li>
+                <li>In the Open dialog box, choose one or multiple image files.</li>
+                <li>
+                    Click on the canvas to place the image to add the image in its 
+                    original size or click and drag to adjust the image size before 
+                    placing it on the canvas.
+                </li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/images/images.mp4" type="video/mp4">
+            </video>
+
+            <h3>The drag-and-drop method</h3>
+            <p>You can always simply drag and drop images from your files into Lunacy.</p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/images/drag.mp4" type="video/mp4">
+            </video>
+
+            <p>
+                Alternatively, you can right-click on an image in your file explorer 
+                or browser and select Copy image, then simply paste it onto the canvas.
+            </p>
+
+            <p>The Photos library</p>
+
+            <p>To use images from the Lunacy Photos library:</p>
+            <ol>
+                <li>Open the Photos tab in the left panel.</li>
+                <li>Choose an image, then <b>drag and drop</b> it onto the canvas.</li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/images/phLib.mp4" type="video/mp4">
+            </video>
+
+            <h3>Importing images from the browser</h3>
+
+            <p>There are two ways to import an image from your browser via link:</p>
+
+            <ul>
+                <li>
+                    Right-click the image in your web browser and select <b>Copy image</b> 
+                    address from the context menu. Switch to Lunacy, press <code>M</code> for the 
+                    <b>Image tool</b>, then paste the image URL in the file name input field. 
+                    Finally, click <b>Open</b>.
+                </li>
+                <p>OR</p>
+                <li>
+                    Right-click the image in your web browser and select <b>Copy image 
+                    address</b> from the context menu. Switch to Lunacy, right click over 
+                    the canvas, and select <b>Paste here</b> from the context menu. Click OK 
+                    in the Paste as image dialog box. If you click <b>Cancel</b>, Lunacy 
+                    will paste the text of the image address.
+                </li>
+            </ul>
+
+
+            <h2 id="imgFile">Adding image fills</h2>
+
+            <p>You can also add images directly to your layers (including shapes, 
+                frames, and text layers). They will act as a layer background you can 
+                replace or modify anytime.
+            </p>
+
+            <p>To add an Image fill:</p>
+
+            <ol>
+                <li>
+                    Make sure your layer has a fill. If it doesn't, click + next to the 
+                    Fill section of the right panel with a layer selected.
+                </li>
+                <li>Click on the color swatch in the Fill section to open up the color picker.</li>
+                <li>In the top bar of the color picker, click <ion-icon name="apps-outline"></ion-icon>.</li>
+                <li>Select an image from on your computer and click Open.</li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/images/file.mp4" type="video/mp4">
+            </video>
+
+            <p>Use the drop-down list below the Choose image button to select the fill method:</p>
+
+            <ul>
+                <li><b>Fill</b>. Adjusts the image size to the layer's width.</li>
+                <li><b>Fit</b>. Adjusts the image size to fit the layer's height.</li>
+                <li><b>Stretch</b>. Stretches the image to fit the layer's width and height.</li>
+                <li>
+                    <b>Tile</b>. Duplicates the image in a tile pattern to fit the layer. 
+                    The size of tiles is adjustable.
+                </li>
+            </ul>
+
+            <h2 id="replace">Replacing images</h2>
+
+            <p>There are two ways you can replace images.</p>
+
+            <p>
+                The first is to select an image and click the <b>Replace image</b> button in the 
+                Image section in the right panel. This only works for images added directly to the canvas.
+            </p>
+
+            <p><b>To replace an image</b> fill, select the layer with the fill, click the 
+                swatch in the <b>Fill</b> section, then <b>Choose image</b>.
+            </p>
+
+            <p>Another quick way to replace an image or image fill is by holding down 
+                <code>Ctrl</code> / <code>⌘</code> and drag-and-dropping an image from your desktop or the Photos 
+                library onto a layer, like in the demo below.
+            </p>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/images/replace.mp4" type="video/mp4">
+            </video>
+
+
+            <h2 id="editing">Editing images</h2>
+
+            <p>Cropping images</p>
+            <p>To crop an image:</p>
+
+            <ul>
+                <li>Select the image.</li>
+                <li>Press <code>Enter</code> or click <ion-icon name="pencil-outline"></ion-icon> on the context 
+                    toolbar to enable <b>Edit mode</b>.
+                </li>
+                <li>
+                    Crop the image, then press <code>Enter</code> again or click the Apply 
+                    editing button in the right panel.
+                </li>
+            </ul>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/images/crope.mp4" type="video/mp4">
+            </video>
+
+            <h2 id="back">Background remover</h2>
+
+            <p>To remove a background from an image:</p>
+
+            <ol>
+                <li>Select the image.</li>
+                <li>In the right panel, click <b>Remove background.</b></li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/images/removeBack.mp4" type="video/mp4">
+            </video>
+
+            <h3>Cutting out a part of an image</h3>
+
+            <p>You can cut out part of an image so it becomes a new image layer that you can adjust as you like.</p>
+
+            <p>To cut out a part of an image:</p>
+
+            <ol>
+                <li>Select the image.</li>
+                <li>Press Enter to enable Edit mode.</li>
+                <li>Choose one of the selection tools that show up below the image:
+                    <ul style="list-style-type: disc;">
+                        <li>Scissors. With scissors, you can make a selection with any shape (rectangle, ellipse, triangle, etc.) by selecting the shape on the toolbar or pressing the corresponding shape shortcut.</li>
+                        <li>Freeform lasso. With the freeform lasso, draw freehand selections on parts of the image, just like with the Pencil tool. To close the selection border, just release the mouse button.</li>
+                        <li>Polygon lasso. Use the polygonal lasso to make selections using paths, similar to using the Pen tool. To disable snapping while drawing the selection, hold down Ctrl / ⌘.</li>
+                    </ul>
+                </li>
+                <li>Once you have an area selected:
+                    <ul style="list-style-type: disc;">
+                        <li>Press Delete to remove it completely.</li>
+                        <li>Move the selection to where you want it to be. In this case, Lunacy creates a vector shape with an image fill that corresponds to your selection and automatically fills the emptied area with the color that’s prevalent along the selection border.</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <video width="950px" height="500px" autoplay loop>
+                <source src="./VIDEO/images/cutParts.mp4" type="video/mp4">
+            </video>
+
+            <h3>Image filters</h3>
+
+            <p>Change the hue, saturation, contrast, and other properties of your images.</p>
+
+            <p>To do this:</p>
+            <ol>
+                <li>Select one or several image layers.</li>
+                <li>Click <code>+</code> next to <b>Image filters</b> in the right panel.</li>
+                <li>Drag the sliders to adjust the image.</li>
+            </ol>
+
+            <p>These adjustments are all reversible. You can discard all changes 
+                and restore the original image by clicking the Reset values 
+                (<ion-icon name="reload-outline"></ion-icon>) 
+                button next to the section header.
+            </p>
+
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Bondokic Nikola. All rights reserved</p>
+    </footer>
+    
+    <!-- SCROL TO TOP BUTTON -->
+    <button id="scrollTopButton" class="hidden" onclick="scrollToTop()">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+    
+
+
+    <script src="script.js"></script>
+    <!-- LINCURI PENTRU A FOLOSI IONICONS  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

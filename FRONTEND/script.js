@@ -24,8 +24,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-
 /* GO TO TOP BUTTON */
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -42,9 +40,6 @@ document.addEventListener("DOMContentLoaded", function() {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
 }
-
-
-
 
 /* LEFT MANU PAGINA ABOUT */
 
@@ -66,51 +61,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+/* GO TO LOGIN PAGE */
 
-
-/* PENTRU DOWNLOAD SA APARE LOGIN */
-// Get the button and modal elements
-var buttonDownload = document.getElementById("buttonDownload");
-var modalForms = document.getElementById("signInSignUpModal");
-
-// Add event listener to the download button
-buttonDownload.addEventListener("click", function() {
-    // Display the modal forms
-    modalForms.classList.remove("hidden");
+const downloadButton = document.querySelector('.downloadButtonWelcome');
+downloadButton.addEventListener('click', function() {
+    
+    window.location.href = 'LoginForm.html';
 });
-
-// Function to close the modal forms
-function closeForm() {
-    modalForms.classList.add("hidden");
-}
-
-function showSignUpForm() {
-    var signInFormContainer = document.getElementById("signInFormContainer");
-    var signUpFormContainer = document.getElementById("signUpFormContainer");
-    var showSignUpButton = document.getElementById("showSignUpButton");
-    var showSignInButton = document.getElementById("showSignInButton");
-
-    // Toggle visibility of sign-in and sign-up forms
-    signInFormContainer.classList.add("hidden");
-    signUpFormContainer.classList.remove("hidden");
-
-    // Hide the "Sign Up" button and show the "Sign In" button
-    showSignUpButton.style.display = "none";
-    showSignInButton.style.display = "inline-block";
-}
-
-function showSignInForm() {
-    var signInFormContainer = document.getElementById("signInFormContainer");
-    var signUpFormContainer = document.getElementById("signUpFormContainer");
-    var showSignUpButton = document.getElementById("showSignUpButton");
-    var showSignInButton = document.getElementById("showSignInButton");
-
-    // Toggle visibility of sign-in and sign-up forms
-    signUpFormContainer.classList.add("hidden");
-    signInFormContainer.classList.remove("hidden");
-
-    // Hide the "Sign In" button and show the "Sign Up" button
-    showSignInButton.style.display = "none";
-    showSignUpButton.style.display = "inline-block";
-}
 
