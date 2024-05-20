@@ -1,8 +1,10 @@
 import pyodbc
 from flask import Flask, request, jsonify, redirect, url_for, render_template, flash
 import re
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 # Definirea detaliilor de conectare la baza de date
 server = 'localhost'
@@ -19,10 +21,10 @@ conn_str = (
 # Route to render the signup form
 @app.route('/')
 def index():
-    return render_template('LoginForm.html')  # Make sure your HTML form is in the templates folder
+    return render_template('LoginForm.html')
 
 # Route to handle form submissions
-@app.route('/submit_form', methods=['POST', 'GET'])
+@app.route('/submit_form', methods=['POST'])
 def submit_form():
     first_name = request.form['first_name']
     last_name = request.form['last_name']
@@ -43,24 +45,20 @@ def submit_form():
 
     try:
         # Connect to the database
-        conn = pyodbc.connect(conn_str)
-        cursor = conn.cursor()
+        with pyodbc.connect(conn_str) as conn:
+            cursor = conn.cursor()
 
-        # Insert the form data into the SIGNUP table
-        cursor.execute('''
-            INSERT INTO SIGNUP (Fname, Lname, Username, Email, Password)
-            VALUES (?, ?, ?, ?, ?)
-            ''', 
-            (first_name, last_name, username, email, password))
+            # Insert the form data into the SIGNUP table
+            cursor.execute('''
+                INSERT INTO SIGNUP (Fname, Lname, Username, Email, Password)
+                VALUES (?, ?, ?, ?, ?)
+                ''', 
+                (first_name, last_name, username, email, password))
 
-        # Commit the transaction
-        conn.commit()
+            # Commit the transaction
+            conn.commit()
 
-        # Close the connection
-        cursor.close()
-        conn.close()
-
-        # Redirect to a success page (create a success.html in the templates folder)
+        # Redirect to a success page
         return redirect(url_for('success'))
 
     except Exception as e:
@@ -85,6 +83,8 @@ rows_al_doilea_tabel = cursor.fetchall()
 
 # Închiderea conexiunii cu baza de date
 conn.close()
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
