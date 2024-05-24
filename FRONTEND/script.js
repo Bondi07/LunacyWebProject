@@ -60,12 +60,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-/* GO TO LOGIN PAGE */
-
-const downloadButton = document.querySelector('.downloadButtonWelcome');
-downloadButton.addEventListener('click', function() {
-    
-    window.location.href = 'LoginForm.html';
-});
-
